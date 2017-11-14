@@ -1,0 +1,19 @@
+html, body {
+  min-width: 1440px;
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+/* 描述性小白字 */
+.txt-desc {
+  font-size: 12px;
+}
+/* 下拉框小箭头 */
+.select-caret {
+  display: inline-block;
+  width:10px;
+  height:8px;
+  background: url('../i/select.png') center center;
+  background-size: 100% 100%;
+}

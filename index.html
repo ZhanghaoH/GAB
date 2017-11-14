@@ -1,0 +1,406 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>公安互联网+政务服务平台首页</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <style>
+    .bd {
+      width: 1200px;
+      margin: 0 auto;
+    }
+    /* logo栏 */
+
+    .logo-wrap {
+      background: #052863;
+    }
+
+    .logo {
+      letter-spacing: 5px;
+      font-size: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 120px;
+      width: 1440px;
+      height: 140px;
+    }
+    /* logo图标 */
+
+    .logo-img {
+      width: 77px;
+      height: 86px;
+      /* background: url('./assets/i/logo_guohui.png') center center;
+      background-size: contain; */
+      margin: 0 25px;
+    }
+    /* logo文字 */
+
+    .logo-txt {
+      font-size: 24px;
+      color: #ffffff;
+      letter-spacing: 7px;
+    }
+    /* 导航 */
+
+    .nav-wrap {
+      background: url('./assets/i/nav_bg.png') center center;
+      background-size: 100% 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 668px;
+    }
+
+    .nav {
+      background: rgba(0, 0, 0, .47);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+
+    .nav-list {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-around;
+      list-style: none;
+      padding: 0;
+    }
+
+    .nav-list>li {
+      line-height: 50px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .nav-list a {
+      color: #fff;
+      letter-spacing: 1px;
+    }
+
+    .nav-list>li.nav-li__active {
+      background-color: #f4e271;
+    }
+
+    .nav-list>li.nav-li__active a {
+      color: #3a3e25;
+    }
+
+    .nav-list>li:hover {
+      background: #f4e271;
+    }
+
+    .nav-list>li:hover a {
+      color: #3a3e25;
+    }
+
+    .select-area {
+      background: #ffffff;
+      border: 1px solid #d5d6d7;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      border-radius: 4px;
+      width: 150px;
+      height: 54px;
+      box-sizing: border-box;
+      padding: 15px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      margin-right: 6px;
+      font-size: 1.6rem;
+      border: none;
+      outline: none;
+      /*将默认的select选择框样式清除*/
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -ms-appearance: none;
+    }
+
+    .select-caret {
+      position: absolute;
+      right: 20px;
+      top: 23px;
+    }
+
+    .input-key {
+      font-size: 1.6rem;
+      background: #ffffff;
+      border: 1px solid #d2d2d2;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24), 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+      border-radius: 4px 0 0 4px;
+      width: 603px;
+      height: 54px;
+      box-sizing: border-box;
+      text-align: left;
+      padding: 15px;
+    }
+
+    .btn-container {
+      display: inline-block;
+      zoom: 1;
+      font-size: 1.6rem;
+      vertical-align: top;
+    }
+
+    .btn-search {
+      background: #4997f1;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.30);
+      width: 120px;
+      height: 54px;
+      color: #ffffff;
+      letter-spacing: 1.29px;
+      text-align: center;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+
+    .search-form {
+      font-size: 0
+    }
+
+    .search-key-container {
+      margin-top: 20px;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: flex-start;
+    }
+
+    .search-key {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: flex-start;
+      list-style: none;
+      width: 603px;
+    }
+
+
+    .search-key>li {
+      margin-right: 36px;
+    }
+
+    .search-key li>a {
+      font-size: 12px;
+      color: #ffffff;
+      letter-spacing: 0.71px;
+    }
+
+    .search-key li>a:hover {
+      color: #f4e271;
+      text-decoration: underline;
+    }
+
+    .search-key-label {
+      flex: none;
+      font-size: 12px;
+      margin-right: 15px;
+      padding-top: 5px;
+      width: 150px;
+      text-align: center;
+      color: #ffffff;
+      letter-spacing: 0.71px;
+    }
+
+    .flink {
+      background: #ffffff;
+      width: 1440px;
+      height: 280px;
+    }
+
+    .footer {
+      background-image: linear-gradient(-180deg, #164894 0%, #0b2653 98%);
+      width: 1440px;
+      height: 348px;
+    }
+    .menu {
+      display: flex;
+      flex-flow: row nowrap;
+      padding: 0;
+      list-style: none;
+    }
+    .menu>li {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- logo -->
+  <div class="container logo-wrap">
+    <div class="logo bd">
+      <div class="logo-txt">公安部互联网+</div>
+      <img class="logo-img" src="./assets/i/logo_guohui.png" />
+      <div class="logo-txt">政务服务平台</div>
+    </div>
+  </div>
+
+  <!-- navigation & search -->
+  <div class="container nav-wrap" style="border-top: 2px solid #f4e271">
+    <nav class="nav">
+      <ul class="nav-list bd">
+        <li class="nav-li__active">
+          <a href="###">首页</a>
+        </li>
+        <li>
+          <a href="">事项中心</a>
+        </li>
+        <li>
+          <a href="">政策文件</a>
+        </li>
+        <li>
+          <a href="">智能问答</a>
+        </li>
+        <li>
+          <a href="">APP中心</a>
+        </li>
+        <li>
+          <a href="">个人中心</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- search -->
+    <div class="search-container">
+      <form class="search-form am-form-inline">
+        <div class="am-form-group" style="position:relative">
+          <select id="area" class="select-area">
+            <option value="option1">北京市</option>
+            <option value="option2">郑州市</option>
+            <option value="option3">杭州市</option>
+            <option value="option3">乌鲁木齐市</option>
+          </select>
+          <span class="select-caret"></span>
+        </div>
+        <!-- <div class="am-form-group"> -->
+        <input type="text" class="input-key" id="doc-ipt-pwd-1" placeholder="快速搜索你想要的服务">
+        <!-- </div> -->
+        <span class="btn-container">
+          <input type="submit" value="搜索" class="am-btn btn-search">
+        </span>
+      </form>
+      <div class="search-key-container">
+        <div class="search-key-label">热门搜索:</div>
+        <ul class="search-key">
+          <li>
+            <a href="">出入境业务预约</a>
+          </li>
+          <li>
+            <a href="">河南省警民通</a>
+          </li>
+          <li>
+            <a href="">机动车车检</a>
+          </li>
+          <li>
+            <a href="">广州微警</a>
+          </li>
+          <li>
+            <a href="">公民出国办证须知</a>
+          </li>
+          <li>
+            <a href="">旅馆业办证许可
+            </a>
+          </li>
+          <li>
+            <a href="">购房入户
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="bd">
+    <ul class="menu">
+      <li>
+        <a href="">
+          <i></i>
+          <span class="menu-txt">身份证办理
+            <br>进度查询</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i></i>
+          <span class="menu-txt">出入境业务
+            <br>预约</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i></i>
+          <span class="menu-txt">出生登记</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i></i>
+          <span class="menu-txt">居住证申报
+            <br>登记</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i></i>
+          <span class="menu-txt">流动人口异地办理
+            <br>出入境证件须知</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i></i>
+          <span class="menu-txt">驾驶证
+            <br>换证/补证</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="flink">
+
+  </div>
+  <div class="footer">
+
+  </div>
+  <!--[if (gte IE 9)|!(IE)]><!-->
+  <script src="assets/js/jquery.min.js"></script>
+  <!--<![endif]-->
+  <!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+  <script src="assets/js/amazeui.min.js"></script>
+</body>
+
+</html>
