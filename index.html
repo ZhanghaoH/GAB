@@ -28,234 +28,8 @@
 
   <link rel="stylesheet" href="assets/css/amazeui.min.css">
   <link rel="stylesheet" href="assets/css/app.css">
-  <style>
-    .bd {
-      width: 1200px;
-      margin: 0 auto;
-    }
-    /* logo栏 */
+  <link rel="stylesheet" href="assets/css/index.css">
 
-    .logo-wrap {
-      background: #052863;
-    }
-
-    .logo {
-      letter-spacing: 5px;
-      font-size: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 120px;
-      width: 1440px;
-      height: 140px;
-    }
-    /* logo图标 */
-
-    .logo-img {
-      width: 77px;
-      height: 86px;
-      /* background: url('./assets/i/logo_guohui.png') center center;
-      background-size: contain; */
-      margin: 0 25px;
-    }
-    /* logo文字 */
-
-    .logo-txt {
-      font-size: 24px;
-      color: #ffffff;
-      letter-spacing: 7px;
-    }
-    /* 导航 */
-
-    .nav-wrap {
-      background: url('./assets/i/nav_bg.png') center center;
-      background-size: 100% 100%;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 668px;
-    }
-
-    .nav {
-      background: rgba(0, 0, 0, .47);
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-    }
-
-    .nav-list {
-      display: flex;
-      flex-flow: row nowrap;
-      align-items: center;
-      justify-content: space-around;
-      list-style: none;
-      padding: 0;
-    }
-
-    .nav-list>li {
-      line-height: 50px;
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-
-    .nav-list a {
-      color: #fff;
-      letter-spacing: 1px;
-    }
-
-    .nav-list>li.nav-li__active {
-      background-color: #f4e271;
-    }
-
-    .nav-list>li.nav-li__active a {
-      color: #3a3e25;
-    }
-
-    .nav-list>li:hover {
-      background: #f4e271;
-    }
-
-    .nav-list>li:hover a {
-      color: #3a3e25;
-    }
-
-    .select-area {
-      background: #ffffff;
-      border: 1px solid #d5d6d7;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-      border-radius: 4px;
-      width: 150px;
-      height: 54px;
-      box-sizing: border-box;
-      padding: 15px;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      margin-right: 6px;
-      font-size: 1.6rem;
-      border: none;
-      outline: none;
-      /*将默认的select选择框样式清除*/
-      appearance: none;
-      -moz-appearance: none;
-      -webkit-appearance: none;
-      -ms-appearance: none;
-    }
-
-    .select-caret {
-      position: absolute;
-      right: 20px;
-      top: 23px;
-    }
-
-    .input-key {
-      font-size: 1.6rem;
-      background: #ffffff;
-      border: 1px solid #d2d2d2;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24), 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-      border-radius: 4px 0 0 4px;
-      width: 603px;
-      height: 54px;
-      box-sizing: border-box;
-      text-align: left;
-      padding: 15px;
-    }
-
-    .btn-container {
-      display: inline-block;
-      zoom: 1;
-      font-size: 1.6rem;
-      vertical-align: top;
-    }
-
-    .btn-search {
-      background: #4997f1;
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.30);
-      width: 120px;
-      height: 54px;
-      color: #ffffff;
-      letter-spacing: 1.29px;
-      text-align: center;
-      border-top-right-radius: 4px;
-      border-bottom-right-radius: 4px;
-    }
-
-    .search-form {
-      font-size: 0
-    }
-
-    .search-key-container {
-      margin-top: 20px;
-      display: flex;
-      flex-flow: row nowrap;
-      align-items: flex-start;
-    }
-
-    .search-key {
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-flow: row wrap;
-      align-items: flex-start;
-      list-style: none;
-      width: 603px;
-    }
-
-
-    .search-key>li {
-      margin-right: 36px;
-    }
-
-    .search-key li>a {
-      font-size: 12px;
-      color: #ffffff;
-      letter-spacing: 0.71px;
-    }
-
-    .search-key li>a:hover {
-      color: #f4e271;
-      text-decoration: underline;
-    }
-
-    .search-key-label {
-      flex: none;
-      font-size: 12px;
-      margin-right: 15px;
-      padding-top: 5px;
-      width: 150px;
-      text-align: center;
-      color: #ffffff;
-      letter-spacing: 0.71px;
-    }
-
-    .flink {
-      background: #ffffff;
-      width: 1440px;
-      height: 280px;
-    }
-
-    .footer {
-      background-image: linear-gradient(-180deg, #164894 0%, #0b2653 98%);
-      width: 1440px;
-      height: 348px;
-    }
-    .menu {
-      display: flex;
-      flex-flow: row nowrap;
-      padding: 0;
-      list-style: none;
-    }
-    .menu>li {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-    }
-  </style>
 </head>
 
 <body>
@@ -341,56 +115,217 @@
       </div>
     </div>
   </div>
-  <div class="bd">
-    <ul class="menu">
-      <li>
-        <a href="">
-          <i></i>
-          <span class="menu-txt">身份证办理
-            <br>进度查询</span>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <i></i>
-          <span class="menu-txt">出入境业务
-            <br>预约</span>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <i></i>
-          <span class="menu-txt">出生登记</span>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <i></i>
-          <span class="menu-txt">居住证申报
-            <br>登记</span>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <i></i>
-          <span class="menu-txt">流动人口异地办理
-            <br>出入境证件须知</span>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <i></i>
-          <span class="menu-txt">驾驶证
-            <br>换证/补证</span>
-        </a>
-      </li>
-    </ul>
+  <div class="bd" style="height:588px;position:relative">
+    <div class="bd up" style="">
+      <ul class="menu">
+        <li>
+          <a href="">
+            <i class="menu-icon sfzbl"></i>
+            <span class="menu-txt">身份证办理
+              <br>进度查询</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="menu-icon crjyy"></i>
+            <span class="menu-txt">出入境业务
+              <br>预约</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="menu-icon csdj"></i>
+            <span class="menu-txt">出生登记</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="menu-icon jzzsb"></i>
+            <span class="menu-txt">居住证申报
+              <br>登记</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="menu-icon ldrkyd"></i>
+            <span class="menu-txt">流动人口异地办理
+              <br>出入境证件须知</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="menu-icon jszhb"></i>
+            <span class="menu-txt">驾驶证
+              <br>换证/补证</span>
+          </a>
+        </li>
+      </ul>
+      <div class="cnt-wrap news">
+        <div class="cnt-left" style="height:298px"></div>
+        <div class="cnt-right" style="height:298px;background: #f5fbff;">
+          <div class="cnt-tit">
+            <i class="tit"></i>政策文件
+            <i class="cnt-more"></i>
+          </div>
+          <ul class="cnt-policies">
+            <li>
+              <i class="date" style="background:url(./assets/i/date_1.png) center center no-repeat;background-size:100% 100%">
+                <span class="month">10月</span>
+                <br>
+                <span class="day">23</span>
+              </i>
+              <a href="">李克强签署国务院令公布《国务院关于修改部分行》 | 全文
+                <span class="time">(10-23)</span>
+              </a>
+            </li>
+            <li>
+              <i class="date" style="background:url(./assets/i/date_2.png) center center no-repeat;background-size:100% 100%">
+                <span class="month">10月</span>
+                <br>
+                <span class="day">22</span>
+              </i>
+              <a href="">国务院一周新政[10.14—10.20]
+                <span class="time">(10-22)</span>
+              </a>
+            </li>
+            <li>
+              <i class="date" style="background:url(./assets/i/date_3.png) center center no-repeat;background-size:100% 100%">
+                <span class="month">10月</span>
+                <br>
+                <span class="day">22</span>
+              </i>
+              <a href="">国务院发文部署开展第三次全国土地调查解读 | 全文
+                <span class="time">(10-22)</span>
+              </a>
+            </li>
+            <li>
+              <i class="date" style="background:url(./assets/i/date_4.png) center center no-repeat;background-size:100% 100%">
+                <span class="month">10月</span>
+                <br>
+                <span class="day">13</span>
+              </i>
+              <a href="">国务院办公厅发文部署积极推进供应链创新与全文 | 解读
+                <span class="time">(10-13)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="cnt-wrap issues">
+        <div class="cnt-left" style="height:280px">
+          <div class="cnt-ques-wrap">
+            <div class="cnt-tit">
+              <i class="tit"></i>热点问题
+              <i class="cnt-more"></i>
+            </div>
+            <ul class="cnt-ques">
+              <li>
+                <a href="">•关于私有房屋出租的相关问题</a>
+                <span class="time cnt-time">(10-16)</span>
+              </li>
+              <li>
+                <a href="">•关于申请客车驾驶员的相关问题</a>
+                <span class="time cnt-time">(10-16)</span>
+              </li>
+              <li>
+                <a href="">•关于私有房屋出租的相关问题</a>
+                <span class="time cnt-time">(10-16)</span>
+              </li>
+              <li>
+                <a href="">•关于申请客车驾驶员的相关问题</a>
+                <span class="time cnt-time">(10-16)</span>
+              </li>
+              <li>
+                <a href="">•关于私有房屋出租的相关问题</a>
+                <span class="time cnt-time">(10-16)</span>
+              </li>
+              <li>
+                <a href="">•关于申请客车驾驶员的相关问题</a>
+                <span class="time cnt-time">(10-16)</span>
+              </li>
+              <li>
+                <a href="">•关于私有房屋出租的相关问题</a>
+                <span class="time cnt-time">(10-16)</span>
+              </li>
+            </ul>
+          </div>
+          <div class="cnt-module">
+            <a class="cnt-module-qa">
+              <i class="qa"></i>
+              <span>智能问答</span>
+            </a>
+            <a class="cnt-module-app">
+              <i class="app"></i>
+              <span>APP中心</span>
+            </a>
+          </div>
+        </div>
+        <div class="cnt-right " style="height:280px">
+          <div class="cnt-tit">
+            <i class="tit"></i>热点事项
+            <i class="cnt-more"></i>
+          </div>
+          <ul class="cnt-ques">
+            <li>
+              <i class="index index-hot"></i>
+              <a href="">大中专院校录取学生迁入</a>
+            </li>
+            <li>
+              <i class="index index-hot"></i>
+              <a href="">变更文化程度、婚姻状况</a>
+            </li>
+            <li>
+              <i class="index index-hot"></i>
+              <a href="">转业、复员、退伍军人入户</a>
+            </li>
+            <li>
+              <i class="index index-warm"></i>
+              <a href="">子女投靠父母</a>
+            </li>
+            <li>
+              <i class="index"></i>
+              <a href="">务工人员入户</a>
+            </li>
+            <li>
+              <i class="index"></i>
+              <a href="">回国（恢复）户口</a>
+            </li>
+            <li>
+              <i class="index"></i>
+              <a href="">准迁证补发</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
   </div>
   <div class="flink">
-
+    <div class="bd">
+      <div class="cnt-tit">
+          <i class="tit"></i>友情链接
+      </div>
+      <ul class="flink-ul">
+        <li><a href=""><img src="assets/i/zgzfw.png" alt="中国政府网"></a></li>
+        <li><a href=""><img src="assets/i/zgcaw.png" alt="中国长安网"></a></li>
+        <li><a href=""><img src="assets/i/qzlxw.png" alt="群众路线网"></a></li>
+        <li><a href=""><img src="assets/i/jgllw.png" alt="中央国家机关理论在线"></a></li>
+        <li><a href=""><img src="assets/i/zgzfw.png" alt="中华人民共和国公安部"></a></li>
+        <li><a href=""><img src="assets/i/zgzfw.png" alt="中央国家机关举报网站"></a></li>
+      </ul>
+    </div>
   </div>
   <div class="footer">
-
+    <div class="copr">版权所有：中华人民共和国公安部</div>
+    <div class="hr"></div>
+    <div class="info">
+      <p><span style="margin-right:16px">京公网安备&emsp;11010102000001号</span><span>京ICP备05070602号</span></p>
+      <p><span style="margin-right:20px">地址：北京市东长安街14号</span><span>邮编：100741</span></p>
+    </div>
+    <div class="info-img">
+      <img src="assets/i/dzjg.png" alt="党政机关" width="26" height="31" style="margin-right:16px">
+      <img src="assets/i/zfwz.png" alt="政府网站找错" width="44" height="22">
+    </div>
   </div>
   <!--[if (gte IE 9)|!(IE)]><!-->
   <script src="assets/js/jquery.min.js"></script>
