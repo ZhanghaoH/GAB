@@ -1,0 +1,23 @@
+.me{
+  height: 846px;
+  background: url(../i/bg2.png);
+  background-size: contain;
+}
+.me-cnt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.me-cnt-l {
+  background:#ffffff;
+  border-radius:4px;
+  width:307px;
+  height:698px;
+}
+.me-cnt-tit {
+  /* font-family:PingFangSC-Medium; */
+  font-size:18px;
+  color:#ffffff;
+  letter-spacing:1.12px;
+  text-align:justify;
+}

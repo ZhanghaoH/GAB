@@ -1,28 +1,104 @@
-html, body {
-  min-width: 1440px;
+html,
+body {
+    min-width: 1440px;
+    background-color: #f0f0f0;
 }
+
+.bd {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .container {
-  width: 1440px;
-  margin: 0 auto;
+    width: 1440px;
+    margin: 0 auto;
 }
+
 .time {
-  font-size:14px;
-  color:#b1b1b1;
-  letter-spacing:1px;
+    font-size: 14px;
+    color: #b1b1b1;
+    letter-spacing: 1px;
 }
+
+
 /* 描述性小白字 */
+
 .txt-desc {
-  font-size: 12px;
+    font-size: 12px;
 }
+
+
 /* 下拉框小箭头 */
+
 .select-caret {
-  display: inline-block;
-  width:10px;
-  height:8px;
-  background: url('../i/select.png') center center;
-  background-size: 100% 100%;
+    display: inline-block;
+    width: 10px;
+    height: 8px;
+    background: url('../i/select.png') center center;
+    background-size: 100% 100%;
 }
+
 i {
-  display: inline-block;
-  background: #052863;
+    display: inline-block;
+    background: #052863;
 }
+
+.line-clamp {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+i.modal-close {
+    width: 20px;
+    height: 20px;
+    background: url(../i/close.png) center center;
+    background-size: 100% 100%;
+}
+
+a,
+button,
+input {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input[class="btn-*"]:hover {
+    color: #fff;
+}
+/* 导航 */
+.nav-wr {
+    opacity: 0.96;
+    background: #ffffff;
+  }
+  
+  .nav-other {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-other li a {
+    /* font-family: PingFangSC-Medium; */
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #616161;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+
+  .nav-other li:hover a,
+  .nav-other-li__active a {
+    border-bottom: 2px solid #4886ff;
+    /* font-family: PingFangSC-Semibold; */
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 1px;
+    text-align: justify;
+  }

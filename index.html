@@ -62,7 +62,7 @@
           <a href="">APP中心</a>
         </li>
         <li>
-          <a href="">个人中心</a>
+          <a href="javascript:login();">个人中心</a>
         </li>
       </ul>
     </nav>
@@ -79,10 +79,13 @@
           <span class="select-caret"></span>
         </div>
         <!-- <div class="am-form-group"> -->
-        <input type="text" class="input-key" id="doc-ipt-pwd-1" placeholder="快速搜索你想要的服务">
+        <input type="text" class="input-key" id="search_cnt" placeholder="快速搜索你想要的服务">
         <!-- </div> -->
         <span class="btn-container">
           <input type="submit" value="搜索" class="am-btn btn-search">
+        </span>
+        <span class="btn-container">
+          <input type="button" value="高级搜索" class="am-btn btn-search"  style="background:transparent;box-shadow:none">
         </span>
       </form>
       <div class="search-key-container">
@@ -113,10 +116,80 @@
           </li>
         </ul>
       </div>
+      <div class="pop-wrap am-hide">
+        <div class="am-tabs" data-am-tabs>
+          <ul class="am-tabs-nav am-nav am-nav-tabs">
+            <li class="am-active">
+              <a href="#tab1">热门搜索</a>
+            </li>
+            <li>
+              <a href="#tab2">服务事项</a>
+            </li>
+            <li>
+              <a href="#tab3">办事指南</a>
+            </li>
+            <li>
+              <a href="#tab4">相关APP</a>
+            </li>
+            <li>
+              <a href="#tab5">常见问题</a>
+            </li>
+            <li>
+              <a href="#tab6">政策文件</a>
+            </li>
+          </ul>
+          <div class="am-tabs-bd">
+            <div class="am-tab-panel am-active" id="tab1">
+              <ul class="hot-tab-cnt">
+                <li>
+                  <a href="">出入境证件办理</a>
+                </li>
+                <li>
+                  <a href="">因私出入境中介机构资质办证指南</a>
+                </li>
+                <li>
+                  <a href="">关于未成年人申请出入境证件的相关问题</a>
+                </li>
+                <li class="hot-vnt-bordert">
+                  <a href="" class="hot-cnt-tuwen">
+                    <div class="hot-cnt-tu">
+                      <img src="" alt="北京服务您" width="58" height="58">
+                    </div>
+                    <div class="hot-cnt-wen">
+                      <div class="wen-tit">北京服务您</div>
+                      <div class="wen-desc line-clamp">“北京服务您”APP实现了多个复杂公共服务事项的移动端一站式办理，为广大市民的政务生活变得更加便捷。</div>
+                    </div>
+                  </a>
+                </li>
+                <li class="hot-vnt-bordert">
+                  <a href="" class="hot-cnt-wen">
+                    <div class="wen-tit">公安部出入境管理局负责人就启用电子台胞证答记者问</div>
+                    <ol class="hot-cnt-qa">
+                      <li>
+                        <div class="hot-qa-q">和现行证件相比，电子台胞证有哪些明显的变化？</div>
+                        <div class="hot-qa-a line-clamp">答：电子台胞证最明显的变化由两个方面：一是采用了卡式证件的形式，携带使用变得更为方便；二是取消了签注区，进一步落实了取消台胞签注政策规定。此外，我们对卡面可视…</div>
+                      </li>
+                      <!-- <li>
+                        <div class="hot-qa-q">和现行证件相比，电子台胞证有哪些明显的变化？</div>
+                        <div class="hot-qa-a line-clamp">答：电子台胞证最明显的变化由两个方面：一是采用了卡式证件的形式，携带使用变得更为方便；二是取消了签注区，进一步落实了取消台胞签注政策规定。此外，我们对卡面可视…</div>
+                      </li> -->
+                    </ol>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="am-tab-panel" id="tab2">服务事项</div>
+            <div class="am-tab-panel" id="tab3">办事指南</div>
+            <div class="am-tab-panel" id="tab4">相关APP</div>
+            <div class="am-tab-panel" id="tab5">常见问题</div>
+            <div class="am-tab-panel" id="tab6">政策文件</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="bd" style="height:588px;position:relative">
-    <div class="bd up" style="">
+    <div class="bd up">
       <ul class="menu">
         <li>
           <a href="">
@@ -303,15 +376,39 @@
   <div class="flink">
     <div class="bd">
       <div class="cnt-tit">
-          <i class="tit"></i>友情链接
+        <i class="tit"></i>友情链接
       </div>
       <ul class="flink-ul">
-        <li><a href=""><img src="assets/i/zgzfw.png" alt="中国政府网"></a></li>
-        <li><a href=""><img src="assets/i/zgcaw.png" alt="中国长安网"></a></li>
-        <li><a href=""><img src="assets/i/qzlxw.png" alt="群众路线网"></a></li>
-        <li><a href=""><img src="assets/i/jgllw.png" alt="中央国家机关理论在线"></a></li>
-        <li><a href=""><img src="assets/i/zgzfw.png" alt="中华人民共和国公安部"></a></li>
-        <li><a href=""><img src="assets/i/zgzfw.png" alt="中央国家机关举报网站"></a></li>
+        <li>
+          <a href="">
+            <img src="assets/i/zgzfw.png" alt="中国政府网">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="assets/i/zgcaw.png" alt="中国长安网">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="assets/i/qzlxw.png" alt="群众路线网">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="assets/i/jgllw.png" alt="中央国家机关理论在线">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="assets/i/zgzfw.png" alt="中华人民共和国公安部">
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="assets/i/zgzfw.png" alt="中央国家机关举报网站">
+          </a>
+        </li>
       </ul>
     </div>
   </div>
@@ -319,12 +416,37 @@
     <div class="copr">版权所有：中华人民共和国公安部</div>
     <div class="hr"></div>
     <div class="info">
-      <p><span style="margin-right:16px">京公网安备&emsp;11010102000001号</span><span>京ICP备05070602号</span></p>
-      <p><span style="margin-right:20px">地址：北京市东长安街14号</span><span>邮编：100741</span></p>
+      <p>
+        <span style="margin-right:16px">京公网安备&emsp;11010102000001号</span>
+        <span>京ICP备05070602号</span>
+      </p>
+      <p>
+        <span style="margin-right:20px">地址：北京市东长安街14号</span>
+        <span>邮编：100741</span>
+      </p>
     </div>
     <div class="info-img">
       <img src="assets/i/dzjg.png" alt="党政机关" width="26" height="31" style="margin-right:16px">
       <img src="assets/i/zfwz.png" alt="政府网站找错" width="44" height="22">
+    </div>
+  </div>
+  <div class="modal-wrap am-hide">
+    <div class="login-modal">
+      <i class="modal-close"></i>
+      <div class="login-tit">欢迎使用</div>
+      <div class="login-hd">公安部互联网+政务服务平台</div>
+      <form class="login-form" onsubmit="">
+        <div class="form-group">
+          <i class="icon-user"></i>
+          <input type="text" class="form-field" placeholder="请输入您的手机号">
+        </div>
+        <div class="form-group">
+          <i class="icon-psd"></i>
+          <input type="password" class="form-field" placeholder="请输入您的密码">
+        </div>
+        <input type="submit" value="登录" class="am-btn btn-login">
+      </form>
+      <div class="oper-wrap"><a href="">注册用户</a><a href="">忘记密码?</a></div>
     </div>
   </div>
   <!--[if (gte IE 9)|!(IE)]><!-->
@@ -337,5 +459,24 @@
 <![endif]-->
   <script src="assets/js/amazeui.min.js"></script>
 </body>
+<script>
+  $(document).ready(function () {
+    var modalLogin = $(".modal-wrap")
+    var pop = $(".pop-wrap")
+    $(".modal-close").on("tap click", function () {
+      modalLogin.addClass("am-hide")
+    })
+    $("input#search_cnt").click( function(){
+      pop.removeClass("am-hide")
+    })
+    $("input#search_cnt").blur( function(){
+      pop.addClass("am-hide")
+    })
+    function login() {
+      modalLogin.removeClass("am-hide")
+    }
+    window.login = login
+  });
+</script>
 
 </html>
