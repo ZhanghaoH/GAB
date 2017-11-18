@@ -105,13 +105,6 @@
   margin-right: 6px;
   font-size: 1.6rem;
   font-weight: bolder;
-  border: none;
-  outline: none;
-  /*将默认的select选择框样式清除*/
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -ms-appearance: none;
 }
 
 .select-caret {
@@ -223,10 +216,10 @@
   height: 115px;
 }
 .menu>li:hover {
-  box-shadow:inset 0 3px 16px 0 rgba(177,185,195,0.50);
+  /* box-shadow:inset 0 3px 16px 0 rgba(177,185,195,0.50); */
 }
 .menu>li:hover a {
-  border-right-color: transparent;
+  /* border-right-color: transparent; */
 }
 .menu>li a {
   display: flex;
@@ -237,11 +230,35 @@
   height: 70px;
   /* font-family:PingFangSC-Semibold; */
   font-size:14px;
-  color:#2759a5;
+  color:#fff;
   letter-spacing:1.5px;
   line-height:17px;
   text-align:center;
-  border-right: 2px solid rgba(208,225,247,0.56);
+  /* border-right: 2px solid rgba(208,225,247,0.56); */
+}
+.menu-icon-sfzbl {
+  background: url(../i/icon_shenfenzheng@2x.png) center center no-repeat;
+  background-size: contain;
+}
+.menu-icon-crjyy {
+  background: url(../i/icon_churujing@2x.png) center center no-repeat;
+  background-size: contain;
+}
+.menu-icon-csdj {
+  background: url(../i/icon_chusheng@2x.png) center center no-repeat;
+  background-size: contain;
+}
+.menu-icon-jzzsb {
+  background: url(../i/icon_juzhuzheng@2x.png) center center no-repeat;
+  background-size: contain;
+}
+.menu-icon-ldrkyd {
+  background: url(../i/icon_liudongrenkou@2x.png) center center no-repeat;
+  background-size: contain;
+}
+.menu-icon-jszhb {
+  background: url(../i/icon_jiashizheng@2x.png) center center no-repeat;
+  background-size: contain;
 }
 .up {
   box-shadow:2px 2px 4px 0 rgba(224,224,224,0.36), -2px 0 4px 0 rgba(0,0,0,0.04);background:#f7f7f7;
@@ -249,12 +266,13 @@
   position: absolute;
   top: -58px;
 }
-.menu>li:last-child a {
+/* .menu>li:last-child a {
   border-right: none;
-}
+} */
 .menu-icon {
   width: 40px;
-  height: 30px;
+  height: 38px;
+  margin-bottom: 8px;
 }
 .cnt-wrap {
   overflow: hidden;
@@ -325,6 +343,12 @@ i.cnt-more {
   position: absolute;
   right: 50px;
   top: 25px;
+  border:1px solid #327fdf;
+  width:15px;
+  height:15px;
+  border-radius:100%;
+  background: url(../i/more.png) center center no-repeat;
+  background-size: contain;
 }
 i.date {
   flex: none;
@@ -427,13 +451,13 @@ i.index-warm {
 i.qa {
   width: 46px;
   height: 46px;
-  background: url(../i/qa.png) center center;
+  background: url(../i/icon_zhineng@2x.png) center center no-repeat;
   background-size: contain;
 }
 i.app{
-  width: 30px;
-  height: 43px;
-  background: url(../i/app.png) center center;
+  width: 46px;
+  height: 46px;
+  background: url(../i/icon_app@2x.png) center center no-repeat;
   background-size: contain;
 }
 .cnt-module-app {
@@ -475,14 +499,12 @@ i.app{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 60px;
-  margin-bottom: 25px;
-  /* width: 116px;
-  height: 72px; */
+  width: 120px;
+  height: 75px;
 }
 .flink-ul a>img {
   /* width: 116px; */
-  height: 72px;
+  height: 32px;
 }
 .footer {
   background-image: linear-gradient(-180deg, #164894 0%, #0b2653 98%);
@@ -644,23 +666,7 @@ i.app{
   align-items: center;
   justify-content: center
 }
-.modal-wrap {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(16,37,89,0.49);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 99;
-}
-i.modal-close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-}
+
 .login-form {
   margin-top: 30px;
 }
@@ -686,7 +692,7 @@ i.modal-close {
   border-radius:4px;
   width:314px;
   height:46px;
-  padding: 15px;
+  padding-right: 15px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -696,15 +702,15 @@ i.modal-close {
   width: 31px;
   height: 15px;
   padding-right: 15px;
-  border-right: 1px solid #dfdfdf;
+  padding-left: 20px;
   flex: none;
 }
 i.icon-user {
-  background: transparent url(../i/user.ong) center center;
+  background: transparent url("../i/icon_yonghu@2x.png") center center no-repeat;
   background-size: contain;
 }
 i.icon-psd {
-  background: transparent url(../i/psd.ong) center center;
+  background: transparent url("../i/icon_mima@2x.png") center center no-repeat;
   background-size: contain;
 }
 .form-field {
@@ -716,6 +722,7 @@ i.icon-psd {
   letter-spacing:1px;
   line-height: 1.5;
   border: none;
+  border-left: 1px solid #dfdfdf;
 }
 .btn-login {
   display: block;

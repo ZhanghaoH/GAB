@@ -45,7 +45,7 @@
   <!-- navigation & search -->
   <div class="container nav-wrap" style="border-top: 2px solid #f4e271">
     <nav class="nav">
-      <ul class="nav-list bd">
+      <ul class="nav-list bd" id="indexNav">
         <li class="nav-li__active">
           <a href="###">首页</a>
         </li>
@@ -82,7 +82,7 @@
         <input type="text" class="input-key" id="search_cnt" placeholder="快速搜索你想要的服务">
         <!-- </div> -->
         <span class="btn-container">
-          <input type="submit" value="搜索" class="am-btn btn-search">
+          <input type="button" value="搜索" class="am-btn btn-search">
         </span>
         <span class="btn-container">
           <input type="button" value="高级搜索" class="am-btn btn-search"  style="background:transparent;box-shadow:none">
@@ -153,7 +153,7 @@
                 <li class="hot-vnt-bordert">
                   <a href="" class="hot-cnt-tuwen">
                     <div class="hot-cnt-tu">
-                      <img src="" alt="北京服务您" width="58" height="58">
+                      <img src="assets/i/img_beijinghuanyingni@2x.png" alt="北京服务您" width="58" height="58">
                     </div>
                     <div class="hot-cnt-wen">
                       <div class="wen-tit">北京服务您</div>
@@ -191,43 +191,43 @@
   <div class="bd" style="height:588px;position:relative">
     <div class="bd up">
       <ul class="menu">
-        <li>
+        <li style="background:#198cff;">
           <a href="">
-            <i class="menu-icon sfzbl"></i>
+            <i class="menu-icon menu-icon-sfzbl"></i>
             <span class="menu-txt">身份证办理
               <br>进度查询</span>
           </a>
         </li>
-        <li>
+        <li style="background:#4ca6ff;">
           <a href="">
-            <i class="menu-icon crjyy"></i>
+            <i class="menu-icon menu-icon-crjyy"></i>
             <span class="menu-txt">出入境业务
               <br>预约</span>
           </a>
         </li>
-        <li>
+        <li style="background:#80bfff;">
           <a href="">
-            <i class="menu-icon csdj"></i>
+            <i class="menu-icon menu-icon-csdj"></i>
             <span class="menu-txt">出生登记</span>
           </a>
         </li>
-        <li>
+        <li style="background:#99ccff;">
           <a href="">
-            <i class="menu-icon jzzsb"></i>
+            <i class="menu-icon menu-icon-jzzsb"></i>
             <span class="menu-txt">居住证申报
               <br>登记</span>
           </a>
         </li>
-        <li>
+        <li style="background:#66b3ff;">
           <a href="">
-            <i class="menu-icon ldrkyd"></i>
+            <i class="menu-icon menu-icon-ldrkyd"></i>
             <span class="menu-txt">流动人口异地办理
               <br>出入境证件须知</span>
           </a>
         </li>
-        <li>
+        <li style="background:#3b9dff;">
           <a href="">
-            <i class="menu-icon jszhb"></i>
+            <i class="menu-icon menu-icon-jszhb"></i>
             <span class="menu-txt">驾驶证
               <br>换证/补证</span>
           </a>
@@ -381,32 +381,32 @@
       <ul class="flink-ul">
         <li>
           <a href="">
-            <img src="assets/i/zgzfw.png" alt="中国政府网">
+            <img src="assets/i/img_gov@2x.png" alt="中国政府网">
           </a>
         </li>
         <li>
           <a href="">
-            <img src="assets/i/zgcaw.png" alt="中国长安网">
+            <img src="assets/i/img_chinapeace@2x.png" alt="中国长安网">
           </a>
         </li>
         <li>
           <a href="">
-            <img src="assets/i/qzlxw.png" alt="群众路线网">
+            <img src="assets/i/img_people@2x.png" alt="群众路线网">
+          </a>
+        </li>
+        <!-- <li>
+          <a href="">
+            <img src="assets/i/img_lilunwuzhangzaixian@2x.png" alt="中央国家机关理论在线">
+          </a>
+        </li> -->
+        <li>
+          <a href="">
+            <img src="assets/i/img_12388@2x.png" alt="中华人民共和国公安部">
           </a>
         </li>
         <li>
           <a href="">
-            <img src="assets/i/jgllw.png" alt="中央国家机关理论在线">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="assets/i/zgzfw.png" alt="中华人民共和国公安部">
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="assets/i/zgzfw.png" alt="中央国家机关举报网站">
+            <img src="assets/i/img_mps@2x.png" alt="中央国家机关举报网站">
           </a>
         </li>
       </ul>
@@ -426,8 +426,8 @@
       </p>
     </div>
     <div class="info-img">
-      <img src="assets/i/dzjg.png" alt="党政机关" width="26" height="31" style="margin-right:16px">
-      <img src="assets/i/zfwz.png" alt="政府网站找错" width="44" height="22">
+      <img src="assets/i/img_dangzhengjiguan@2x.png" alt="党政机关" width="44" height="31" style="margin-right:16px">
+      <img src="assets/i/img_zhaocuo@2x.png" alt="政府网站找错" width="44" height="31">
     </div>
   </div>
   <div class="modal-wrap am-hide">
@@ -444,7 +444,7 @@
           <i class="icon-psd"></i>
           <input type="password" class="form-field" placeholder="请输入您的密码">
         </div>
-        <input type="submit" value="登录" class="am-btn btn-login">
+        <input type="button" value="登录" class="am-btn btn-login">
       </form>
       <div class="oper-wrap"><a href="">注册用户</a><a href="">忘记密码?</a></div>
     </div>
@@ -460,9 +460,11 @@
   <script src="assets/js/amazeui.min.js"></script>
 </body>
 <script>
+  
   $(document).ready(function () {
     var modalLogin = $(".modal-wrap")
     var pop = $(".pop-wrap")
+    var indexNavLis = $("#indexNav").children("li")
     $(".modal-close").on("tap click", function () {
       modalLogin.addClass("am-hide")
     })
@@ -471,6 +473,10 @@
     })
     $("input#search_cnt").blur( function(){
       pop.addClass("am-hide")
+    })
+    $("#indexNav").on("click", "li", function(){
+      indexNavLis.removeClass("nav-li__active")
+      $(this).addClass("nav-li__active")
     })
     function login() {
       modalLogin.removeClass("am-hide")
