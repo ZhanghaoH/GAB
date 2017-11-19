@@ -181,7 +181,6 @@ i.icon-thumb {
 }
 
 .up-services {
-    flex: auto;
     /* display: flex;
     justify-content: space-between; */
     width: 610px;
@@ -315,12 +314,12 @@ i.icon-thumb {
     width: 295px;
 }
 
-.tab-comment-status {
+.msg-action, .tab-comment-status {
     width: 65px;
     text-align: center;
 }
 
-.tab-news-time {
+.msg-time, .tab-news-time {
     width: 85px;
     text-align: center;
 }
@@ -335,7 +334,7 @@ i.icon-thumb {
     text-align: center;
 }
 
-.comment-del {
+.action-del {
     cursor: pointer;
 }
 
@@ -411,7 +410,7 @@ li .tab-comment-csr {
     justify-content: space-between;
 }
 
-li .tab-comment-status {
+li .tab-comment-status, .msg-action {
     background: #327fdf;
     border-radius: 2px;
     width: 65px;
@@ -437,16 +436,16 @@ li .comment-status__disabled {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #d0d0d0;
+    /* font-family:PingFangSC-Medium; */
+    font-size: 14px;
+    letter-spacing: 1.17px;
 }
 
 .pg {
     list-style: none;
     display: flex;
     align-items: center;
-    color: #d0d0d0;
-    /* font-family:PingFangSC-Medium; */
-    font-size: 14px;
-    letter-spacing: 1.17px;
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -562,4 +561,51 @@ i.icon-select {
 }
 .btn__disabled {
     background: #b0b0b0;
+}
+.modal-msg {
+    /* width: 450px; */
+    padding-bottom: 0;
+}
+.msg-wr {
+    width: 100%;
+    margin-top: 25px;
+}
+.msg-cnt {
+    height: 360px;
+    padding: 0 15px;
+    list-style: none;
+    border-top: 1px solid rgba(226, 226, 226, .5);
+    border-bottom: 1px solid rgba(226, 226, 226, .5);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+
+.msg-cnt li {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(226, 226, 226, .5);
+}
+
+.msg-cnt li:nth-child(5n) {
+    border-bottom: none;
+}
+.msg-tit {
+    width: 200px;
+}
+.msg-status {
+    width: 30px;
+}
+i.msg-status {
+    width: 20px;
+    height: 20px;
+    background: url("../i/icon_xinxi_blue@2x.png") center center no-repeat;
+    background-size: contain;
+}
+i.msg-status.msg-status__done {
+    background: url("../i/icon_xinxi@2x.png") center center no-repeat;
+    background-size: contain;
 }

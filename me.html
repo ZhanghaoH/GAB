@@ -33,19 +33,19 @@
   <nav class="container nav-wr">
     <ul class="nav-other bd">
       <li>
-        <a href="###">首页</a>
+        <a href="index.html">首页</a>
       </li>
       <li>
-        <a href="">事项中心</a>
+        <a href="eventsCenter.html">事项中心</a>
       </li>
       <li>
-        <a href="">政策文件</a>
+        <a href="policyFiles.html">政策文件</a>
       </li>
       <li>
-        <a href="">智能问答</a>
+        <a href="QAIntelligence.html">智能问答</a>
       </li>
       <li>
-        <a href="">APP中心</a>
+        <a href="appCenter.html">APP中心</a>
       </li>
       <li class="nav-other-li__active">
         <a href="###">个人中心</a>
@@ -299,19 +299,19 @@
                     <div class="tab-cnt-tit">因私出入境中介机构资格认定（境外就业、留学除外）</div>
                     <div class="tab-news-time">2017.08.20</div>
                     <!-- <div class="tab-news-status news-status__done">已办结</div> -->
-                    <div class="tab-comment-status comment-del">删除</div>
+                    <div class="tab-comment-status action-del">删除</div>
                   </li>
                   <li>
                     <div class="tab-cnt-tit">商品房过户需要公安局开具亲属关系证明</div>
                     <div class="tab-news-time">2017.08.21</div>
                     <!-- <div class="tab-news-status">办理中</div> -->
-                    <div class="tab-comment-status comment-del">删除</div>
+                    <div class="tab-comment-status action-del">删除</div>
                   </li>
                   <li>
                     <div class="tab-cnt-tit">学生异地补办身份证</div>
                     <div class="tab-news-time">2017.07.30</div>
                     <!-- <div class="tab-news-status news-status__done">已办结</div> -->
-                    <div class="tab-comment-status comment-del">删除</div>
+                    <div class="tab-comment-status action-del">删除</div>
                   </li>
                 </ul>
                 <div class="pg-wr">
@@ -333,11 +333,11 @@
       </div>
     </div>
   </div>
-  <!-- 个人中心 -->
-  <div class="modal-wrap am-hide">
+  <!-- 个人信息 -->
+  <div class="modal-wrap am-hide" id="infos">
     <div class="modal-bd">
       <i class="modal-close"></i>
-      <div class="modal-tit">个人中心</div>
+      <div class="modal-tit">个人信息</div>
       <form class="modal-form" onsubmit="">
         <div class="form-group-inline">
           <label for="" class="form-label">我的昵称:</label>
@@ -361,6 +361,7 @@
                   <option value="">开封市</option>
                   <option value="">洛阳市</option>
                 </select>
+                <!-- FIXED: 下箭头覆盖下拉框 点箭头无法响应下拉 -->
                 <i class="icon-select"></i>
               </div>
               <div class="select-wr">
@@ -379,7 +380,8 @@
       </form>
     </div>
   </div>
-  <div class="modal-wrap am-hide">
+  <!-- 修改密码 -->
+  <div class="modal-wrap am-hide" id="changePSD">
     <div class="modal-bd">
       <i class="modal-close"></i>
       <div class="modal-tit">修改密码</div>
@@ -400,7 +402,43 @@
       </form>
     </div>
   </div>
-  <div class="modal-wrap">
+  <!-- 消息中心 -->
+  <div class="modal-wrap am-hide" id="msg">
+    <div class="modal-bd modal-msg">
+      <i class="modal-close"></i>
+      <div class="modal-tit">消息中心</div>
+      <div class="msg-wr">
+        <ul class="msg-cnt">
+          <li>
+            <i class="msg-status"></i>
+            <div class="msg-tit">因私出入境中介机构资格认定（境外就业、留学除外）</div>
+            <div class="msg-time">2017.08.20</div>
+            <div class="msg-action action-del">删除</div>
+          </li>
+          <li>
+            <i class="msg-status msg-status__done"></i>
+            <div class="msg-tit">因私出入境中介机构资格认定（境外就业、留学除外）</div>
+            <div class="msg-time">2017.08.21</div>
+            <div class="msg-action action-del">删除</div>
+          </li>
+        </ul>
+        <div class="pg-wr">
+          <div>上一页</div>
+          <ul class="pg">
+            <li class="pg__active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>...</li>
+            <li>12</li>
+          </ul>
+          <div class="pg__active">下一页</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 实名认证 -->
+  <div class="modal-wrap am-hide" id="identify">
     <div class="modal-bd">
       <i class="modal-close"></i>
       <div class="modal-tit">实名认证</div>
@@ -441,13 +479,32 @@
   $(function () {
     var services = $(".up-services").children("ul")
     var myInfo = $("#myInfo")
+    $(".msg-status").on("click", function () {
+      $(this).toggleClass("msg-status__done")
+    })
     $(".modal-close").on("tap click", function (e) {
       $(this).parents(".modal-wrap").addClass("am-hide")
     })
     myInfo.on("click", "li", function (e) {
       myInfo.children("li").removeClass("items__active")
       $(this).addClass("items__active")
-      console.log(e);
+      var currentIndex = e.currentTarget.dataset.index
+      switch (currentIndex) {
+        case "1":
+          $("#infos").removeClass("am-hide")
+          break;
+        case "2":
+          $("#identify").removeClass("am-hide")
+          break;
+        case "3":
+          $("#msg").removeClass("am-hide")
+          break;
+        case "4":
+          $("#changePSD").removeClass("am-hide")
+          break;
+        default:
+          break;
+      }
     })
     $(".icon-last").on("click", function () {
       var left = services.position().left
@@ -468,7 +525,7 @@
         })
       }
     })
-    $(".comment-del").on("click", function () {
+    $(".action-del").on("click", function () {
       $(this).parents("li").remove()
     })
   })

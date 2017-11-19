@@ -338,14 +338,11 @@
   border-bottom: 2px solid #f1f1f1;
 }
 i.cnt-more {
-  width:15px;
-  height:15px;
+  width:20px;
+  height:20px;
   position: absolute;
   right: 50px;
   top: 25px;
-  border:1px solid #327fdf;
-  width:15px;
-  height:15px;
   border-radius:100%;
   background: url(../i/more.png) center center no-repeat;
   background-size: contain;
@@ -492,7 +489,7 @@ i.app{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 0 25px;
+  padding: 25px;
   list-style: none;
 }
 .flink-ul li {

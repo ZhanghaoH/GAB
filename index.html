@@ -50,17 +50,17 @@
           <a href="###">首页</a>
         </li>
         <li>
-          <a href="">事项中心</a>
-        </li>
-        <li>
-          <a href="">政策文件</a>
-        </li>
-        <li>
-          <a href="">智能问答</a>
-        </li>
-        <li>
-          <a href="">APP中心</a>
-        </li>
+            <a href="eventsCenter.html">事项中心</a>
+          </li>
+          <li>
+            <a href="policyFiles.html">政策文件</a>
+          </li>
+          <li>
+            <a href="QAIntelligence.html">智能问答</a>
+          </li>
+          <li>
+            <a href="appCenter.html">APP中心</a>
+          </li>
         <li>
           <a href="javascript:login();">个人中心</a>
         </li>
@@ -444,7 +444,7 @@
           <i class="icon-psd"></i>
           <input type="password" class="form-field" placeholder="请输入您的密码">
         </div>
-        <input type="button" value="登录" class="am-btn btn-login">
+        <input type="button" value="登录" class="btn-login" id="btnLogin">
       </form>
       <div class="oper-wrap"><a href="">注册用户</a><a href="">忘记密码?</a></div>
     </div>
@@ -477,6 +477,9 @@
     $("#indexNav").on("click", "li", function(){
       indexNavLis.removeClass("nav-li__active")
       $(this).addClass("nav-li__active")
+    })
+    $("#btnLogin").on("click", function(){
+      window.location.assign("me.html")
     })
     function login() {
       modalLogin.removeClass("am-hide")
