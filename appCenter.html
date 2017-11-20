@@ -25,10 +25,205 @@
 
   <link rel="stylesheet" href="assets/css/amazeui.min.css">
   <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/css/appCenter.css">
 </head>
 
 <body>
-
+  <!-- 导航 -->
+  <nav class="container nav-wr">
+    <ul class="nav-other bd">
+      <li>
+        <a href="index.html">首页</a>
+      </li>
+      <li>
+        <a href="eventsCenter.html">事项中心</a>
+      </li>
+      <li>
+        <a href="./policyFiles.html">政策文件</a>
+      </li>
+      <li>
+        <a href="QAIntelligence.html">智能问答</a>
+      </li>
+      <li class="nav-other-li__active">
+        <a href="###">APP中心</a>
+      </li>
+      <li>
+        <a href="me.html">个人中心</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- 主体 -->
+  <div class="container bd-wr">
+    <div class="bd-cnt">
+      <div class="bd-cnt-l area">
+        <div class="bd-cnt-l-tit">APP中心</div>
+        <div class="bd-cnt-l-list-wr">
+          <div class="bd-cnt-l-list-tit">热门城市：</div>
+          <ul class="city-list">
+            <li>
+              <a href="###">北京</a>
+            </li>
+            <li>
+              <a href="###">上海</a>
+            </li>
+            <li>
+              <a href="###">广州</a>
+            </li>
+            <li>
+              <a href="###">深圳</a>
+            </li>
+            <li>
+              <a href="###">青岛</a>
+            </li>
+            <li>
+              <a href="###">杭州</a>
+            </li>
+            <li>
+              <a href="###">南京</a>
+            </li>
+            <li>
+              <a href="###">合肥</a>
+            </li>
+            <li>
+              <a href="###">郑州</a>
+            </li>
+            <li>
+              <a href="###">西安</a>
+            </li>
+            <li>
+              <a href="###">武汉</a>
+            </li>
+            <li>
+              <a href="###">重庆</a>
+            </li>
+            <li>
+              <a href="###">成都</a>
+            </li>
+            <li>
+              <a href="###">长沙</a>
+            </li>
+            <li>
+              <a href="###">长春</a>
+            </li>
+            <li>
+              <a href="###">石家庄</a>
+            </li>
+          </ul>
+          <div class="bd-cnt-l-list-tit">手动选择：</div>
+          <div class="select-wr">
+            <select name="city" id="">
+              <option value="">郑州市</option>
+              <option value="">开封市</option>
+              <option value="">洛阳市</option>
+            </select>
+            <!-- FIXED: 下箭头覆盖下拉框 点箭头无法响应下拉 -->
+            <i class="icon-select"></i>
+          </div>
+          <div class="select-wr">
+            <select name="city" id="">
+              <option value="">高新区</option>
+              <option value="">金水区</option>
+              <option value="">金明区</option>
+            </select>
+            <i class="icon-select"></i>
+          </div>
+        </div>
+      </div>
+      <div class="bd-cnt-r">
+        <div class="form-r">
+          <input type="text" name="" placeholder="快速寻找你需要的文件" id="">
+          <button type="button">搜索</button>
+        </div>
+        <div class="am-tabs" data-am-tabs>
+          <ul class="am-tabs-nav am-nav am-nav-tabs">
+            <li class="am-active">
+              <a href="#tab1">APP</a>
+            </li>
+            <li>
+              <a href="#tab2">微信</a>
+            </li>
+            <li>
+              <a href="#tab3">支付宝城市服务模块</a>
+            </li>
+          </ul>
+          <div class="am-tabs-bd">
+            <div class="am-tab-panel am-active" id="tab1">
+              <ul class="app-list">
+                <li>
+                  <div class="pop-erweima-wr am-hide">
+                    <img src="./assets/i/img_erweima.png" alt="" class="pop-erweima-img">
+                    <div class="pop-erweima-txt">扫码关注或下载</div>
+                  </div>
+                  <div class="app-btn-erweima"></div>
+                  <i class="app-icon app-icon-henanjingmintong"></i>
+                  <div class="app-name">河南警民通</div>
+                  <div class="app-desc-wr">即“河南公安互联网便民服务平台”，目前已经具备了机动车违章查询、等便民服务功能</div>
+                </li>
+                <li>
+                  <div class="pop-erweima-wr am-hide">
+                    <img src="./assets/i/img_erweima.png" alt="" class="pop-erweima-img">
+                    <div class="pop-erweima-txt">扫码关注或下载</div>
+                  </div>
+                  <div class="app-btn-erweima"></div>
+                  <i class="app-icon app-icon-beijingfuwuni"></i>
+                  <div class="app-name">北京服务您</div>
+                  <div class="app-desc-wr">“北京服务您”APP实现了多个复杂公共服务事项的移动端一站式办理</div>
+                </li>
+                <li>
+                  <div class="pop-erweima-wr am-hide">
+                    <img src="./assets/i/img_erweima.png" alt="" class="pop-erweima-img">
+                    <div class="pop-erweima-txt">扫码关注或下载</div>
+                  </div>
+                  <div class="app-btn-er  weima"></div>
+                  <i class="app-icon app-icon-beijingjiaojing"></i>
+                  <div class="app-name">北京交警</div>
+                  <div class="app-desc-wr">北京公安局交通管理局、北京市保险行业协会推出，为北京车主提供便捷交通出行、车务管理服务</div>
+                </li>
+                <li>
+                  <div class="pop-erweima-wr am-hide">
+                    <img src="./assets/i/img_erweima.png" alt="" class="pop-erweima-img">
+                    <div class="pop-erweima-txt">扫码关注或下载</div>  
+                  </div>
+                  <div class="app-btn-erweima"></div>
+                  <i class="app-icon app-icon-beijinggongjijin"></i>
+                  <div class="app-name">北京公积金</div>
+                  <div class="app-desc-wr">北京公积金明细一览表，查询快速方便</div>
+                </li>
+                <li>
+                  <div class="pop-erweima-wr am-hide">
+                    <img src="./assets/i/img_erweima.png" alt="" class="pop-erweima-img">
+                    <div class="pop-erweima-txt">扫码关注或下载</div>
+                  </div>
+                  <div class="app-btn-erweima"></div>
+                  <i class="app-icon app-icon-beijingshebao"></i>
+                  <div class="app-name">北京社保</div>
+                  <div class="app-desc-wr">一款为北京用户打造的社保服务平台。可以在线查询和办理社保，可以线上缴纳社保，欢迎前来试试！</div>
+                </li>
+              </ul>
+              <!-- <div class="pg-wr">
+                <div>上一页</div>
+                <ul class="pg">
+                  <li class="pg__active">1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>4</li>
+                  <li>...</li>
+                  <li>12</li>
+                </ul>
+                <div class="pg__active">下一页</div>
+              </div> -->
+            </div>
+            <div class="am-tab-panel" id="tab2">
+              微信
+            </div>
+            <div class="am-tab-panel" id="tab3">
+              支付宝城市服务模块
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 <!--[if (gte IE 9)|!(IE)]><!-->
 <script src="assets/js/jquery.min.js"></script>
@@ -39,5 +234,15 @@
 <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
 <![endif]-->
 <script src="assets/js/amazeui.min.js"></script>
+<script>
+  $(function () {
+    $(".app-btn-erweima").mouseenter( function(){
+      $(this).siblings(".pop-erweima-wr").removeClass("am-hide")
+    })
+    $(".pop-erweima-wr").mouseleave(function(e){
+      $(this).addClass("am-hide")
+    })
+  })
+</script>
 
 </html>

@@ -200,7 +200,7 @@ button:hover {
     border-bottom: 2px solid #4886ff;
     /* font-family: PingFangSC-Semibold; */
     font-size: 16px;
-    font-weight: bolder;
+    /* font-weight: bolder; */
     color: #000000;
     letter-spacing: 1px;
     text-align: justify;
@@ -219,7 +219,7 @@ button:hover {
     line-height: 1.5;
     border: none;
     display: block;
-    padding: .4em 10px;
+    padding: .4em 15px;
     margin-right: 0;
     text-align: center;
     font-size: 14px;
@@ -237,10 +237,23 @@ button:hover {
 
 .am-tabs-bd {
     border: none;
+    overflow-y: auto;
 }
 
-.am-nav-tabs>li.am-active {
-    background: #327fdf;
+.am-nav-tabs>li {
+    width: fit-content;
+    background: #d1e5ff;
+    border-radius: 4px 4px 0 0;
+    /* border-right: 2px solid transparent; */
+    margin-right: 1px;
+}
+
+.am-nav-tabs>li a {
+    border-radius: 4px 4px 0 0;
+}
+
+.am-nav-tabs {
+    border-bottom: 1px solid #bed8ef;
 }
 .bd-wr {
     background: url(../i/bg2.png) no-repeat;
