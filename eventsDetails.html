@@ -2,295 +2,237 @@
 <html lang="zh-CN">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>事项中心</title>
-  <!-- Set render engine for 360 browser -->
-  <meta name="renderer" content="webkit">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>事项中心</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
 
-  <!-- No Baidu Siteapp-->
-  <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
 
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
 
-  <!-- Add to homescreen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
 
-  <!-- Tile icon for Win8 (144x144 + tile color) -->
-  <meta name="msapplication-TileColor" content="#0e90d2">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileColor" content="#0e90d2">
 
-  <link rel="stylesheet" href="assets/css/amazeui.min.css">
-  <link rel="stylesheet" href="assets/css/app.css">
-  <link rel="stylesheet" href="assets/css/eventsDetails.css">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/eventsDetails.css">
 </head>
 
 <body>
-  <!-- 导航 -->
-  <nav class="container nav-wr">
-    <ul class="nav-other bd">
-      <li>
-        <a href="index.html">首页</a>
-      </li>
-      <li class="nav-other-li__active">
-        <a href="./eventsCenter.html">事项中心</a>
-      </li>
-      <li>
-        <a href="./policyFiles.html">政策文件</a>
-      </li>
-      <li>
-        <a href="QAIntelligence.html">智能问答</a>
-      </li>
-      <li>
-        <a href="./appCenter.html">APP中心</a>
-      </li>
-      <li>
-        <a href="me.html">个人中心</a>
-      </li>
-    </ul>
-  </nav>
-  <div class="container bd-wr">
-    <div class="bd-cnt">
-      <div class="bd-cnt-l details">
-        <div class="bg-birth"></div>
-        <div class="bd-cnt-l-tit">出生登记</div>
-        <div class="bd-cnt-l-list-wr">
-          <div class="bd-cnt-l-list-tit">业务简介：</div>
-          <div class="bd-cnt-paragraph">
-            <p>新生婴儿应在出生后一个月内，持婴儿《出生医学证明》、婴儿父母亲的结婚证、居民身份证、户口簿，向婴儿父亲或母亲常住户口所在地公安派出所申报出生登记。</p>
-            <p>非婚生育的新生婴儿，需随父亲常住户口所在地落户的，必须提供法院判定或公证机关公证确认的父子关系证明材料办理。</p>
-          </div>
-        </div>
-      </div>
-      <div class="details-r">
-        <div class="details-cnt-r-up">
-          <ul class="details-up-services">
+    <!-- 导航 -->
+    <nav class="container nav-wr">
+        <ul class="nav-other bd">
             <li>
-              <i class="service-icon-yuyue"></i>
-              <span>在线预约</span>
+                <a href="index.html">首页</a>
+            </li>
+            <li class="nav-other-li__active">
+                <a href="./eventsCenter.html">事项中心</a>
             </li>
             <li>
-              <i class="service-icon-banli"></i>
-              <span>在线办理</span>
+                <a href="./policyFiles.html">政策文件</a>
             </li>
             <li>
-              <i class="service-icon-zixun"></i>
-              <span>在线咨询</span>
+                <a href="QAIntelligence.html">智能问答</a>
             </li>
             <li>
-              <i class="service-icon-chaxun"></i>
-              <span>查询结果</span>
+                <a href="./appCenter.html">APP中心</a>
             </li>
-          </ul>
-        </div>
-        <div class="details-cnt-r-down">
-          <div class="files-download">
-            <div class="files-download-txt">文件下载：</div>
-            <i class="download-txt"></i>
-            <i class="download-pdf"></i>
-          </div>
-          <div class="am-tabs" data-am-tabs>
-            <ul class="am-tabs-nav am-nav am-nav-tabs">
-              <li class="am-active">
-                <a href="#tab1">基本信息</a>
-              </li>
-              <li>
-                <a href="#tab2">办事指南</a>
-              </li>
-              <li>
-                <a href="#tab3">所需材料</a>
-              </li>
-              <li>
-                <a href="#tab4">办理流程</a>
-              </li>
-              <li>
-                <a href="#tab4">申请依据</a>
-              </li>
-            </ul>
-            <div class="am-tabs-bd">
-              <div class="am-tab-panel am-active" id="tab1">
-                <div class="tab-hd">
-                  <div class="tab-cnt-tit">业务名称</div>
-                  <div class="tab-news-time">申请时间</div>
-                  <div class="tab-news-status">已办结</div>
-                  <div class="tab-comment-status"></div>
-                </div>
-                <ul class="tab-cnt">
-                  <li>
-                    <div class="tab-cnt-tit">因私出入境中介机构资格认定（境外就业、留学除外）</div>
-                    <div class="tab-news-time">2017.08.20</div>
-                    <div class="tab-news-status news-status__done">已办结</div>
-                    <div class="tab-comment-status">评价</div>
-                  </li>
-                  <li>
-                    <div class="tab-cnt-tit">因私出入境中介机构资格认定（境外就业、留学除外）</div>
-                    <div class="tab-news-time">2017.08.21</div>
-                    <div class="tab-news-status">办理中</div>
-                    <div class="tab-comment-status comment-status__disabled">评价</div>
-                  </li>
-                  <li>
-                    <div class="tab-cnt-tit">出生登记（持省内新版出生证）</div>
-                    <div class="tab-news-time">2017.07.30</div>
-                    <div class="tab-news-status news-status__done">已办结</div>
-                    <div class="tab-comment-status  comment-status__done">已评价</div>
-                  </li>
-                  <li>
-                    <div class="tab-cnt-tit">看守所被监管人员律师会见网上预约</div>
-                    <div class="tab-news-time">2017.06.17</div>
-                    <div class="tab-news-status news-status__withdraw">已撤销</div>
-                    <div class="tab-comment-status  comment-status__disabled">评价</div>
-                  </li>
-                  <li>
-                    <div class="tab-cnt-tit">看守所被监管人员律师会见网上预约</div>
-                    <div class="tab-news-time">2017.03.23</div>
-                    <div class="tab-news-status news-status__draft">草稿</div>
-                    <div class="tab-comment-status">评价</div>
-                  </li>
-                </ul>
-                <div class="pg-wr">
-                  <div>上一页</div>
-                  <ul class="pg">
-                    <li class="pg__active">1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>...</li>
-                    <li>12</li>
-                  </ul>
-                  <div class="pg__active">下一页</div>
-                </div>
-              </div>
-              <div class="am-tab-panel" id="tab2">
-                <ul class="tab-guide">
-                  <li>
-                    <span class="li-order">1.</span>婴儿不超过6周岁的，由派出所对申请人提供的材料进行核实，材料齐全的立即核准。
-                  </li>
-                  <li>
-                    <span class="li-order">2.</span>婴儿超过6周岁的，经派出所对申请人提供的材料进行核实后，上报到县级公安机关治安（户政）部门审批。办理时限20个工作日。
-                  </li>
-                  <li>
-                    <span class="li-order">3.</span>经核准办理的，申请人须持申报材料原件及复印件，在60日内到户籍所在地派出所户籍窗口办理。逾期未办理的应当重新提交申请。
-                  </li>
-                  <li>
-                    <span class="li-order">4.</span>新生儿父母双方民族不同的，父母双方应当到公安派出所填写《河南省新增人口民族成份确认登记表》。如一方不能到场的，需签署委托书，委托另一方代为办理新生儿民族确认登记手续；父母一方亡故或失踪的需提供相关证明。
-                  </li>
-                </ul>
-                <div class="pg-wr">
-                  <div>上一页</div>
-                  <ul class="pg">
-                    <li class="pg__active">1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>...</li>
-                    <li>12</li>
-                  </ul>
-                  <div class="pg__active">下一页</div>
-                </div>
-              </div>
-              <div class="am-tab-panel" id="tab3">
-                <div class="tab-hd">
-                  <div class="tab-cnt-tit">业务名称</div>
-                  <div class="tab-news-num">办件单号</div>
-                  <div class="tab-comment-csr">满意度</div>
-                </div>
-                <ul class="tab-cnt">
-                  <li>
-                    <div class="tab-cnt-tit">因私出入境中介机构资格认定（境外就业、留学除外）</div>
-                    <div class="tab-news-num">170913410221920206000601</div>
-                    <div class="tab-comment-csr">
-                      <i class="csr-full"></i>
-                      <i class="csr-full"></i>
-                      <i class="csr-full"></i>
-                      <i class="csr-full"></i>
-                      <i class="csr-full"></i>
+            <li>
+                <a href="me.html">个人中心</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container bd-wr">
+        <div class="bd-cnt">
+            <div class="bd-cnt-l details">
+                <div class="bg-birth"></div>
+                <div class="bd-cnt-l-tit">出生登记</div>
+                <div class="bd-cnt-l-list-wr">
+                    <div class="bd-cnt-l-list-tit">业务简介：</div>
+                    <div class="bd-cnt-paragraph">
+                        <p>新生婴儿应在出生后一个月内，持婴儿《出生医学证明》、婴儿父母亲的结婚证、居民身份证、户口簿，向婴儿父亲或母亲常住户口所在地公安派出所申报出生登记。</p>
+                        <p>非婚生育的新生婴儿，需随父亲常住户口所在地落户的，必须提供法院判定或公证机关公证确认的父子关系证明材料办理。</p>
                     </div>
-                  </li>
-                  <li>
-                    <div class="tab-cnt-tit">商品房过户需要公安局开具亲属关系证明</div>
-                    <div class="tab-news-num">170913410221920206000147</div>
-                    <div class="tab-comment-csr">
-                      <i class="csr-full"></i>
-                      <i class="csr-full"></i>
-                      <i class="csr-full"></i>
-                      <i class="csr-full"></i>
-                      <i class="csr-empty"></i>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="tab-cnt-tit">学生异地补办身份证</div>
-                    <div class="tab-news-num">170913410221920206000233</div>
-                    <div class="tab-comment-csr">
-                      <i class="csr-full"></i>
-                      <i class="csr-full"></i>
-                      <i class="csr-full"></i>
-                      <i class="csr-full"></i>
-                      <i class="csr-half"></i>
-                    </div>
-                  </li>
-                </ul>
-                <div class="pg-wr">
-                  <div>上一页</div>
-                  <ul class="pg">
-                    <li class="pg__active">1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>...</li>
-                    <li>12</li>
-                  </ul>
-                  <div class="pg__active">下一页</div>
                 </div>
-              </div>
-              <div class="am-tab-panel" id="tab4">
-                <div class="tab-hd">
-                  <div class="tab-cnt-tit">收藏列表</div>
-                  <div class="tab-news-time">收藏时间</div>
-                  <!-- <div class="tab-news-status">操作</div> -->
-                  <div class="tab-comment-status">操作</div>
-                </div>
-                <ul class="tab-cnt">
-                  <li>
-                    <div class="tab-cnt-tit">因私出入境中介机构资格认定（境外就业、留学除外）</div>
-                    <div class="tab-news-time">2017.08.20</div>
-                    <!-- <div class="tab-news-status news-status__done">已办结</div> -->
-                    <div class="tab-comment-status action-del">删除</div>
-                  </li>
-                  <li>
-                    <div class="tab-cnt-tit">商品房过户需要公安局开具亲属关系证明</div>
-                    <div class="tab-news-time">2017.08.21</div>
-                    <!-- <div class="tab-news-status">办理中</div> -->
-                    <div class="tab-comment-status action-del">删除</div>
-                  </li>
-                  <li>
-                    <div class="tab-cnt-tit">学生异地补办身份证</div>
-                    <div class="tab-news-time">2017.07.30</div>
-                    <!-- <div class="tab-news-status news-status__done">已办结</div> -->
-                    <div class="tab-comment-status action-del">删除</div>
-                  </li>
-                </ul>
-                <div class="pg-wr">
-                  <div>上一页</div>
-                  <ul class="pg">
-                    <li class="pg__active">1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>...</li>
-                    <li>12</li>
-                  </ul>
-                  <div class="pg__active">下一页</div>
-                </div>
-              </div>
             </div>
-          </div>
+            <div class="details-r">
+                <div class="details-cnt-r-up">
+                    <ul class="details-up-services">
+                        <li>
+                            <i class="service-icon-yuyue"></i>
+                            <span>在线预约</span>
+                        </li>
+                        <li>
+                            <i class="service-icon-banli"></i>
+                            <span>在线办理</span>
+                        </li>
+                        <li>
+                            <i class="service-icon-zixun"></i>
+                            <span>在线咨询</span>
+                        </li>
+                        <li>
+                            <i class="service-icon-chaxun"></i>
+                            <span>查询结果</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="details-cnt-r-down">
+                    <div class="files-download">
+                        <div class="files-download-txt">文件下载：</div>
+                        <i class="download-txt"></i>
+                        <i class="download-pdf"></i>
+                    </div>
+                    <div class="am-tabs" data-am-tabs>
+                        <ul class="am-tabs-nav am-nav am-nav-tabs">
+                            <li class="am-active">
+                                <a href="#tab1">基本信息</a>
+                            </li>
+                            <li>
+                                <a href="#tab2">办事指南</a>
+                            </li>
+                            <li>
+                                <a href="#tab3">所需材料</a>
+                            </li>
+                            <li>
+                                <a href="#tab4">办理流程</a>
+                            </li>
+                            <li>
+                                <a href="#tab5">申请依据</a>
+                            </li>
+                        </ul>
+                        <div class="am-tabs-bd">
+                            <div class="am-tab-panel am-active" id="tab1">
+                                <div class="am-g">
+                                    <div class="am-u-sm-1 am-u-md-2 am-u-lg-3">
+                                        内容
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="am-tab-panel" id="tab2">
+                                <ul class="tab-guide">
+                                    <li>
+                                        <span class="li-order">1.</span>婴儿不超过6周岁的，由派出所对申请人提供的材料进行核实，材料齐全的立即核准。
+                                    </li>
+                                    <li>
+                                        <span class="li-order">2.</span>婴儿超过6周岁的，经派出所对申请人提供的材料进行核实后，上报到县级公安机关治安（户政）部门审批。办理时限20个工作日。
+                                    </li>
+                                    <li>
+                                        <span class="li-order">3.</span>经核准办理的，申请人须持申报材料原件及复印件，在60日内到户籍所在地派出所户籍窗口办理。逾期未办理的应当重新提交申请。
+                                    </li>
+                                    <li>
+                                        <span class="li-order">4.</span>新生儿父母双方民族不同的，父母双方应当到公安派出所填写《河南省新增人口民族成份确认登记表》。如一方不能到场的，需签署委托书，委托另一方代为办理新生儿民族确认登记手续；父母一方亡故或失踪的需提供相关证明。
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="am-tab-panel" id="tab3">
+                                <div class="material-hd">
+                                    <div class="material-index">序号</div>
+                                    <div class="material-name">材料名称</div>
+                                    <div class="material-bumen">所需部门</div>
+                                    <div class="material-download">下载</div>
+                                </div>
+                                <div class="material-list">
+                                    <li>
+                                        <div class="material-index">1</div>
+                                        <div class="material-name">省内签发新版《出生医学证明》</div>
+                                        <div class="material-bumen">其他部门</div>
+                                        <div class="material-download download__disabled">无需下载</div>
+                                    </li>
+                                    <li>
+                                        <div class="material-index">2</div>
+                                        <div class="material-name">父亲或母亲的《居民户口簿》和《居民身份证》</div>
+                                        <div class="material-bumen">公安部门</div>
+                                        <div class="material-download download__disabled">无需下载</div>
+                                    </li>
+                                    <li>
+                                        <div class="material-index">3</div>
+                                        <div class="material-name">父母《结婚证》（非婚生育的不需要提供）</div>
+                                        <div class="material-bumen">其他部门</div>
+                                        <div class="material-download download__disabled">无需下载</div>
+                                    </li>
+                                    <li>
+                                        <div class="material-index">4</div>
+                                        <div class="material-name">父亲或母亲的《居民户口簿》申请表</div>
+                                        <div class="material-bumen">公安部门</div>
+                                        <div class="material-download">下载</div>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="am-tab-panel" id="tab4">
+                                <div class="procedure-tit">传统线下流程</div>
+                                <ul class="procedure-wr">
+                                    <li class="procedure-cnt-wr">
+                                        <div class="procedure-tit__strong">第一步</div>
+                                        <div class="procedure-txt">办理人携带所需材料到户籍所在地派出所办理</div>
+                                    </li>
+                                    <li class="procedure-cnt-wr">
+                                        <div class="procedure-tit__strong">第二步</div>
+                                        <div class="procedure-txt">公安机关核验证件、核验身份</div>
+                                    </li>
+                                    <li class="procedure-cnt-wr">
+                                        <div class="procedure-tit__strong">第三步</div>
+                                        <div class="procedure-txt"><span class="procedure-txt__marked">（年龄小于6周岁时）</span>当场办结领取;<span class="procedure-txt__marked">（年龄大于6周岁时）</span>等待分县局审批办结后携带有效证件领取</div>
+                                    </li>
+                                </ul>
+                                <div class="procedure-tit">网上预审+窗口办理</div>
+                                <ul class="procedure-wr">
+                                    <li class="procedure-cnt-wr">
+                                        <div class="procedure-tit__strong">第一步</div>
+                                        <div class="procedure-txt"><span class="procedure-txt__marked">1.</span>办理人准备所需材料（拍照或扫描件）</div>
+                                        <div class="procedure-txt"><span class="procedure-txt__marked">2.</span>办理人网上填写并上传材料</div>
+                                        <div class="procedure-txt"><span class="procedure-txt__marked">3.</span>选择窗口办理方式，提交申报</div>
+                                    </li>
+                                    <li class="procedure-cnt-wr">
+                                        <div class="procedure-tit__strong">第二步</div>
+                                        <div class="procedure-txt"><span class="procedure-txt__marked">1.</span>等待公安机关预审后，携带所需材料原件到户籍地派出所</div>
+                                        <div class="procedure-txt"><span class="procedure-txt__marked">2.</span>公安机关核验证件、核验身份</div>
+                                    </li>
+                                    <li class="procedure-cnt-wr">
+                                        <div class="procedure-tit__strong">第三步</div>
+                                        <div class="procedure-txt"><span class="procedure-txt__marked">1.</span>办理人当场打印领取户口本;（年龄大于6周岁时）等待分县局审批办结后携带有效证件领取</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="am-tab-panel" id="tab5">
+                                <div class="yiju-hd">
+                                    <div class="yiju-index">序号</div>
+                                    <div class="yiju-name">材料名称</div>
+                                </div>
+                                <ul class="yiju-list">
+                                    <li>
+                                        <div class="yiju-index">1</div>
+                                        <div class="yiju-name">《河南省公安机关户政服务管理工作范围（试行）》</div>
+                                    </li>
+                                </ul>
+                                <!-- <div class="pg-wr">
+                                    <div>上一页</div>
+                                    <ul class="pg">
+                                        <li class="pg__active">1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>...</li>
+                                        <li>12</li>
+                                    </ul>
+                                    <div class="pg__active">下一页</div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </body>
 <!--[if (gte IE 9)|!(IE)]><!-->
 <script src="assets/js/jquery.min.js"></script>
