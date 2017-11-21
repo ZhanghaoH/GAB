@@ -95,28 +95,76 @@
                     <div class="am-tabs" data-am-tabs>
                         <ul class="am-tabs-nav am-nav am-nav-tabs">
                             <li class="am-active">
-                                <a href="#tab1">基本信息</a>
+                                <a href="#tab1"  id="jbxx">基本信息</a>
+                            </li>
+                            <li >
+                                <a href="#tab2" id="bszn">办事指南</a>
                             </li>
                             <li>
-                                <a href="#tab2">办事指南</a>
+                                <a href="#tab3"  id="sxcl">所需材料</a>
                             </li>
                             <li>
-                                <a href="#tab3">所需材料</a>
+                                <a href="#tab4"  id="blll">办理流程</a>
                             </li>
                             <li>
-                                <a href="#tab4">办理流程</a>
-                            </li>
-                            <li>
-                                <a href="#tab5">申请依据</a>
+                                <a href="#tab5"  id="sqyj">申请依据</a>
                             </li>
                         </ul>
                         <div class="am-tabs-bd">
                             <div class="am-tab-panel am-active" id="tab1">
-                                <div class="am-g">
-                                    <div class="am-u-sm-1 am-u-md-2 am-u-lg-3">
-                                        内容
-                                    </div>
-                                </div>
+                                <table class="am-table tab-table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="table-label">发布单位</td>
+                                            <td colspan="2">北京市公安局</td>
+                                            <td class="table-label">法定期限</td>
+                                            <td colspan="2">25天</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-label">审核单位</td>
+                                            <td colspan="2">北京市公安局</td>
+                                            <td class="table-label">承诺期限</td>
+                                            <td colspan="2">25天</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-label">维护单位</td>
+                                            <td colspan="2">北京市公安局</td>
+                                            <td class="table-label">咨询电话</td>
+                                            <td colspan="2">010-88888888</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-label">服务对象</td>
+                                            <td colspan="2">个人</td>
+                                            <td class="table-label">监督投诉</td>
+                                            <td colspan="2">010-88888888</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-label">服务范围</td>
+                                            <td colspan="2">省级</td>
+                                            <td class="table-label">收费标准</td>
+                                            <td colspan="2">不收费</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-label">服务类型</td>
+                                            <td colspan="2">在线办理、在线预约</td>
+                                            <td class="table-label">网办认证</td>
+                                            <td colspan="2">实人实名认证</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="table-label">事项说明</td>
+                                            <td colspan="2">为省内新生儿办理入户</td>
+                                            <td class="table-label">工作时间</td>
+                                            <td colspan="2">夏：上午8:00到12:00，下午2:30到6:00冬：上午8:00到12:00，下午2:00到5:30</td>
+                                        </tr>
+                                        <tr rowspan="2">
+                                            <td class="table-label">办理地点</td>
+                                            <td colspan="5">北京市东城区前门东大街9号
+                                                <span class="table-txt__strong" style="margin-left: 25px;">
+                                                    <i class="table-icon-location"></i>更多办理地点</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                             <div class="am-tab-panel" id="tab2">
                                 <ul class="tab-guide">
@@ -181,25 +229,33 @@
                                     </li>
                                     <li class="procedure-cnt-wr">
                                         <div class="procedure-tit__strong">第三步</div>
-                                        <div class="procedure-txt"><span class="procedure-txt__marked">（年龄小于6周岁时）</span>当场办结领取;<span class="procedure-txt__marked">（年龄大于6周岁时）</span>等待分县局审批办结后携带有效证件领取</div>
+                                        <div class="procedure-txt">
+                                            <span class="procedure-txt__marked">（年龄小于6周岁时）</span>当场办结领取;
+                                            <span class="procedure-txt__marked">（年龄大于6周岁时）</span>等待分县局审批办结后携带有效证件领取</div>
                                     </li>
                                 </ul>
                                 <div class="procedure-tit">网上预审+窗口办理</div>
                                 <ul class="procedure-wr">
                                     <li class="procedure-cnt-wr">
                                         <div class="procedure-tit__strong">第一步</div>
-                                        <div class="procedure-txt"><span class="procedure-txt__marked">1.</span>办理人准备所需材料（拍照或扫描件）</div>
-                                        <div class="procedure-txt"><span class="procedure-txt__marked">2.</span>办理人网上填写并上传材料</div>
-                                        <div class="procedure-txt"><span class="procedure-txt__marked">3.</span>选择窗口办理方式，提交申报</div>
+                                        <div class="procedure-txt">
+                                            <span class="procedure-txt__marked">1.</span>办理人准备所需材料（拍照或扫描件）</div>
+                                        <div class="procedure-txt">
+                                            <span class="procedure-txt__marked">2.</span>办理人网上填写并上传材料</div>
+                                        <div class="procedure-txt">
+                                            <span class="procedure-txt__marked">3.</span>选择窗口办理方式，提交申报</div>
                                     </li>
                                     <li class="procedure-cnt-wr">
                                         <div class="procedure-tit__strong">第二步</div>
-                                        <div class="procedure-txt"><span class="procedure-txt__marked">1.</span>等待公安机关预审后，携带所需材料原件到户籍地派出所</div>
-                                        <div class="procedure-txt"><span class="procedure-txt__marked">2.</span>公安机关核验证件、核验身份</div>
+                                        <div class="procedure-txt">
+                                            <span class="procedure-txt__marked">1.</span>等待公安机关预审后，携带所需材料原件到户籍地派出所</div>
+                                        <div class="procedure-txt">
+                                            <span class="procedure-txt__marked">2.</span>公安机关核验证件、核验身份</div>
                                     </li>
                                     <li class="procedure-cnt-wr">
                                         <div class="procedure-tit__strong">第三步</div>
-                                        <div class="procedure-txt"><span class="procedure-txt__marked">1.</span>办理人当场打印领取户口本;（年龄大于6周岁时）等待分县局审批办结后携带有效证件领取</div>
+                                        <div class="procedure-txt">
+                                            <span class="procedure-txt__marked">1.</span>办理人当场打印领取户口本</div>
                                     </li>
                                 </ul>
                             </div>
@@ -244,6 +300,29 @@
 <![endif]-->
 <script src="assets/js/amazeui.min.js"></script>
 <script>
+    $(document).ready(function () {
+       if(location.search){
+            var tab = parseURL(location.href)
+            console.log(tab);
+            if (tab.item === "bszn") {
+                console.log("tp");
+               document.getElementById("bszn").click();
+            }
+       }
+
+        function parseURL(url) {
+            var url = url.split("?")[1];
+            var para = url.split("&");
+            var len = para.length;
+            var res = {};
+            var arr = [];
+            for (var i = 0; i < len; i++) {
+                arr = para[i].split("=");
+                res[arr[0]] = arr[1];
+            }
+            return res;
+        }
+    });
 </script>
 
 </html>

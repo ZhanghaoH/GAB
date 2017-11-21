@@ -333,3 +333,35 @@ li .yiju-index {
     font-size: 12px;
     color: #808080;
 }
+
+.tab-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    /* font-family:PingFangSC-Regular; */
+    font-size:14px;
+    color:#1f2226;
+    margin-top: 15px;
+}
+.am-table>tbody>tr>td, .am-table>tbody>tr>th, .am-table>tfoot>tr>td, .am-table>tfoot>tr>th, .am-table>thead>tr>td, .am-table>thead>tr>th {
+    border: none;
+    padding: 15px 0;
+    vertical-align: middle;
+    text-align: center;
+}
+.tab-table tr:nth-child(odd) {
+    background-color:#eaf2fa;
+}
+.table-txt__strong {
+    color:#79a9ee;
+}
+i.table-icon-location {
+    width: 11px;
+    height: 14px;
+    background: url("../i/location.png") center center no-repeat;
+    background-size: 100%;
+    margin-right: 15px;
+}
+.table-label {
+    background-color: #d6e4f6;
+}

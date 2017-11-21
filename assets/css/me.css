@@ -50,7 +50,61 @@ i.icon-thumb {
     background: url("../i/img_touxiang@2x.png") center center no-repeat;
     background-size: contain;
 }
-
+.identify-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.identify-class i {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.identify-class i:first-child {
+    margin-left: 15px;
+}
+i.identify-icon-idcard {
+    background: url("../i/idcard.png") center center no-repeat;
+    background-size: 100%
+}
+i.identify-icon-idcard.identify__done {
+    background: url("../i/idcard_done.png") center center no-repeat;
+    background-size: 100%
+}
+i.identify-icon-alipay {
+    background: url("../i/alipay.png") center center no-repeat;
+    background-size: 100%
+}
+i.identify-icon-alipay.identify__done {
+    background: url("../i/alipay_done.png") center center no-repeat;
+    background-size: 100%
+}
+i.identify-icon-wechat {
+    background: url("../i/wechat.png") center center no-repeat;
+    background-size: 100%
+}
+i.identify-icon-wechat.identify__done {
+    background: url("../i/wechat_done.png") center center no-repeat;
+    background-size: 100%
+}
+i.identify-icon-driver {
+    background: url("../i/driver.png") center center no-repeat;
+    background-size: 100%
+}
+i.identify-icon-driver.identify__done {
+    background: url("../i/driver_done.png") center center no-repeat;
+    background-size: 100%
+}
+i.identify-icon-unionpay {
+    background: url("../i/unionpay.png") center center no-repeat;
+    background-size: 100%
+}
+i.identify-icon-unionpay.identify__done {
+    background: url("../i/unionpay_done.png") center center no-repeat;
+    background-size: 100%
+}
 .cntl-thumb-uname {
     margin-top: 15px;
     /* font-family:PingFangSC-Regular; */

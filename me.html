@@ -59,7 +59,14 @@
         <div class="me-cnt-bdl">
           <div class="cntl-thumb">
             <i class="icon-thumb"></i>
-            <span class="cntl-thumb-uname">用户</span>
+            <span class="cntl-thumb-uname" id="userClass">普通用户</span>
+            <div class="identify-class">
+              <i class="identify-icon-driver" data-index="0"></i>
+              <i class="identify-icon-idcard" data-index="1"></i>
+              <i class="identify-icon-wechat" data-index="2"></i>
+              <i class="identify-icon-alipay" data-index="3"></i>
+              <i class="identify-icon-unionpay" data-index="4"></i>
+            </div>
           </div>
           <ul class="cntl-items" id="myInfo">
             <li data-index="1">
@@ -479,6 +486,57 @@
   $(function () {
     var services = $(".up-services").children("ul")
     var myInfo = $("#myInfo")
+    var userClass = $("#userClass")
+    var identify = $(".identify-class").children("i")
+
+    identify.on("click", function (e) {
+      var identifyIndex = e.currentTarget.dataset.index
+      var utitle = "普通用户"
+      if ($(this).hasClass("identify__done")) {
+        switch (identifyIndex) {
+          case "0":
+            identify.removeClass("identify__done")
+            utitle = "普通用户"
+            break;
+          case "1":
+            identify.eq(2).removeClass("identify__done")
+            identify.eq(3).removeClass("identify__done")
+            identify.eq(4).removeClass("identify__done")
+            utitle = "实人实证用户"
+            break;
+          case "2":
+          case "3":
+          case "4":
+            utitle = "实人实名实证用户"
+            break;
+          default:
+            break;
+        }
+          $(this).removeClass("identify__done")
+      } else {
+        switch (identifyIndex) {
+          case "0":
+            identify.eq(0).addClass("identify__done")
+            utitle = "实人实证用户"
+            break;
+          case "1":
+          case "2":
+          case "3":
+          case "4":
+            identify.eq(0).addClass("identify__done")
+            identify.eq(1).addClass("identify__done")
+            $(this).addClass("identify__done")
+            utitle = "实人实名实证用户"
+            break;
+          default:
+            break;
+        }
+        // changeIdentify(identifyIndex)
+      }
+        userClass.text(utitle)
+    })
+
+
     $(".msg-status").on("click", function () {
       $(this).toggleClass("msg-status__done")
     })
@@ -528,6 +586,17 @@
     $(".action-del").on("click", function () {
       $(this).parents("li").remove()
     })
+    
+    /*----------  function change identify-icon  ----------*/
+    function changeIdentify(iconIndex){
+      var i = 0;
+      identify.removeClass("identify__done")
+      while (i <= iconIndex) {
+        identify.eq(i).addClass("identify__done")
+        ++i
+      }
+    }
+    
   })
 </script>
 
