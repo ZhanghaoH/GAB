@@ -1,7 +1,7 @@
 html,
 body {
-    min-width: 1440px;
-    background-color: #f0f0f0;
+    min-width: 1200px;
+    /* background-color: #f0f0f0; */
 }
 
 label {
@@ -31,7 +31,7 @@ ol {
 }
 
 .container {
-    width: 1440px;
+    min-width: 1200px;
     margin: 0 auto;
 }
 
@@ -180,8 +180,7 @@ button:hover {
 /* 导航 */
 
 .nav-wr {
-    opacity: 0.96;
-    background: #ffffff;
+    background: rgba(0, 0, 0,.6);
 }
 
 .nav-other {
@@ -194,25 +193,26 @@ button:hover {
 }
 
 .nav-other li a {
+    color: #fff;
+    letter-spacing: 1px;
     /* font-family: PingFangSC-Medium; */
     display: block;
+    padding-left: 30px;
+    padding-right: 30px;
     height: 50px;
     line-height: 50px;
     font-size: 16px;
-    color: #616161;
     letter-spacing: 1px;
-    text-align: justify;
 }
 
 .nav-other li:hover a,
-.nav-other-li__active a {
-    border-bottom: 2px solid #4886ff;
+li.nav-other-li__active a{
+    background: #f4e271;
+    color: #3a3e25;
     /* font-family: PingFangSC-Semibold; */
     font-size: 16px;
     /* font-weight: bolder; */
-    color: #000000;
     letter-spacing: 1px;
-    text-align: justify;
 }
 
 .am-nav-tabs {
