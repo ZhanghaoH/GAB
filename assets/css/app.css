@@ -193,14 +193,15 @@ button:hover {
     letter-spacing: 1px;
 }
 
-.nav-other li:hover a,
+.nav-other li a:hover {
+    color: #f4e271;
+    
+}
+li.nav-other-li__active a:hover,
 li.nav-other-li__active a{
     background: #f4e271;
     color: #3a3e25;
     /* font-family: PingFangSC-Semibold; */
-    font-size: 16px;
-    /* font-weight: bolder; */
-    letter-spacing: 1px;
 }
 
 .am-nav-tabs {

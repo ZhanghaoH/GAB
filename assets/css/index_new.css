@@ -80,21 +80,19 @@
   /* font-family:PingFangSC-Medium; */
 }
 
-.nav-list>li.nav-li__active {
-  background-color: #f4e271;
-}
-
+.nav-list>li.nav-li__active a:hover,
 .nav-list>li.nav-li__active a {
+  background-color: #f4e271;
   color: #3a3e25;
 }
 
 .nav-list>li a:hover {
-  background: #f4e271;
+  color: #f4e271;
 }
 
-.nav-list>li:hover a {
+/* .nav-list>li:hover a {
   color: #3a3e25;
-}
+} */
 .search-container {
   position: relative;
 }
