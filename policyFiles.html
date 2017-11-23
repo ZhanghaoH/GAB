@@ -210,12 +210,10 @@
 <script src="./assets/js/distpicker.min.js"></script>
 <script>
   $(function () {
+    $(".bd-wr").height(document.body.scrollHeight)
+    var $distpicker = $('#distpicker');
+    $distpicker.distpicker();
     $("i.files-mark").on("click", function () {
-      $(".bd-wr").height(document.body.scrollHeight)
-      var $distpicker = $('#distpicker');
-
-      $distpicker.distpicker();
-
       $(this).toggleClass("mark__marked")
     })
   })

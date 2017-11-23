@@ -169,6 +169,7 @@ button:hover {
 
 .nav-wr {
     background: rgba(0, 0, 0,.47);
+    border-bottom: 2px solid rgb(244, 226, 113);
 }
 
 .nav-other {
@@ -194,12 +195,14 @@ button:hover {
 }
 
 .nav-other li a:hover {
-    color: #f4e271;
-    
+    color: #f4e271;   
+}
+li.nav-other-li__active {
+    background: #f4e271;
+    /* font-size: 0; */
 }
 li.nav-other-li__active a:hover,
 li.nav-other-li__active a{
-    background: #f4e271;
     color: #3a3e25;
     /* font-family: PingFangSC-Semibold; */
 }
@@ -255,7 +258,7 @@ li.nav-other-li__active a{
 }
 .bd-wr {
     height: 100%;
-    background: url(../i/bg31.png) center center no-repeat;
+    background: url(../i/bg2.png) center center no-repeat;
     background-size: 100% 100%;
 }
 

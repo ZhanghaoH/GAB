@@ -4,9 +4,10 @@
   background-attachment: fixed;
 }
 .section:first-child {
-  background: url("../i/bg_search.png") center center no-repeat;
+  background: none;
+  /* background: url("../i/bg_search2.png") center center no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 }
 /* logo栏 */
 .logo-wrap {
@@ -38,26 +39,38 @@
   letter-spacing: 7px;
 }
 /* 导航 */
-
+.nav-bd {
+  background: url("../i/bg_search2.png") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 .nav-wrap {
-  background: url('../i/bglion-2.png') center bottom no-repeat;
+  background: url('../i/lion22.png') center bottom no-repeat;
   background-size: 720px 335px;
   background-size: auto 90%;
   position: relative;
   display: flex;
+  flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  border-top: 2px solid #f4e271
   /* height: 668px; */
 }
 
 .nav {
-  background: rgba(0, 0, 0, .47);
-  position: absolute;
+  background: rgba(5, 40, 99, .8);
+  /* background: #052863; */
+  /* position: absolute;
   left: 0;
   right: 0;
-  top: 0;
+  top: 0; */
 }
-
+.fiexd_nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 .nav-list {
   display: flex;
   flex-flow: row nowrap;
@@ -69,20 +82,25 @@
 
 .nav-list>li {
   line-height: 50px;
+  width: 128px;
+  text-align: center
 }
 
 .nav-list a {
   color: #fff;
   letter-spacing: 1px;
   display: block;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin: 0 auto
+  /* padding-left: 30px;
+  padding-right: 30px; */
   /* font-family:PingFangSC-Medium; */
 }
 
+.nav-list>li.nav-li__active {
+  background-color: #f4e271;
+}
 .nav-list>li.nav-li__active a:hover,
 .nav-list>li.nav-li__active a {
-  background-color: #f4e271;
   color: #3a3e25;
 }
 
@@ -97,14 +115,16 @@
   position: relative;
 }
 .select-area {
-  background: #ffffff url("../i/select.png") 90% center no-repeat;
-  background-size: 10px;
+  /* background: #ffffff url("../i/select.png") 90% center no-repeat; */
+  background: #ffffff url("../i/location.png") 10px center no-repeat;
+  background-size: 15px;
   border: 1px solid #d5d6d7;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   border-radius: 4px;
-  width: 120px;
-  height: 54px;
-  padding: 15px;
+  width: 132px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 10px 0 35px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -112,7 +132,9 @@
   font-size: 1.6rem;
   font-weight: bolder;
 }
-
+.form-search {
+  position: relative;
+}
 
 .input-key {
   font-size: 1.6rem;
@@ -122,9 +144,10 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.24), 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   border-radius: 4px 0 0 4px;
   width: 450px;
-  height: 54px;
+  height: 45px;
+ line-height: 45px;
   text-align: left;
-  padding: 15px;
+  padding: 0 15px 0 15px;
   /* z-index: 999; */
 }
 
@@ -139,18 +162,25 @@
   background: #4997f1;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.30);
   width: 120px;
-  height: 54px;
+  height: 45px;
+  line-height: 45px;
   color: #ffffff;
   /* font-family:PingFangSC-Semibold, 微软雅黑; */
   letter-spacing: 1.29px;
   text-align: center;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+  padding: 0;
+}
+.btn-search__high {
+  position: absolute;
+  right: -120px;
+  top: 0;
 }
 
-
 .search-form {
-  font-size: 0
+  font-size: 0;
+  position: relative;
 }
 
 .search-key-container {
@@ -167,7 +197,7 @@
   flex-flow: row wrap;
   align-items: flex-start;
   list-style: none;
-  width: 603px;
+  width: 570px;
 }
 
 
@@ -194,9 +224,9 @@
 .search-key-label {
   flex: none;
   font-size: 12px;
-  margin-right: 15px;
+  margin-right: 6px;
   padding-top: 5px;
-  width: 150px;
+  width: 132px;
   text-align: center;
   color: #ffffff;
   letter-spacing: 0.71px;
@@ -209,6 +239,9 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  position: absolute;
+  bottom: 0;
+  width: 1000px;
 }
 .menu>li {
   flex: 1;
@@ -217,7 +250,7 @@
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  height: 115px;
+  padding: 10px 0;
 }
 .menu>li a {
   display: flex;
@@ -631,12 +664,12 @@ i.app{
   background: #f5fbff;
   /* border-radius: 4px; */
   z-index: 3;
-  width: 603px;
+  width: 570px;
   height: 402px;
   padding: 25px 25px 0;
   position: absolute;
-  top: 54px;
-  left: 254px;
+  top: 45px;
+  left: 146px;
   overflow: auto;
 }
 .pop-wrap .am-nav-tabs {

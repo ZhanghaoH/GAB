@@ -8,7 +8,6 @@
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>公安互联网+政务服务平台首页</title>
-
   <!-- Set render engine for 360 browser -->
   <meta name="renderer" content="webkit">
 
@@ -44,147 +43,194 @@
         </div>
       </div>
       <!-- navigation & search -->
-      <div class="container nav-wrap" style="border-top: 2px solid #f4e271" id="searchPage">
-        <nav class="nav">
-          <ul class="nav-list bd" id="indexNav">
-            <li class="nav-li__active">
-              <a href="###">首页</a>
-            </li>
-            <li>
-              <a href="eventsCenter.html">事项中心</a>
-            </li>
-            <li>
-              <a href="policyFiles.html">政策文件</a>
-            </li>
-            <li>
-              <a href="QAIntelligence.html">智能问答</a>
-            </li>
-            <li>
-              <a href="appCenter.html">APP中心</a>
-            </li>
-            <li>
-              <a href="javascript:login();">个人中心</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- search -->
-        <div class="search-container">
-          <form class="search-form am-form-inline">
-            <div class="am-form-group" style="position:relative" data-toggle="distpicker">
-              <select id="province" class="select-area" >
-              </select>
-              <select id="city" class="select-area">
-              </select>
-              <!-- <span class="select-caret"></span> -->
-            </div>
-            <!-- <div class="am-form-group"> -->
-            <input type="text" class="input-key" id="search_cnt" placeholder="快速搜索你想要的服务">
-            <!-- </div> -->
-            <span class="btn-container">
-              <input type="button" value="搜索" class="am-btn btn-search">
-            </span>
-            <span class="btn-container">
-              <input type="button" value="高级搜索" class="am-btn btn-search" style="background:transparent;box-shadow:none">
-            </span>
-          </form>
-          <div class="search-key-container">
-            <div class="search-key-label">热门搜索:</div>
-            <ul class="search-key">
-              <li>
-                <a href="">出入境业务预约</a>
-              </li>
-              <li>
-                <a href="">河南省警民通</a>
-              </li>
-              <li>
-                <a href="">机动车车检</a>
-              </li>
-              <li>
-                <a href="">广州微警</a>
-              </li>
-              <li>
-                <a href="">公民出国办证须知</a>
-              </li>
-              <li>
-                <a href="">旅馆业办证许可
-                </a>
-              </li>
-              <li>
-                <a href="">购房入户
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="pop-wrap am-hide">
-            <div class="am-tabs" data-am-tabs>
-              <ul class="am-tabs-nav am-nav am-nav-tabs">
-                <li class="am-active">
-                  <a href="#tab1">热门搜索</a>
+      <nav class="nav" data-am-sticky>
+        <ul class="nav-list bd" id="indexNav">
+          <li class="nav-li__active">
+            <a href="###">首页</a>
+          </li>
+          <li>
+            <a href="eventsCenter.html">事项中心</a>
+          </li>
+          <li>
+            <a href="policyFiles.html">政策文件</a>
+          </li>
+          <li>
+            <a href="QAIntelligence.html">智能问答</a>
+          </li>
+          <li>
+            <a href="appCenter.html">APP中心</a>
+          </li>
+          <li>
+            <a href="javascript:login();">个人中心</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container nav-bd">
+        <div class="nav-wrap" id="searchPage">
+          <!-- search -->
+          <div class="search-container">
+            <form class="search-form am-form-inline" >
+              <!-- <div class="am-form-group" style="position:relative" data-toggle="distpicker">
+                <select id="province" class="select-area" >
+                </select>
+                <select id="city" class="select-area">
+                </select>
+              </div> -->
+              <div class="am-form-group">
+                <div class="select-area" id="location"></div>
+              </div>
+              <input type="text" class="input-key" id="search_cnt" placeholder="快速搜索你想要的服务">
+              <!-- </div> -->
+              <span class="btn-container">
+                <input type="button" value="搜索" class="am-btn btn-search">
+              </span>
+              <span class="btn-container btn-search__high" >
+                <input type="button" value="高级搜索" class="am-btn btn-search" style="background:transparent;box-shadow:none">
+              </span>
+            </form>
+            <div class="search-key-container">
+              <div class="search-key-label">热门搜索:</div>
+              <ul class="search-key">
+                <li>
+                  <a href="">出入境业务预约</a>
                 </li>
                 <li>
-                  <a href="#tab2">服务事项</a>
+                  <a href="">河南省警民通</a>
                 </li>
                 <li>
-                  <a href="#tab3">办事指南</a>
+                  <a href="">机动车车检</a>
                 </li>
                 <li>
-                  <a href="#tab4">相关APP</a>
+                  <a href="">广州微警</a>
                 </li>
                 <li>
-                  <a href="#tab5">常见问题</a>
+                  <a href="">公民出国办证须知</a>
                 </li>
                 <li>
-                  <a href="#tab6">政策文件</a>
+                  <a href="">旅馆业办证许可
+                  </a>
+                </li>
+                <li>
+                  <a href="">购房入户
+                  </a>
                 </li>
               </ul>
-              <div class="am-tabs-bd">
-                <div class="am-tab-panel am-active" id="tab1">
-                  <ul class="hot-tab-cnt">
-                    <li>
-                      <a href="">出入境证件办理</a>
-                    </li>
-                    <li>
-                      <a href="">因私出入境中介机构资质办证指南</a>
-                    </li>
-                    <li>
-                      <a href="">关于未成年人申请出入境证件的相关问题</a>
-                    </li>
-                    <li class="hot-vnt-bordert">
-                      <a href="./appCenter.html" class="hot-cnt-tuwen">
-                        <div class="hot-cnt-tu">
-                          <img src="assets/i/img_beijinghuanyingni@2x.png" alt="北京服务您" width="58" height="58">
-                        </div>
-                        <div class="hot-cnt-wen">
-                          <div class="wen-tit">北京服务您</div>
-                          <div class="wen-desc line-clamp">“北京服务您”APP实现了多个复杂公共服务事项的移动端一站式办理，为广大市民的政务生活变得更加便捷。</div>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="hot-vnt-bordert">
-                      <a href="" class="hot-cnt-wen">
-                        <div class="wen-tit">公安部出入境管理局负责人就启用电子台胞证答记者问</div>
-                        <ol class="hot-cnt-qa">
-                          <li>
-                            <div class="hot-qa-q">和现行证件相比，电子台胞证有哪些明显的变化？</div>
-                            <div class="hot-qa-a line-clamp">答：电子台胞证最明显的变化由两个方面：一是采用了卡式证件的形式，携带使用变得更为方便；二是取消了签注区，进一步落实了取消台胞签注政策规定。此外，我们对卡面可视…</div>
-                          </li>
-                          <!-- <li>
-                            <div class="hot-qa-q">和现行证件相比，电子台胞证有哪些明显的变化？</div>
-                            <div class="hot-qa-a line-clamp">答：电子台胞证最明显的变化由两个方面：一是采用了卡式证件的形式，携带使用变得更为方便；二是取消了签注区，进一步落实了取消台胞签注政策规定。此外，我们对卡面可视…</div>
-                          </li> -->
-                        </ol>
-                      </a>
-                    </li>
-                  </ul>
+            </div>
+            <div class="pop-wrap am-hide">
+              <div class="am-tabs" data-am-tabs>
+                <ul class="am-tabs-nav am-nav am-nav-tabs">
+                  <li class="am-active">
+                    <a href="#tab1">热门搜索</a>
+                  </li>
+                  <li>
+                    <a href="#tab2">服务事项</a>
+                  </li>
+                  <li>
+                    <a href="#tab3">办事指南</a>
+                  </li>
+                  <li>
+                    <a href="#tab4">相关APP</a>
+                  </li>
+                  <li>
+                    <a href="#tab5">常见问题</a>
+                  </li>
+                  <li>
+                    <a href="#tab6">政策文件</a>
+                  </li>
+                </ul>
+                <div class="am-tabs-bd">
+                  <div class="am-tab-panel am-active" id="tab1">
+                    <ul class="hot-tab-cnt">
+                      <li>
+                        <a href="">出入境证件办理</a>
+                      </li>
+                      <li>
+                        <a href="">因私出入境中介机构资质办证指南</a>
+                      </li>
+                      <li>
+                        <a href="">关于未成年人申请出入境证件的相关问题</a>
+                      </li>
+                      <li class="hot-vnt-bordert">
+                        <a href="./appCenter.html" class="hot-cnt-tuwen">
+                          <div class="hot-cnt-tu">
+                            <img src="assets/i/img_beijinghuanyingni@2x.png" alt="北京服务您" width="58" height="58">
+                          </div>
+                          <div class="hot-cnt-wen">
+                            <div class="wen-tit">北京服务您</div>
+                            <div class="wen-desc line-clamp">“北京服务您”APP实现了多个复杂公共服务事项的移动端一站式办理，为广大市民的政务生活变得更加便捷。</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="hot-vnt-bordert">
+                        <a href="" class="hot-cnt-wen">
+                          <div class="wen-tit">公安部出入境管理局负责人就启用电子台胞证答记者问</div>
+                          <ol class="hot-cnt-qa">
+                            <li>
+                              <div class="hot-qa-q">和现行证件相比，电子台胞证有哪些明显的变化？</div>
+                              <div class="hot-qa-a line-clamp">答：电子台胞证最明显的变化由两个方面：一是采用了卡式证件的形式，携带使用变得更为方便；二是取消了签注区，进一步落实了取消台胞签注政策规定。此外，我们对卡面可视…</div>
+                            </li>
+                            <!-- <li>
+                              <div class="hot-qa-q">和现行证件相比，电子台胞证有哪些明显的变化？</div>
+                              <div class="hot-qa-a line-clamp">答：电子台胞证最明显的变化由两个方面：一是采用了卡式证件的形式，携带使用变得更为方便；二是取消了签注区，进一步落实了取消台胞签注政策规定。此外，我们对卡面可视…</div>
+                            </li> -->
+                          </ol>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="am-tab-panel" id="tab2">服务事项</div>
+                  <div class="am-tab-panel" id="tab3">办事指南</div>
+                  <div class="am-tab-panel" id="tab4">相关APP</div>
+                  <div class="am-tab-panel" id="tab5">常见问题</div>
+                  <div class="am-tab-panel" id="tab6">政策文件</div>
                 </div>
-                <div class="am-tab-panel" id="tab2">服务事项</div>
-                <div class="am-tab-panel" id="tab3">办事指南</div>
-                <div class="am-tab-panel" id="tab4">相关APP</div>
-                <div class="am-tab-panel" id="tab5">常见问题</div>
-                <div class="am-tab-panel" id="tab6">政策文件</div>
               </div>
             </div>
           </div>
+          <!-- 块状菜单栏 -->
+          <ul class="menu">
+            <li style="background:#198cff;">
+              <a href="">
+                <i class="menu-icon menu-icon-sfzbl"></i>
+                <span class="menu-txt">身份证办理
+                  <br>进度查询</span>
+              </a>
+            </li>
+            <li style="background:#4ca6ff;">
+              <a href="">
+                <i class="menu-icon menu-icon-crjyy"></i>
+                <span class="menu-txt">出入境业务
+                  <br>预约</span>
+              </a>
+            </li>
+            <li style="background:#80bfff;">
+              <a href="">
+                <i class="menu-icon menu-icon-csdj"></i>
+                <span class="menu-txt">出生登记</span>
+              </a>
+            </li>
+            <li style="background:#99ccff;">
+              <a href="">
+                <i class="menu-icon menu-icon-jzzsb"></i>
+                <span class="menu-txt">居住证申报
+                  <br>登记</span>
+              </a>
+            </li>
+            <li style="background:#66b3ff;">
+              <a href="">
+                <i class="menu-icon menu-icon-ldrkyd"></i>
+                <span class="menu-txt">流动人口异地办理
+                  <br>出入境证件须知</span>
+              </a>
+            </li>
+            <li style="background:#3b9dff;">
+              <a href="">
+                <i class="menu-icon menu-icon-jszhb"></i>
+                <span class="menu-txt">驾驶证
+                  <br>换证/补证</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -192,50 +238,6 @@
       <!-- second screen-->
       <!-- <div class="bd" style="height:588px;position:relative"> -->
       <div class="bd up">
-        <!-- 块状菜单栏 -->
-        <ul class="menu">
-          <li style="background:#198cff;">
-            <a href="">
-              <i class="menu-icon menu-icon-sfzbl"></i>
-              <span class="menu-txt">身份证办理
-                <br>进度查询</span>
-            </a>
-          </li>
-          <li style="background:#4ca6ff;">
-            <a href="">
-              <i class="menu-icon menu-icon-crjyy"></i>
-              <span class="menu-txt">出入境业务
-                <br>预约</span>
-            </a>
-          </li>
-          <li style="background:#80bfff;">
-            <a href="">
-              <i class="menu-icon menu-icon-csdj"></i>
-              <span class="menu-txt">出生登记</span>
-            </a>
-          </li>
-          <li style="background:#99ccff;">
-            <a href="">
-              <i class="menu-icon menu-icon-jzzsb"></i>
-              <span class="menu-txt">居住证申报
-                <br>登记</span>
-            </a>
-          </li>
-          <li style="background:#66b3ff;">
-            <a href="">
-              <i class="menu-icon menu-icon-ldrkyd"></i>
-              <span class="menu-txt">流动人口异地办理
-                <br>出入境证件须知</span>
-            </a>
-          </li>
-          <li style="background:#3b9dff;">
-            <a href="">
-              <i class="menu-icon menu-icon-jszhb"></i>
-              <span class="menu-txt">驾驶证
-                <br>换证/补证</span>
-            </a>
-          </li>
-        </ul>
         <!-- 新闻政策块 -->
         <div class="cnt-wrap news">
           <div class="cnt-left" style="height:298px">
@@ -552,25 +554,27 @@
     <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
     <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
     <![endif]-->
-  
-  <!-- <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.1&key=e31e1eb03a47963714cbad012ae86c9e&plugin=AMap.CitySearch"></script> -->
-  <script src="./assets/js/distpicker.data.min.js"></script>
-  <script src="./assets/js/distpicker.min.js"></script>
+
+  <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.1&key=e31e1eb03a47963714cbad012ae86c9e&plugin=AMap.CitySearch"></script>
+  <!-- <script src="./assets/js/distpicker.data.min.js"></script>
+  <script src="./assets/js/distpicker.min.js"></script> -->
   <script src="assets/js/amazeui.min.js"></script>
 </body>
 <script>
   $(document).ready(function () {
     loadPage()
-    var $distpicker = $('#distpicker');
-    $distpicker.distpicker();
-
+    // var $distpicker = $('#distpicker');
+    // $distpicker.distpicker();
+    $(window).scroll(function(){
+      $(".nav").addClass("fixed_nav")
+	  })
     /*---------- fullpage  ----------*/
     function loadPage() {
       var winSize = findDimensions()
       console.log(winSize);
       console.log($(window).width());
       console.log($(window).height());
-      $("#searchPage").height(winSize.winHeight - 100)
+      $("#searchPage").height(winSize.winHeight - 150)
     }
     window.onresize = loadPage;
     //函数：获取尺寸
@@ -611,9 +615,11 @@
     function showCityInfo() {
       //实例化城市查询类
       var citysearch = new AMap.CitySearch();
+      console.log("进入");
       var cityinfo, provinceinfo
       //自动获取用户IP，返回当前城市
       citysearch.getLocalCity(function (status, result) {
+        console.log(status, result);
         if (status === 'complete' && result.info === 'OK') {
           if (result && result.city && result.bounds) {
             cityinfo = result.city;
@@ -623,11 +629,12 @@
           cityinfo = "北京市";
           provinceinfo = "北京城区";
         }
+        $("#location").text(cityinfo)
       });
-      return {
-        city: cityinfo,
-        province: provinceinfo
-      }
+      // return {
+      //   city: cityinfo,
+      //   province: provinceinfo
+      // }
     }
     /*=====  End of Amap Location  ======*/
 
@@ -707,7 +714,7 @@
     })
 
     /*=====  End of news slides  ======*/
-    // var address = showCityInfo()
+    showCityInfo()
     /* 登录 */
     function login() {
       modalLogin.removeClass("am-hide")

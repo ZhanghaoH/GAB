@@ -489,9 +489,7 @@
     var identify = $(".identify-class").children("i")
     $(".me").height(document.body.scrollHeight)
     var $distpicker = $('#distpicker');
-
-  $distpicker.distpicker();
-
+    $distpicker.distpicker();
     identify.on("click", function (e) {
       var identifyIndex = e.currentTarget.dataset.index
       var utitle = "普通用户"
@@ -538,7 +536,6 @@
       }
         userClass.text(utitle)
     })
-
 
     $(".msg-status").on("click", function () {
       $(this).toggleClass("msg-status__done")
