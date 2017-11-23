@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+    <div data-toggle="distpicker">
+        <div class="form-group">
+          <label class="sr-only" for="province7">Province</label>
+          <select class="form-control" id="province7"></select>
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="city7">City</label>
+          <select class="form-control" id="city7"></select>
+        </div>
+      </div>
+</body>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="./assets/js/distpicker.data.min.js"></script>
+<script src="./assets/js/distpicker.min.js"></script>
+  <script>
+  $(function () {
+
+  'use strict';
+
+  var $distpicker = $('#distpicker');
+
+  $distpicker.distpicker();
+
+
+});
+
+  </script>
+
+</html>

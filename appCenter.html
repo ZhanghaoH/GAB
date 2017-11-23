@@ -29,31 +29,31 @@
 </head>
 
 <body>
-  <!-- 导航 -->
-  <nav class="container nav-wr">
-    <ul class="nav-other bd">
-      <li>
-        <a href="index.html">首页</a>
-      </li>
-      <li>
-        <a href="eventsCenter.html">事项中心</a>
-      </li>
-      <li>
-        <a href="./policyFiles.html">政策文件</a>
-      </li>
-      <li>
-        <a href="QAIntelligence.html">智能问答</a>
-      </li>
-      <li class="nav-other-li__active">
-        <a href="###">APP中心</a>
-      </li>
-      <li>
-        <a href="me.html">个人中心</a>
-      </li>
-    </ul>
-  </nav>
   <!-- 主体 -->
   <div class="container bd-wr">
+    <!-- 导航 -->
+    <nav class="container nav-wr">
+      <ul class="nav-other bd">
+        <li>
+          <a href="index_new.html">首页</a>
+        </li>
+        <li>
+          <a href="eventsCenter.html">事项中心</a>
+        </li>
+        <li>
+          <a href="./policyFiles.html">政策文件</a>
+        </li>
+        <li>
+          <a href="QAIntelligence.html">智能问答</a>
+        </li>
+        <li class="nav-other-li__active">
+          <a href="###">APP中心</a>
+        </li>
+        <li>
+          <a href="me.html">个人中心</a>
+        </li>
+      </ul>
+    </nav>
     <div class="bd-cnt">
       <div class="bd-cnt-l area">
         <div class="bd-cnt-l-tit">APP中心</div>
@@ -110,22 +110,18 @@
             </li>
           </ul>
           <div class="bd-cnt-l-list-tit">手动选择：</div>
-          <div class="select-wr">
-            <select name="city" id="">
-              <option value="">郑州市</option>
-              <option value="">开封市</option>
-              <option value="">洛阳市</option>
-            </select>
-            <!-- FIXED: 下箭头覆盖下拉框 点箭头无法响应下拉 -->
-            <i class="icon-select"></i>
-          </div>
-          <div class="select-wr">
-            <select name="city" id="">
-              <option value="">高新区</option>
-              <option value="">金水区</option>
-              <option value="">金明区</option>
-            </select>
-            <i class="icon-select"></i>
+          <div data-toggle="distpicker">
+            <div class="select-wr">
+              <select name="province" id="province" onchange="javascript:search(this)">
+              </select>
+              <!-- FIXED: 下箭头覆盖下拉框 点箭头无法响应下拉 -->
+              <!-- <i class="icon-select"></i> -->
+            </div>
+            <div class="select-wr">
+              <select name="city" id="city">
+              </select>
+              <!-- <i class="icon-select"></i> -->
+            </div>
           </div>
         </div>
       </div>
@@ -350,8 +346,15 @@
 <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
 <![endif]-->
 <script src="assets/js/amazeui.min.js"></script>
+<!-- <script src="http://webapi.amap.com/maps?v=1.4.1&key=e31e1eb03a47963714cbad012ae86c9e&plugin=AMap.DistrictSearch"></script>
+<script src="./assets/js/selectarea.js"></script> -->
+<script src="./assets/js/distpicker.data.min.js"></script>
+<script src="./assets/js/distpicker.min.js"></script>
 <script>
   $(function () {
+    var $distpicker = $('#distpicker');
+    $distpicker.distpicker();
+    $(".bd-wr").height(document.body.scrollHeight)
     $(".app-btn-erweima").mouseenter(function () {
       $(this).siblings(".pop-erweima-wr").removeClass("am-hide")
     })

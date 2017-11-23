@@ -29,31 +29,31 @@
 </head>
 
 <body>
-  <!-- 导航 -->
-  <nav class="container nav-wr">
-    <ul class="nav-other bd">
-      <li>
-        <a href="index.html">首页</a>
-      </li>
-      <li class="nav-other-li__active">
-        <a href="###">事项中心</a>
-      </li>
-      <li>
-        <a href="./policyFiles.html">政策文件</a>
-      </li>
-      <li>
-        <a href="QAIntelligence.html">智能问答</a>
-      </li>
-      <li>
-        <a href="./appCenter.html">APP中心</a>
-      </li>
-      <li>
-        <a href="me.html">个人中心</a>
-      </li>
-    </ul>
-  </nav>
   <!-- 主体 -->
   <div class="container bd-wr">
+    <!-- 导航 -->
+    <nav class="container nav-wr">
+      <ul class="nav-other bd">
+        <li>
+          <a href="index_new.html">首页</a>
+        </li>
+        <li class="nav-other-li__active">
+          <a href="###">事项中心</a>
+        </li>
+        <li>
+          <a href="./policyFiles.html">政策文件</a>
+        </li>
+        <li>
+          <a href="QAIntelligence.html">智能问答</a>
+        </li>
+        <li>
+          <a href="./appCenter.html">APP中心</a>
+        </li>
+        <li>
+          <a href="me.html">个人中心</a>
+        </li>
+      </ul>
+    </nav>
     <div class="bd-cnt">
       <div class="bd-cnt-l events">
         <div class="bd-cnt-l-tit">事项中心</div>
@@ -121,22 +121,15 @@
                   </li>
                 </ul>
                 <div class="bd-cnt-l-list-tit">手动选择：</div>
-                <div class="select-wr">
-                  <select name="city" id="">
-                    <option value="">郑州市</option>
-                    <option value="">开封市</option>
-                    <option value="">洛阳市</option>
-                  </select>
-                  <!-- FIXED: 下箭头覆盖下拉框 点箭头无法响应下拉 -->
-                  <i class="icon-select"></i>
-                </div>
-                <div class="select-wr">
-                  <select name="city" id="">
-                    <option value="">高新区</option>
-                    <option value="">金水区</option>
-                    <option value="">金明区</option>
-                  </select>
-                  <i class="icon-select"></i>
+                <div data-toggle="distpicker">
+                  <div class="select-wr">
+                    <select name="province" id="province" onchange="javascript:search(this)">
+                    </select>
+                  </div>
+                  <div class="select-wr">
+                    <select name="city" id="city">
+                    </select>
+                  </div>
                 </div>
               </div>
               <div class="am-tab-panel" id="tab2">
@@ -195,7 +188,8 @@
               </div>
               <ul class="events-list">
                 <li>
-                  <div class="events-name"><a href="./eventsDetails.html"> 出生登记</a>
+                  <div class="events-name">
+                    <a href="./eventsDetails.html"> 出生登记</a>
                     <a href="./eventsDetails.html?item=bszn" class="txt-guide">
                       <i class="icon-file"></i>
                       办事指南
@@ -206,7 +200,8 @@
                   <i class="events-mark mark__marked"></i>
                 </li>
                 <li>
-                  <div class="events-name"><a href="./eventsDetails.html"> 涉外和市儿童福利院孤儿收养登记</a>
+                  <div class="events-name">
+                    <a href="./eventsDetails.html"> 涉外和市儿童福利院孤儿收养登记</a>
                     <a href="./eventsDetails.html?item=bszn" class="txt-guide">
                       <i class="icon-file"></i>
                       办事指南
@@ -217,7 +212,8 @@
                   <i class="events-mark"></i>
                 </li>
                 <li>
-                  <div class="events-name"><a href="./eventsDetails.html"> 计划生育手术并发症鉴定</a>
+                  <div class="events-name">
+                    <a href="./eventsDetails.html"> 计划生育手术并发症鉴定</a>
                     <a href="./eventsDetails.html?item=bszn" class="txt-guide">
                       <i class="icon-file"></i>
                       办事指南
@@ -228,7 +224,8 @@
                   <i class="events-mark mark__marked"></i>
                 </li>
                 <li>
-                  <div class="events-name"><a href="./eventsDetails.html"> 华侨收养三代以内旁系血亲子女登记</a>
+                  <div class="events-name">
+                    <a href="./eventsDetails.html"> 华侨收养三代以内旁系血亲子女登记</a>
                     <a href="./eventsDetails.html?item=bszn" class="txt-guide">
                       <i class="icon-file"></i>
                       办事指南
@@ -239,7 +236,8 @@
                   <i class="events-mark"></i>
                 </li>
                 <li>
-                  <div class="events-name"><a href="./eventsDetails.html"> 华侨撤销收养登记</a>
+                  <div class="events-name">
+                    <a href="./eventsDetails.html"> 华侨撤销收养登记</a>
                     <a href="./eventsDetails.html?item=bszn" class="txt-guide">
                       <i class="icon-file"></i>
                       办事指南
@@ -250,7 +248,8 @@
                   <i class="events-mark"></i>
                 </li>
                 <li>
-                  <div class="events-name"><a href="./eventsDetails.html"> 台湾居民收养登记</a>
+                  <div class="events-name">
+                    <a href="./eventsDetails.html"> 台湾居民收养登记</a>
                     <a href="./eventsDetails.html?item=bszn" class="txt-guide">
                       <i class="icon-file"></i>
                       办事指南
@@ -276,13 +275,11 @@
             </div>
             <div class="am-tab-panel" id="tabR2">
               <br>
-              <br>
-              企业业务
+              <br> 企业业务
             </div>
             <div class="am-tab-panel" id="tabR3">
               <br>
-              <br>
-              境外人士业务
+              <br> 境外人士业务
             </div>
           </div>
         </div>
@@ -299,8 +296,15 @@
 <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
 <![endif]-->
 <script src="assets/js/amazeui.min.js"></script>
+<!-- <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.1&key=e31e1eb03a47963714cbad012ae86c9e&plugin=AMap.DistrictSearch"></script>
+<script src="./assets/js/selectarea.js"></script> -->
+<script src="./assets/js/distpicker.data.min.js"></script>
+<script src="./assets/js/distpicker.min.js"></script>
 <script>
   $(function () {
+    var $distpicker = $('#distpicker');
+    $distpicker.distpicker();
+    $(".bd-wr").height(document.body.scrollHeight)
     $(".app-btn-erweima").mouseenter(function () {
       $(this).siblings(".pop-erweima-wr").removeClass("am-hide")
     })

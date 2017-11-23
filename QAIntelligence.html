@@ -30,29 +30,29 @@
 
 <body>
 
-  <nav class="container nav-wr">
-    <ul class="nav-other bd">
-      <li>
-        <a href="index.html">首页</a>
-      </li>
-      <li>
-        <a href="eventsCenter.html">事项中心</a>
-      </li>
-      <li>
-        <a href="policyFiles.html">政策文件</a>
-      </li>
-      <li class="nav-other-li__active">
-        <a href="">智能问答</a>
-      </li>
-      <li>
-        <a href="appCenter.html">APP中心</a>
-      </li>
-      <li>
-        <a href="me.html">个人中心</a>
-      </li>
-    </ul>
-  </nav>
   <div class="container bd-wr">
+    <nav class="container nav-wr">
+      <ul class="nav-other bd">
+        <li>
+          <a href="index_new.html">首页</a>
+        </li>
+        <li>
+          <a href="eventsCenter.html">事项中心</a>
+        </li>
+        <li>
+          <a href="policyFiles.html">政策文件</a>
+        </li>
+        <li class="nav-other-li__active">
+          <a href="">智能问答</a>
+        </li>
+        <li>
+          <a href="appCenter.html">APP中心</a>
+        </li>
+        <li>
+          <a href="me.html">个人中心</a>
+        </li>
+      </ul>
+    </nav>
     <div class="bd-cnt">
       <div class="bd-cnt-l">
         <div class="bd-cnt-l-tit">智能问答</div>
@@ -152,6 +152,7 @@
 <script src="assets/js/amazeui.min.js"></script>
 <script>
   $(function () {
+    $(".bd-wr").height(document.body.scrollHeight)
     var chatList = $("#chatList")
     $("#btnSend").on("click", function () {
       var askCnt = $("#askCnt").val()
@@ -165,8 +166,30 @@
                 <i class="chat-icon-client"></i><span>用户昵称</span>
               </div>
               <div class="chat-client-txt">${askCnt}</div>
-            </li>`
+            </li>
+            <li class="chat-robot">
+              <div class="chat-infos">
+                <i class="chat-icon-robot"></i>
+                <span>客服4396</span>
+              </div>
+              <div class="chat-robot-txt">
+                <span class="chat-txt-tit">您好，您是想问以下的问题吗？</span>
+                <ul class="chat-items">
+                  <li>中华人民共和国出入境通行证</li>
+                  <li>出入境证件真伪鉴定</li>
+                  <li>关于申请出入境中介机构经营许可证的相关问题</li>
+                  <li>出入境证件办理进度查询</li>
+                  <li>对因私出入境中介活动的监管</li>
+                  <li>对因私出入境中介机构经营许可证的相关问题</li>
+                </ul>
+                <span class="chat-txt-tit">还不是我想要的？转
+                  <span class="chat-txt__strong">人工客服</span>
+                </span>
+              </div>
+            </li>
+            `
         chatList.append(chatClient)
+        chatList[0].scrollIntoView(false)
       }
     })
 

@@ -2,6 +2,7 @@ html,
 body {
     min-width: 1200px;
     /* background-color: #f0f0f0; */
+    height: 100%;
 }
 
 label {
@@ -48,16 +49,6 @@ ol {
     font-size: 12px;
 }
 
-
-/* 下拉框小箭头 */
-
-.select-caret {
-    display: inline-block;
-    width: 10px;
-    height: 8px;
-    background: url('../i/select.png') center center;
-    background-size: 100% 100%;
-}
 
 i {
     display: inline-block;
@@ -150,21 +141,18 @@ i.modal-close {
     margin-top: 8px;
 }
 
-i.icon-select {
-    background: #327fdf url("../i/icon_select.png") center center no-repeat;
-    background-size: 20px;
+select {
+    background: #fff url("../i/select.png") 90% center no-repeat;
+    background-size: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-    width: 45px;
-    height: 45px;
-    border-radius: 0 2px 2px 0;
-    position: absolute;
-    top: -1px;
-    right: 0;
+    border-radius: 4px;
+    padding-right: 10px;
 }
 
 a,
 button,
 select,
+option,
 input {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     outline: none;
@@ -180,7 +168,7 @@ button:hover {
 /* 导航 */
 
 .nav-wr {
-    background: rgba(0, 0, 0,.6);
+    background: rgba(0, 0, 0,.47);
 }
 
 .nav-other {
@@ -264,11 +252,12 @@ li.nav-other-li__active a{
 .am-nav-tabs {
     border-bottom: 1px solid #bed8ef;
 }
-
 .bd-wr {
-    background: url(../i/bg2.png) no-repeat;
+    height: 100%;
+    background: url(../i/bg31.png) center center no-repeat;
     background-size: 100% 100%;
 }
+
 
 .bd-cnt {
     width: 1200px;

@@ -29,30 +29,30 @@
 </head>
 
 <body>
-    <!-- 导航 -->
-    <nav class="container nav-wr">
-        <ul class="nav-other bd">
-            <li>
-                <a href="index.html">首页</a>
-            </li>
-            <li class="nav-other-li__active">
-                <a href="./eventsCenter.html">事项中心</a>
-            </li>
-            <li>
-                <a href="./policyFiles.html">政策文件</a>
-            </li>
-            <li>
-                <a href="QAIntelligence.html">智能问答</a>
-            </li>
-            <li>
-                <a href="./appCenter.html">APP中心</a>
-            </li>
-            <li>
-                <a href="me.html">个人中心</a>
-            </li>
-        </ul>
-    </nav>
     <div class="container bd-wr">
+        <!-- 导航 -->
+        <nav class="container nav-wr">
+            <ul class="nav-other bd">
+                <li>
+                    <a href="index_new.html">首页</a>
+                </li>
+                <li class="nav-other-li__active">
+                    <a href="./eventsCenter.html">事项中心</a>
+                </li>
+                <li>
+                    <a href="./policyFiles.html">政策文件</a>
+                </li>
+                <li>
+                    <a href="QAIntelligence.html">智能问答</a>
+                </li>
+                <li>
+                    <a href="./appCenter.html">APP中心</a>
+                </li>
+                <li>
+                    <a href="me.html">个人中心</a>
+                </li>
+            </ul>
+        </nav>
         <div class="bd-cnt">
             <div class="bd-cnt-l details">
                 <div class="bg-birth"></div>
@@ -95,19 +95,19 @@
                     <div class="am-tabs" data-am-tabs>
                         <ul class="am-tabs-nav am-nav am-nav-tabs">
                             <li class="am-active">
-                                <a href="#tab1"  id="jbxx">基本信息</a>
+                                <a href="#tab1" id="jbxx">基本信息</a>
                             </li>
-                            <li >
+                            <li>
                                 <a href="#tab2" id="bszn">办事指南</a>
                             </li>
                             <li>
-                                <a href="#tab3"  id="sxcl">所需材料</a>
+                                <a href="#tab3" id="sxcl">所需材料</a>
                             </li>
                             <li>
-                                <a href="#tab4"  id="blll">办理流程</a>
+                                <a href="#tab4" id="blll">办理流程</a>
                             </li>
                             <li>
-                                <a href="#tab5"  id="sqyj">申请依据</a>
+                                <a href="#tab5" id="sqyj">申请依据</a>
                             </li>
                         </ul>
                         <div class="am-tabs-bd">
@@ -301,14 +301,15 @@
 <script src="assets/js/amazeui.min.js"></script>
 <script>
     $(document).ready(function () {
-       if(location.search){
+        $(".bd-wr").height(document.body.scrollHeight)
+        if (location.search) {
             var tab = parseURL(location.href)
             console.log(tab);
             if (tab.item === "bszn") {
                 console.log("tp");
-               document.getElementById("bszn").click();
+                document.getElementById("bszn").click();
             }
-       }
+        }
 
         function parseURL(url) {
             var url = url.split("?")[1];

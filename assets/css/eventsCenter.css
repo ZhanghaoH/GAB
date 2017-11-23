@@ -57,9 +57,8 @@
   flex: auto;
   line-height: 35px;
   padding-left: 15px;
-  padding-right: 35px;
+  padding-right: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  border-radius: 4px 0 0 4px;
   /* font-family:PingFangSC-Regular; */
   font-size:12px;
   color:#727272;
@@ -116,17 +115,6 @@
   font-size:12px;
   color:#ffffff;
   letter-spacing:0.86px;
-}
-i.icon-select {
-  background: #327fdf url("../i/icon_select.png") center center no-repeat;
-  background-size: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  width: 35px;
-  height: 35px;
-  border-radius: 0 4px 4px 0;
-  position: absolute;
-  top: 0px;
-  right: 0;
 }
 
 .events-hd {

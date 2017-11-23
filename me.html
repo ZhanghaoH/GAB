@@ -26,33 +26,34 @@
   <link rel="stylesheet" href="assets/css/amazeui.min.css">
   <link rel="stylesheet" href="assets/css/app.css">
   <link rel="stylesheet" href="assets/css/me.css">
+ 
 </head>
 
 <body>
 
-  <nav class="container nav-wr">
-    <ul class="nav-other bd">
-      <li>
-        <a href="index.html">首页</a>
-      </li>
-      <li>
-        <a href="eventsCenter.html">事项中心</a>
-      </li>
-      <li>
-        <a href="policyFiles.html">政策文件</a>
-      </li>
-      <li>
-        <a href="QAIntelligence.html">智能问答</a>
-      </li>
-      <li>
-        <a href="appCenter.html">APP中心</a>
-      </li>
-      <li class="nav-other-li__active">
-        <a href="###">个人中心</a>
-      </li>
-    </ul>
-  </nav>
   <div class="container me">
+    <nav class="container nav-wr">
+      <ul class="nav-other bd">
+        <li>
+          <a href="index_new.html">首页</a>
+        </li>
+        <li>
+          <a href="eventsCenter.html">事项中心</a>
+        </li>
+        <li>
+          <a href="policyFiles.html">政策文件</a>
+        </li>
+        <li>
+          <a href="QAIntelligence.html">智能问答</a>
+        </li>
+        <li>
+          <a href="appCenter.html">APP中心</a>
+        </li>
+        <li class="nav-other-li__active">
+          <a href="###">个人中心</a>
+        </li>
+      </ul>
+    </nav>
     <div class="bd me-cnt">
       <div class="me-cnt-l">
         <div class="me-cnt-tit">用户信息</div>
@@ -361,23 +362,17 @@
         <div class="form-group-inline" style="align-items:flex-start">
           <label for="" class="form-label">我的地址:</label>
           <div class="form-group-block">
-            <div class="groups-wr">
+            <div class="groups-wr" data-toggle="distpicker">
               <div class="select-wr" style="margin-left:0">
-                <select name="city" id="">
-                  <option value="">郑州市</option>
-                  <option value="">开封市</option>
-                  <option value="">洛阳市</option>
+                <select name="province" id="province" onchange="search(this)">
                 </select>
                 <!-- FIXED: 下箭头覆盖下拉框 点箭头无法响应下拉 -->
-                <i class="icon-select"></i>
+                <!-- <i class="icon-select"></i> -->
               </div>
               <div class="select-wr">
-                <select name="city" id="">
-                  <option value="">高新区</option>
-                  <option value="">金水区</option>
-                  <option value="">金明区</option>
+                <select name="city" id="city">
                 </select>
-                <i class="icon-select"></i>
+                <!-- <i class="icon-select"></i> -->
               </div>
             </div>
             <input id="" type="text" class="form-widget" placeholder="请输入您的通信地址">
@@ -482,12 +477,20 @@
 <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
 <![endif]-->
 <script src="assets/js/amazeui.min.js"></script>
+<!-- <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.1&key=e31e1eb03a47963714cbad012ae86c9e&plugin=AMap.DistrictSearch"></script>
+<script src="./assets/js/selectarea.js"></script> -->
+<script src="./assets/js/distpicker.data.min.js"></script>
+<script src="./assets/js/distpicker.min.js"></script>
 <script>
   $(function () {
     var services = $(".up-services").children("ul")
     var myInfo = $("#myInfo")
     var userClass = $("#userClass")
     var identify = $(".identify-class").children("i")
+    $(".me").height(document.body.scrollHeight)
+    var $distpicker = $('#distpicker');
+
+  $distpicker.distpicker();
 
     identify.on("click", function (e) {
       var identifyIndex = e.currentTarget.dataset.index

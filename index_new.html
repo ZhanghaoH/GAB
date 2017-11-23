@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="assets/css/app.css">
   <link rel="stylesheet" href="assets/css/index_new.css">
   <link rel="stylesheet" href="assets/css/jquery.fullpage.css">
+
 </head>
 
 <body>
@@ -69,14 +70,12 @@
         <!-- search -->
         <div class="search-container">
           <form class="search-form am-form-inline">
-            <div class="am-form-group" style="position:relative">
-              <select id="area" class="select-area">
-                <option value="option1">北京市</option>
-                <option value="option2">郑州市</option>
-                <option value="option3">杭州市</option>
-                <option value="option3">乌鲁木齐市</option>
+            <div class="am-form-group" style="position:relative" data-toggle="distpicker">
+              <select id="province" class="select-area" >
               </select>
-              <span class="select-caret"></span>
+              <select id="city" class="select-area">
+              </select>
+              <!-- <span class="select-caret"></span> -->
             </div>
             <!-- <div class="am-form-group"> -->
             <input type="text" class="input-key" id="search_cnt" placeholder="快速搜索你想要的服务">
@@ -151,7 +150,7 @@
                       <a href="">关于未成年人申请出入境证件的相关问题</a>
                     </li>
                     <li class="hot-vnt-bordert">
-                      <a href="" class="hot-cnt-tuwen">
+                      <a href="./appCenter.html" class="hot-cnt-tuwen">
                         <div class="hot-cnt-tu">
                           <img src="assets/i/img_beijinghuanyingni@2x.png" alt="北京服务您" width="58" height="58">
                         </div>
@@ -549,17 +548,23 @@
   <script src="./assets/js/scrolloverflow.min.js"></script>
   <script src="./assets/js/jquery.fullpage.min.js"></script>
   <!--[if lte IE 8 ]>
-<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
-<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
-<![endif]-->
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+    <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+    <![endif]-->
+  
+  <!-- <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.1&key=e31e1eb03a47963714cbad012ae86c9e&plugin=AMap.CitySearch"></script> -->
+  <script src="./assets/js/distpicker.data.min.js"></script>
+  <script src="./assets/js/distpicker.min.js"></script>
   <script src="assets/js/amazeui.min.js"></script>
 </body>
 <script>
   $(document).ready(function () {
-
     loadPage()
+    var $distpicker = $('#distpicker');
+    $distpicker.distpicker();
 
+    /*---------- fullpage  ----------*/
     function loadPage() {
       var winSize = findDimensions()
       console.log(winSize);
@@ -568,13 +573,63 @@
       $("#searchPage").height(winSize.winHeight - 100)
     }
     window.onresize = loadPage;
+    //函数：获取尺寸
+    function findDimensions() {
+      var winWidth = 0;
+      var winHeight = 0;
+      //获取窗口宽度
+      if (window.innerWidth)
+        winWidth = window.innerWidth;
+      else if ((document.body) && (document.body.clientWidth))
+        winWidth = document.body.clientWidth;
+      //获取窗口高度
+      if (window.innerHeight)
+        winHeight = window.innerHeight;
+      else if ((document.body) && (document.body.clientHeight))
+        winHeight = document.body.clientHeight;
+      //通过深入Document内部对body进行检测，获取窗口大小
+      if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth) {
+        winHeight = document.documentElement.clientHeight;
+        winWidth = document.documentElement.clientWidth;
+      }
+      return {
+        winHeight: winHeight,
+        winWidth: winWidth
+      }
+    }
     $('#fullpage-wr').fullpage({
       navigation: true,
       scrollOverflow: true,
-      verticalCentered: false,
+      verticalCentered: true,
       css3: false,
     });
 
+    /*=============================================
+    =            Amap Location            =
+    =============================================*/
+    //获取用户所在城市信息
+    function showCityInfo() {
+      //实例化城市查询类
+      var citysearch = new AMap.CitySearch();
+      var cityinfo, provinceinfo
+      //自动获取用户IP，返回当前城市
+      citysearch.getLocalCity(function (status, result) {
+        if (status === 'complete' && result.info === 'OK') {
+          if (result && result.city && result.bounds) {
+            cityinfo = result.city;
+            provinceinfo = result.province;
+          }
+        } else {
+          cityinfo = "北京市";
+          provinceinfo = "北京城区";
+        }
+      });
+      return {
+        city: cityinfo,
+        province: provinceinfo
+      }
+    }
+    /*=====  End of Amap Location  ======*/
 
     var modalLogin = $(".modal-wrap")
     var pop = $(".pop-wrap")
@@ -585,14 +640,22 @@
     var newsLis = $(".news-list").children("li")
     var newsActive = $(".news-active")
     var newsStatic = $(".news-static")
+    var searchKey = $(".search-key-container")
+
     $(".modal-close").on("tap click", function () {
       modalLogin.addClass("am-hide")
     })
-    $("input#search_cnt").click(function () {
+    $("input#search_cnt").focus(function () {
       pop.removeClass("am-hide")
+      searchKey.animate({
+        opacity: 0
+      }, 500)
     })
     $("input#search_cnt").blur(function () {
       pop.addClass("am-hide")
+      searchKey.animate({
+        opacity: 1
+      }, 500)
     })
     $("#indexNav").on("click", "li", function () {
       indexNavLis.removeClass("nav-li__active")
@@ -601,6 +664,10 @@
     $("#btnLogin").on("click", function () {
       window.location.assign("me.html")
     })
+
+    /*=============================================
+    =            news slides            =
+    =============================================*/
 
     function slides() {
       newIndex++
@@ -638,36 +705,17 @@
       video: false, // Boolean: 使用视频的 slider，防止 CSS3 3D 变换毛刺
       directionNav: false,
     })
-    //函数：获取尺寸
-    function findDimensions() {
-      var winWidth = 0;
-      var winHeight = 0;
-      //获取窗口宽度
-      if (window.innerWidth)
-        winWidth = window.innerWidth;
-      else if ((document.body) && (document.body.clientWidth))
-        winWidth = document.body.clientWidth;
-      //获取窗口高度
-      if (window.innerHeight)
-        winHeight = window.innerHeight;
-      else if ((document.body) && (document.body.clientHeight))
-        winHeight = document.body.clientHeight;
-      //通过深入Document内部对body进行检测，获取窗口大小
-      if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth) {
-        winHeight = document.documentElement.clientHeight;
-        winWidth = document.documentElement.clientWidth;
-      }
-      return {
-        winHeight: winHeight,
-        winWidth: winWidth
-      }
-    }
 
+    /*=====  End of news slides  ======*/
+    // var address = showCityInfo()
+    /* 登录 */
     function login() {
       modalLogin.removeClass("am-hide")
     }
     window.login = login
   });
 </script>
+<!-- <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.1&key=e31e1eb03a47963714cbad012ae86c9e&plugin=AMap.DistrictSearch"></script>
+<script src="./assets/js/selectarea.js"></script> -->
 
 </html>
