@@ -42,9 +42,9 @@
                 <li>
                     <a href="./policyFiles.html">政策文件</a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="QAIntelligence.html">智能问答</a>
-                </li>
+                </li> -->
                 <li>
                     <a href="./appCenter.html">APP中心</a>
                 </li>
@@ -69,20 +69,24 @@
                 <div class="details-cnt-r-up">
                     <ul class="details-up-services">
                         <li>
-                            <i class="service-icon-yuyue"></i>
+                            <i class="service-icon service-icon-yuyue service__disabled"></i>
+                            <!-- <img class="service-icon" src="./assets/i/icon_yuyue.png" alt="在线预约"> -->
                             <span>在线预约</span>
                         </li>
                         <li>
-                            <i class="service-icon-banli"></i>
+                            <!-- <img class="service-icon" src="./assets/i/icon_banli.png" alt="在线办理"> -->
+                            <i class="service-icon service-icon-banli service__disabled"></i>
                             <span>在线办理</span>
                         </li>
                         <li>
-                            <i class="service-icon-zixun"></i>
+                            <!-- <img class="service-icon" src="./assets/i/icon_zixun.png" alt="在线咨询"> -->
+                            <i class="service-icon service-icon-zixun"></i>
                             <span>在线咨询</span>
                         </li>
                         <li>
-                            <i class="service-icon-chaxun"></i>
-                            <span>查询结果</span>
+                            <!-- <img class="service-icon" src="./assets/i/icon_chaxun.png" alt="我的进度"> -->
+                            <i class="service-icon service-icon-chaxun service__disabled"></i>
+                            <span>我的进度</span>
                         </li>
                     </ul>
                 </div>
@@ -108,6 +112,9 @@
                             </li>
                             <li>
                                 <a href="#tab5" id="sqyj">申请依据</a>
+                            </li>
+                            <li>
+                                <a href="#tab6" id="cjwt">常见问题</a>
                             </li>
                         </ul>
                         <div class="am-tabs-bd">
@@ -283,6 +290,19 @@
                                     <div class="pg__active">下一页</div>
                                 </div> -->
                             </div>
+                            <div class="am-tab-panel" id="tab6">
+                                <ul class="tab-guide">
+                                    <li>
+                                        <span class="li-order">1.</span>异地出生的婴儿如何办理出生登记？需要准备哪些证件？
+                                    </li>
+                                    <li>
+                                        <span class="li-order">2.</span>在本市家中出生无《出生医学证明》的婴儿如何办理出生登记？
+                                    </li>
+                                    <li>
+                                        <span class="li-order">3.</span>在港、澳、台及国外出生的婴儿办理出生登记有哪些流程？
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -300,7 +320,7 @@
 <![endif]-->
 <script src="assets/js/amazeui.min.js"></script>
 <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
         $(".bd-wr").height(document.body.scrollHeight)
         if (location.search) {
             var tab = parseURL(location.href)
@@ -310,6 +330,10 @@
                 document.getElementById("bszn").click();
             }
         }
+        $(".details-up-services").on("click", "li", function() {
+            var icon = $(this).find(".service-icon")
+            icon.toggleClass("service__disabled")
+        })
 
         function parseURL(url) {
             var url = url.split("?")[1];

@@ -58,15 +58,15 @@
 .details-up-services li {
     display: flex;
     align-items: center;
-}
-
-.details-up-services li>i {
-    width: 45px;
-    height: 45px;
-    margin-right: 15px;
     /* font-family:PingFangSC-Regular; */
     font-size: 16px;
     color: #000000;
+}
+
+.service-icon {
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
 }
 
 i.service-icon-yuyue {
@@ -86,6 +86,26 @@ i.service-icon-chaxun {
 
 i.service-icon-banli {
     background: url("../i/icon_banli.png") center center no-repeat;
+    background-size: 100%;
+}
+
+i.service-icon-yuyue.service__disabled {
+    background: url("../i/icon_yuyue_gray.png") center center no-repeat;
+    background-size: 100%;
+}
+
+i.service-icon-zixun.service__disabled {
+    background: url("../i/icon_zixun_gray.png") center center no-repeat;
+    background-size: 100%;
+}
+
+i.service-icon-chaxun.service__disabled {
+    background: url("../i/icon_chaxun_gray.png") center center no-repeat;
+    background-size: 100%;
+}
+
+i.service-icon-banli.service__disabled {
+    background: url("../i/icon_banli_gray.png") center center no-repeat;
     background-size: 100%;
 }
 
@@ -339,22 +359,31 @@ li .yiju-index {
     border-spacing: 0;
     table-layout: fixed;
     /* font-family:PingFangSC-Regular; */
-    font-size:14px;
-    color:#1f2226;
+    font-size: 14px;
+    color: #1f2226;
     margin-top: 15px;
 }
-.am-table>tbody>tr>td, .am-table>tbody>tr>th, .am-table>tfoot>tr>td, .am-table>tfoot>tr>th, .am-table>thead>tr>td, .am-table>thead>tr>th {
+
+.am-table>tbody>tr>td,
+.am-table>tbody>tr>th,
+.am-table>tfoot>tr>td,
+.am-table>tfoot>tr>th,
+.am-table>thead>tr>td,
+.am-table>thead>tr>th {
     border: none;
     padding: 15px 0;
     vertical-align: middle;
     text-align: center;
 }
+
 .tab-table tr:nth-child(odd) {
-    background-color:#eaf2fa;
+    background-color: #eaf2fa;
 }
+
 .table-txt__strong {
-    color:#79a9ee;
+    color: #79a9ee;
 }
+
 i.table-icon-location {
     width: 11px;
     height: 14px;
@@ -362,6 +391,7 @@ i.table-icon-location {
     background-size: 100%;
     margin-right: 15px;
 }
+
 .table-label {
     background-color: #d6e4f6;
 }

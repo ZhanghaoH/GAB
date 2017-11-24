@@ -2,725 +2,911 @@
 <html class="no-js">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>公安互联网+政务服务平台首页</title>
-  <!-- Set render engine for 360 browser -->
-  <meta name="renderer" content="webkit">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>公安互联网+政务服务平台首页</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
 
-  <!-- No Baidu Siteapp-->
-  <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
 
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
 
-  <!-- Add to homescreen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-  <!-- Tile icon for Win8 (144x144 + tile color) -->
-  <meta name="msapplication-TileColor" content="#0e90d2">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileColor" content="#0e90d2">
 
-  <link rel="stylesheet" href="assets/css/amazeui.min.css">
-  <link rel="stylesheet" href="assets/css/app.css">
-  <link rel="stylesheet" href="assets/css/index_new.css">
-  <link rel="stylesheet" href="assets/css/jquery.fullpage.css">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/index_new.css">
+    <link rel="stylesheet" href="assets/css/jquery.fullpage.css">
 
 </head>
 
 <body>
-  <div id="fullpage-wr">
-    <div class="section">
-      <!-- logo -->
-      <div class="container logo-wrap">
-        <div class="logo bd">
-          <div class="logo-txt">公安部互联网+</div>
-          <img class="logo-img" src="./assets/i/img_logo.png" />
-          <div class="logo-txt">政务服务平台</div>
-        </div>
-      </div>
-      <!-- navigation & search -->
-      <nav class="nav" data-am-sticky>
-        <ul class="nav-list bd" id="indexNav">
-          <li class="nav-li__active">
-            <a href="###">首页</a>
-          </li>
-          <li>
-            <a href="eventsCenter.html">事项中心</a>
-          </li>
-          <li>
-            <a href="policyFiles.html">政策文件</a>
-          </li>
-          <li>
-            <a href="QAIntelligence.html">智能问答</a>
-          </li>
-          <li>
-            <a href="appCenter.html">APP中心</a>
-          </li>
-          <li>
-            <a href="javascript:login();">个人中心</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="container nav-bd">
-        <div class="nav-wrap" id="searchPage">
-          <!-- search -->
-          <div class="search-container">
-            <form class="search-form am-form-inline" >
-              <!-- <div class="am-form-group" style="position:relative" data-toggle="distpicker">
-                <select id="province" class="select-area" >
-                </select>
-                <select id="city" class="select-area">
-                </select>
-              </div> -->
-              <div class="am-form-group">
-                <div class="select-area" id="location"></div>
-              </div>
-              <input type="text" class="input-key" id="search_cnt" placeholder="快速搜索你想要的服务">
-              <!-- </div> -->
-              <span class="btn-container">
+    <a href="./QAIntelligence.html" class="client-service"></a>
+    <div id="fullpage-wr">
+
+        <nav class="nav-float nav-fixed">
+            <ul class="nav-list bd" id="indexNav">
+                <li class="nav-li__active">
+                    <a href="###">首页</a>
+                </li>
+                <li>
+                    <a href="eventsCenter.html">事项中心</a>
+                </li>
+                <li>
+                    <a href="policyFiles.html">政策文件</a>
+                </li>
+                <!-- <li>
+                    <a href="QAIntelligence.html">智能问答</a>
+                </li> -->
+                <li>
+                    <a href="appCenter.html">APP中心</a>
+                </li>
+                <li>
+                    <a href="javascript:login();">个人中心</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="section" id="firstPage">
+            <!-- logo -->
+            <div class="container logo-wrap">
+                <div class="logo bd">
+                    <div class="logo-txt-l">公安部</div>
+                    <img class="logo-img" src="./assets/i/img_logo.png" />
+                    <div class="logo-txt-r">
+                        <span class="txt-cn">互联网+政务服务平台</span>
+                        <span class="txt-en">Internet Plus GOV Affairs Platform</span>
+                    </div>
+                </div>
+            </div>
+            <!-- navigation & search -->
+
+            <nav class="nav nav-index">
+                <ul class="nav-list bd" id="indexNav">
+                    <li class="nav-li__active">
+                        <a href="###">首页</a>
+                    </li>
+                    <li>
+                        <a href="eventsCenter.html">事项中心</a>
+                    </li>
+                    <li>
+                        <a href="policyFiles.html">政策文件</a>
+                    </li>
+                    <!-- <li>
+                        <a href="QAIntelligence.html">智能问答</a>
+                    </li> -->
+                    <li>
+                        <a href="appCenter.html">APP中心</a>
+                    </li>
+                    <li>
+                        <a href="javascript:login();">个人中心</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="container nav-bd">
+                <div class="nav-wrap" id="searchPage">
+                    <!-- search -->
+                    <div class="search-container">
+                        <form class="search-form am-form-inline" style="display:flex">
+                            <!-- <div class="am-form-group"> -->
+                            <div class="select-area" id="location" onclick="javascript: getAreas()">
+                            </div>
+
+                            <!-- </div> -->
+                            <input type="text" class="input-key" id="search_cnt" placeholder="快速搜索你想要的服务">
+                            <!-- </div> -->
+                            <span class="btn-container">
                 <input type="button" value="搜索" class="am-btn btn-search">
               </span>
-              <span class="btn-container btn-search__high" >
+                            <span class="btn-container btn-search__high">
                 <input type="button" value="高级搜索" class="am-btn btn-search" style="background:transparent;box-shadow:none">
               </span>
-            </form>
-            <div class="search-key-container">
-              <div class="search-key-label">热门搜索:</div>
-              <ul class="search-key">
-                <li>
-                  <a href="">出入境业务预约</a>
-                </li>
-                <li>
-                  <a href="">河南省警民通</a>
-                </li>
-                <li>
-                  <a href="">机动车车检</a>
-                </li>
-                <li>
-                  <a href="">广州微警</a>
-                </li>
-                <li>
-                  <a href="">公民出国办证须知</a>
-                </li>
-                <li>
-                  <a href="">旅馆业办证许可
+                        </form>
+                        <div class="search-key-container">
+                            <div class="search-key-label">热门搜索:</div>
+                            <ul class="search-key">
+                                <li>
+                                    <a href="">出入境业务预约</a>
+                                </li>
+                                <li>
+                                    <a href="">河南省警民通</a>
+                                </li>
+                                <li>
+                                    <a href="">机动车车检</a>
+                                </li>
+                                <li>
+                                    <a href="">广州微警</a>
+                                </li>
+                                <li>
+                                    <a href="">公民出国办证须知</a>
+                                </li>
+                                <li>
+                                    <a href="">旅馆业办证许可
                   </a>
-                </li>
-                <li>
-                  <a href="">购房入户
+                                </li>
+                                <li>
+                                    <a href="">购房入户
                   </a>
-                </li>
-              </ul>
-            </div>
-            <div class="pop-wrap am-hide">
-              <div class="am-tabs" data-am-tabs>
-                <ul class="am-tabs-nav am-nav am-nav-tabs">
-                  <li class="am-active">
-                    <a href="#tab1">热门搜索</a>
-                  </li>
-                  <li>
-                    <a href="#tab2">服务事项</a>
-                  </li>
-                  <li>
-                    <a href="#tab3">办事指南</a>
-                  </li>
-                  <li>
-                    <a href="#tab4">相关APP</a>
-                  </li>
-                  <li>
-                    <a href="#tab5">常见问题</a>
-                  </li>
-                  <li>
-                    <a href="#tab6">政策文件</a>
-                  </li>
-                </ul>
-                <div class="am-tabs-bd">
-                  <div class="am-tab-panel am-active" id="tab1">
-                    <ul class="hot-tab-cnt">
-                      <li>
-                        <a href="">出入境证件办理</a>
-                      </li>
-                      <li>
-                        <a href="">因私出入境中介机构资质办证指南</a>
-                      </li>
-                      <li>
-                        <a href="">关于未成年人申请出入境证件的相关问题</a>
-                      </li>
-                      <li class="hot-vnt-bordert">
-                        <a href="./appCenter.html" class="hot-cnt-tuwen">
-                          <div class="hot-cnt-tu">
-                            <img src="assets/i/img_beijinghuanyingni@2x.png" alt="北京服务您" width="58" height="58">
-                          </div>
-                          <div class="hot-cnt-wen">
-                            <div class="wen-tit">北京服务您</div>
-                            <div class="wen-desc line-clamp">“北京服务您”APP实现了多个复杂公共服务事项的移动端一站式办理，为广大市民的政务生活变得更加便捷。</div>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="hot-vnt-bordert">
-                        <a href="" class="hot-cnt-wen">
-                          <div class="wen-tit">公安部出入境管理局负责人就启用电子台胞证答记者问</div>
-                          <ol class="hot-cnt-qa">
-                            <li>
-                              <div class="hot-qa-q">和现行证件相比，电子台胞证有哪些明显的变化？</div>
-                              <div class="hot-qa-a line-clamp">答：电子台胞证最明显的变化由两个方面：一是采用了卡式证件的形式，携带使用变得更为方便；二是取消了签注区，进一步落实了取消台胞签注政策规定。此外，我们对卡面可视…</div>
-                            </li>
-                            <!-- <li>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pop-wrap am-hide">
+                            <div class="am-tabs" data-am-tabs>
+                                <ul class="am-tabs-nav am-nav am-nav-tabs">
+                                    <li class="am-active">
+                                        <a href="#tab1">热门搜索</a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab2">服务事项</a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab3">办事指南</a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab4">相关APP</a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab5">常见问题</a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab6">政策文件</a>
+                                    </li>
+                                </ul>
+                                <div class="am-tabs-bd">
+                                    <div class="am-tab-panel am-active" id="tab1">
+                                        <ul class="hot-tab-cnt">
+                                            <li>
+                                                <a href="">出入境证件办理</a>
+                                            </li>
+                                            <li>
+                                                <a href="">因私出入境中介机构资质办证指南</a>
+                                            </li>
+                                            <li>
+                                                <a href="">关于未成年人申请出入境证件的相关问题</a>
+                                            </li>
+                                            <li class="hot-vnt-bordert">
+                                                <a href="./appCenter.html" class="hot-cnt-tuwen">
+                                                    <div class="hot-cnt-tu">
+                                                        <img src="assets/i/img_beijinghuanyingni@2x.png" alt="北京服务您" width="58" height="58">
+                                                    </div>
+                                                    <div class="hot-cnt-wen">
+                                                        <div class="wen-tit">北京服务您</div>
+                                                        <div class="wen-desc line-clamp">“北京服务您”APP实现了多个复杂公共服务事项的移动端一站式办理，为广大市民的政务生活变得更加便捷。</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="hot-vnt-bordert">
+                                                <a href="" class="hot-cnt-wen">
+                                                    <div class="wen-tit">公安部出入境管理局负责人就启用电子台胞证答记者问</div>
+                                                    <ol class="hot-cnt-qa">
+                                                        <li>
+                                                            <div class="hot-qa-q">和现行证件相比，电子台胞证有哪些明显的变化？</div>
+                                                            <div class="hot-qa-a line-clamp">答：电子台胞证最明显的变化由两个方面：一是采用了卡式证件的形式，携带使用变得更为方便；二是取消了签注区，进一步落实了取消台胞签注政策规定。此外，我们对卡面可视…</div>
+                                                        </li>
+                                                        <!-- <li>
                               <div class="hot-qa-q">和现行证件相比，电子台胞证有哪些明显的变化？</div>
                               <div class="hot-qa-a line-clamp">答：电子台胞证最明显的变化由两个方面：一是采用了卡式证件的形式，携带使用变得更为方便；二是取消了签注区，进一步落实了取消台胞签注政策规定。此外，我们对卡面可视…</div>
                             </li> -->
-                          </ol>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="am-tab-panel" id="tab2">服务事项</div>
-                  <div class="am-tab-panel" id="tab3">办事指南</div>
-                  <div class="am-tab-panel" id="tab4">相关APP</div>
-                  <div class="am-tab-panel" id="tab5">常见问题</div>
-                  <div class="am-tab-panel" id="tab6">政策文件</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- 块状菜单栏 -->
-          <ul class="menu">
-            <li style="background:#198cff;">
-              <a href="">
-                <i class="menu-icon menu-icon-sfzbl"></i>
-                <span class="menu-txt">身份证办理
+                                                    </ol>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="am-tab-panel" id="tab2">服务事项</div>
+                                    <div class="am-tab-panel" id="tab3">办事指南</div>
+                                    <div class="am-tab-panel" id="tab4">相关APP</div>
+                                    <div class="am-tab-panel" id="tab5">常见问题</div>
+                                    <div class="am-tab-panel" id="tab6">政策文件</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 块状菜单栏 -->
+                    <ul class="menu">
+                        <li style="background:#198cff;">
+                            <a href="">
+                                <i class="menu-icon menu-icon-sfzbl"></i>
+                                <span class="menu-txt">身份证办理
                   <br>进度查询</span>
-              </a>
-            </li>
-            <li style="background:#4ca6ff;">
-              <a href="">
-                <i class="menu-icon menu-icon-crjyy"></i>
-                <span class="menu-txt">出入境业务
+                            </a>
+                        </li>
+                        <li style="background:#4ca6ff;">
+                            <a href="">
+                                <i class="menu-icon menu-icon-crjyy"></i>
+                                <span class="menu-txt">出入境业务
                   <br>预约</span>
-              </a>
-            </li>
-            <li style="background:#80bfff;">
-              <a href="">
-                <i class="menu-icon menu-icon-csdj"></i>
-                <span class="menu-txt">出生登记</span>
-              </a>
-            </li>
-            <li style="background:#99ccff;">
-              <a href="">
-                <i class="menu-icon menu-icon-jzzsb"></i>
-                <span class="menu-txt">居住证申报
+                            </a>
+                        </li>
+                        <li style="background:#80bfff;">
+                            <a href="">
+                                <i class="menu-icon menu-icon-csdj"></i>
+                                <span class="menu-txt">出生登记</span>
+                            </a>
+                        </li>
+                        <li style="background:#99ccff;">
+                            <a href="">
+                                <i class="menu-icon menu-icon-jzzsb"></i>
+                                <span class="menu-txt">居住证申报
                   <br>登记</span>
-              </a>
-            </li>
-            <li style="background:#66b3ff;">
-              <a href="">
-                <i class="menu-icon menu-icon-ldrkyd"></i>
-                <span class="menu-txt">流动人口异地办理
+                            </a>
+                        </li>
+                        <li style="background:#66b3ff;">
+                            <a href="">
+                                <i class="menu-icon menu-icon-ldrkyd"></i>
+                                <span class="menu-txt">流动人口异地办理
                   <br>出入境证件须知</span>
-              </a>
-            </li>
-            <li style="background:#3b9dff;">
-              <a href="">
-                <i class="menu-icon menu-icon-jszhb"></i>
-                <span class="menu-txt">驾驶证
+                            </a>
+                        </li>
+                        <li style="background:#3b9dff;">
+                            <a href="">
+                                <i class="menu-icon menu-icon-jszhb"></i>
+                                <span class="menu-txt">驾驶证
                   <br>换证/补证</span>
-              </a>
-            </li>
-          </ul>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="section">
-      <!-- second screen-->
-      <!-- <div class="bd" style="height:588px;position:relative"> -->
-      <div class="bd up">
-        <!-- 新闻政策块 -->
-        <div class="cnt-wrap news">
-          <div class="cnt-left" style="height:298px">
-            <div class="news-list-wr">
-              <!-- <ul class="news-list">
-                  <li class="news-active">
-                    <div class="news-hd am-text-truncate">郑州警方“践行十九大、民警听民声”主题活动邀请首批特邀观察员座谈</div>
-                    <div class="news-bd line-clamp news-txt">河南某公安部举办对抗训练赛，提升同志们的实战技能，为工作中遇到危机时刻时作出快速反应提供了珍贵的技巧</div>
-                  </li>
-                  <li>
-                    <a href="" class="news-link am-text-truncate">郑州市公安机关组织民警收听收看党的十九大开幕会</a>
-                    <span class="news-txt">(10-16)</span>
-                  </li>
-                  <li>
-                    <a href="" class="news-link am-text-truncate">郑州市公安局召开党委扩大会 要求全市公安机关迅速掀起学习宣传贯彻十九大精神的热潮</a>
-                    <span class="news-txt">(10-16)</span>
-                  </li>
-                  <li>
-                    <a href="" class="news-link am-text-truncate">•郑州警方深入开展大排查、大整治、大管控</a>
-                    <span class="news-txt">(10-16)</span>
-                  </li>
-                </ul> -->
-              <ul class="news-list">
-                <li>
-                  <div class="news-active">
-                    <div class="news-hd am-text-truncate">郑州警方“践行十九大、民警听民声”主题活动邀请首批特邀观察员座谈</div>
-                    <div class="news-bd line-clamp news-txt">郑州市公安局召开以“三问两提一转”为主线的“践行十九大、民警听民声”主题活动新闻发布会，向广大市民发放调查问卷，诚挚邀请社会各界为郑州公安工作和队伍建设“把脉问诊”</div>
-                  </div>
-                  <div class="news-static am-hide">
-                    <a href="" class="news-link am-text-truncate">•郑州警方“践行十九大、民警听民声”主题活动邀请首批特邀观察员座谈</a>
-                    <span class="news-txt">(11-08)</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="news-active am-hide">
-                    <div class="news-hd am-text-truncate">郑州市公安机关组织民警收听收看党的十九大开幕会</div>
-                    <div class="news-bd line-clamp news-txt">10月18日上午9时，举世瞩目的中国共产党第十九次全国代表大会在北京隆重开幕。郑州全市公安机关第一时间组织民警认真收听收看了开幕会实况直播，聆听习近平总书记代表第十八届中央委员会所作的工作报告。</div>
-                  </div>
-                  <div class="news-static">
-                    <a href="" class="news-link am-text-truncate">•郑州市公安机关组织民警收听收看党的十九大开幕会</a>
-                    <span class="news-txt">(11-01)</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="news-active am-hide">
-                    <div class="news-hd am-text-truncate">郑州市公安局召开党委扩大会 要求全市公安机关迅速掀起学习宣传贯彻十九大精神的热潮</div>
-                    <div class="news-bd line-clamp news-txt">为传达学习十九大精神，贯彻落实市委常委扩大会议关于学习十九大精神的安排部署，10月29日上午，郑州市公安局召开党委扩大会议，对全市公安机关进一步学习宣传贯彻十九大精神工作进行动员、安排和部署。郑州市政府副市长、市公安局局长马义中出席会议并讲话，要求全市公安机关迅速掀起学习宣传贯彻十九大精神的热潮。全市公安机关各警种、各部门、各分县（市）局主要领导同志参加会议。</div>
-                  </div>
-                  <div class="news-static">
-                    <a href="" class="news-link am-text-truncate">•郑州市公安局召开党委扩大会 要求全市公安机关迅速掀起学习宣传贯彻十九大精神的热潮</a>
-                    <span class="news-txt">(10-29)</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="news-active am-hide">
-                    <div class="news-hd am-text-truncate">郑州警方深入开展大排查、大整治、大管控</div>
-                    <div class="news-bd line-clamp news-txt">为强化社会面治安防控，确保省会郑州社会政治治安大局持续平稳，目前郑州警方深入推进大排查、大整治、大控工作，组织特警、交警、治安、派出所等警力在全市设置22个高速出入市卡口和2个平角卡口（新黄河大桥和老黄河大桥），对出入市的可疑车辆、人员、物品进行设卡盘查。</div>
-                  </div>
-                  <div class="news-static">
-                    <a href="" class="news-link am-text-truncate">•郑州警方深入开展大排查、大整治、大管控</a>
-                    <span class="news-txt">(10-11)</span>
-                  </div>
-                </li>
-              </ul>
-              <div class="pop-triangle"></div>
-            </div>
-            <div class="am-slider am-slider-default news-slider" id="news-slider">
-              <ul class="am-slides">
-                <li>
-                  <img src="http://www.zhengzhouga.gov.cn/u/cms/zzga/201711/08182729apqw.jpg" />
-                </li>
-                <li>
-                  <img src="http://www.zhengzhouga.gov.cn/u/cms/zzga/201711/01113302rhb8.jpg" />
-                </li>
-                <li>
-                  <img src="http://www.zhengzhouga.gov.cn/u/cms/zzga/201710/29174848bopp.jpg" />
-                </li>
-                <li>
-                  <img src="http://www.zhengzhouga.gov.cn/u/cms/zzga/201710/11142037wxqh.jpg" />
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="cnt-right" style="height:298px;background: #f5fbff;">
-            <div class="cnt-tit">
-              <i class="tit"></i>政策文件
-              <i class="cnt-more" style="cursor:pointer" onclick="javascript:window.location.assign('./policyFiles.html')"></i>
-            </div>
-            <ul class="cnt-policies">
-              <li>
-                <i class="date" style="background:url(./assets/i/date_1.png) center center no-repeat;background-size:100% 100%">
+        <div class="section">
+            <!-- second screen-->
+            <!-- <div class="bd" style="height:588px;position:relative"> -->
+            <div class="bd up">
+                <!-- 新闻政策块 -->
+                <div class="cnt-wrap news">
+                    <div class="cnt-left" style="height:298px">
+                        <div class="news-list-wr">
+                            <ul class="news-list">
+                                <li>
+                                    <div class="news-active">
+                                        <div class="news-hd am-text-truncate">郭声琨在中央政法委员会全体会议上强调</div>
+                                        <div class="news-bd line-clamp news-txt">郭声琨在中央政法委员会全体会议上强调:坚决维护党中央权威和集中统一领导</div>
+                                    </div>
+                                    <div class="news-static am-hide">
+                                        <a href="http://www.mps.gov.cn/n2253534/n2253535/c5925560/content.html" class="news-link am-text-truncate">郭声琨在中央政法委员会全体会议上强调</a>
+                                        <div class="news-txt news-desc">中华人民共和国公安部<span class="news-time">2017-11-23</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="news-active am-hide">
+                                        <div class="news-hd am-text-truncate">赵克志在公安现役部队学习交流座谈会上强调</div>
+                                        <div class="news-bd line-clamp news-txt">赵克志在公安现役部队学习交流座谈会上强调:全面深入贯彻军委主席负责制,确保公安现役部队绝对忠诚绝对纯洁绝对可靠</div>
+                                    </div>
+                                    <div class="news-static">
+                                        <a href="http://www.mps.gov.cn/n2253534/n2253535/c5925832/content.html" class="news-link am-text-truncate">赵克志在公安现役部队学习交流座谈会上强调</a>
+                                        <div class="news-txt news-desc">中华人民共和国公安部<span class="news-time">2017-11-23</span></div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="news-active am-hide">
+                                        <div class="news-hd am-text-truncate">全省公安机关集中收听收看十九大开幕式</div>
+                                        <div class="news-bd line-clamp news-txt">10月18日9时，举世瞩目的中国共产党第十九次全国代表大会在北京隆重开幕。全省各级公安机关认真收听收看了十九大开幕式盛况和习近平同志所作工作报告。</div>
+                                    </div>
+                                    <div class="news-static">
+                                        <a href="http://www.henanga.gov.cn/jwzx/rdgz/2017-10-23/8423.html" class="news-link am-text-truncate">全省公安机关集中收听收看十九大开幕式</a>
+                                        <div class="news-txt news-desc">河南省公安厅<span class="news-time">2017-10-23</span></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="news-active am-hide">
+                                        <div class="news-hd am-text-truncate">迎接十九大　忠诚保平</div>
+                                        <div class="news-bd line-clamp news-txt">为迎接党的十九大，全省各级公安机关通过战时思想政治工作，统一全警思想，凝聚全警共识；通过多种丰富多彩的警营文化活动，凝聚警心，激发斗志，以饱满的精神状态，全力投入十九大安保；通过多种形式的实战化训练，磨砺安保精兵，形成战时合力，坚持打赢十九大安全保卫仗。</div>
+                                    </div>
+                                    <div class="news-static">
+                                        <a href="http://www.henanga.gov.cn/jwzx/rdgz/2017-09-18/8348.html" class="news-link am-text-truncate">迎接十九大　忠诚保平安</a>
+                                        <div class="news-txt news-desc">河南省公安厅<span class="news-time">2017-09-18</span></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="pop-triangle"></div>
+                        </div>
+                        <div class="am-slider am-slider-default news-slider" id="news-slider">
+                            <ul class="am-slides">
+                                <li>
+                                    <a href="http://www.mps.gov.cn/n2253534/n2253535/c5925560/content.html">
+                                        <img src="http://www.mps.gov.cn/n2253534/n2253535/c5925560/part/5925580.jpg" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.mps.gov.cn/n2253534/n2253539/c5866758/content.html">
+                                        <img src="http://www.mps.gov.cn/n2253534/n2253539/c5866758/part/5866769.jpg" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.henanga.gov.cn/jwzx/rdgz/2017-10-23/8423.html">
+                                        <img src="http://www.henanga.gov.cn/d/file/jwzx/rdgz/2017-10-23/6d927bab1f4fec08f48bd7865c343b68.jpg" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.henanga.gov.cn/jwzx/rdgz/2017-09-18/8348.html">
+                                        <img src="http://www.henanga.gov.cn/d/file/jwzx/rdgz/2017-09-18/37d4e5078c2ef5868eb26efce4838ed5.jpg" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cnt-right" style="height:298px;background: #f5fbff;">
+                        <div class="cnt-tit">
+                            <i class="tit"></i>政策文件
+                            <i class="cnt-more" style="cursor:pointer" onclick="javascript:window.location.assign('./policyFiles.html')"></i>
+                        </div>
+                        <ul class="cnt-policies">
+                            <li>
+                                <i class="date" style="background:url(./assets/i/date_1.png) center center no-repeat;background-size:100% 100%">
                   <span class="month">10月</span>
                   <br>
                   <span class="day">23</span>
                 </i>
-                <a href="./policyFiles.html">李克强签署国务院令公布《国务院关于修改部分行》 | 全文
+                                <a href="./policyFiles.html">李克强签署国务院令公布《国务院关于修改部分行》 | 全文
                   <span class="time">(10-23)</span>
                 </a>
-              </li>
-              <li>
-                <i class="date" style="background:url(./assets/i/date_2.png) center center no-repeat;background-size:100% 100%">
+                            </li>
+                            <li>
+                                <i class="date" style="background:url(./assets/i/date_2.png) center center no-repeat;background-size:100% 100%">
                   <span class="month">10月</span>
                   <br>
                   <span class="day">22</span>
                 </i>
-                <a href="./policyFiles.html">国务院一周新政[10.14—10.20]
+                                <a href="./policyFiles.html">国务院一周新政[10.14—10.20]
                   <span class="time">(10-22)</span>
                 </a>
-              </li>
-              <li>
-                <i class="date" style="background:url(./assets/i/date_3.png) center center no-repeat;background-size:100% 100%">
+                            </li>
+                            <li>
+                                <i class="date" style="background:url(./assets/i/date_3.png) center center no-repeat;background-size:100% 100%">
                   <span class="month">10月</span>
                   <br>
                   <span class="day">22</span>
                 </i>
-                <a href="./policyFiles.html">国务院发文部署开展第三次全国土地调查解读 | 全文
+                                <a href="./policyFiles.html">国务院发文部署开展第三次全国土地调查解读 | 全文
                   <span class="time">(10-22)</span>
                 </a>
-              </li>
-              <li>
-                <i class="date" style="background:url(./assets/i/date_4.png) center center no-repeat;background-size:100% 100%">
+                            </li>
+                            <li>
+                                <i class="date" style="background:url(./assets/i/date_4.png) center center no-repeat;background-size:100% 100%">
                   <span class="month">10月</span>
                   <br>
                   <span class="day">13</span>
                 </i>
-                <a href="./policyFiles.html">国务院办公厅发文部署积极推进供应链创新与全文 | 解读
+                                <a href="./policyFiles.html">国务院办公厅发文部署积极推进供应链创新与全文 | 解读
                   <span class="time">(10-13)</span>
                 </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- 问题事项块 -->
-        <div class="cnt-wrap issues">
-          <div class="cnt-left" style="height:280px">
-            <div class="cnt-ques-wrap">
-              <div class="cnt-tit">
-                <i class="tit"></i>热点问题
-                <i class="cnt-more" style="cursor:pointer" onclick="javascript:window.location.assign('./QAIntelligence.html')"></i>
-              </div>
-              <ul class="cnt-ques">
-                <li>
-                  <a href="./QAIntelligence.html">•关于私有房屋出租的相关问题</a>
-                  <span class="time cnt-time">(10-16)</span>
-                </li>
-                <li>
-                  <a href="./QAIntelligence.html">•关于申请客车驾驶员的相关问题</a>
-                  <span class="time cnt-time">(10-16)</span>
-                </li>
-                <li>
-                  <a href="./QAIntelligence.html">•关于私有房屋出租的相关问题</a>
-                  <span class="time cnt-time">(10-16)</span>
-                </li>
-                <li>
-                  <a href="./QAIntelligence.html">•关于申请客车驾驶员的相关问题</a>
-                  <span class="time cnt-time">(10-16)</span>
-                </li>
-                <li>
-                  <a href="./QAIntelligence.html">•关于私有房屋出租的相关问题</a>
-                  <span class="time cnt-time">(10-16)</span>
-                </li>
-                <li>
-                  <a href="./QAIntelligence.html">•关于申请客车驾驶员的相关问题</a>
-                  <span class="time cnt-time">(10-16)</span>
-                </li>
-                <li>
-                  <a href="./QAIntelligence.html">•关于私有房屋出租的相关问题</a>
-                  <span class="time cnt-time">(10-16)</span>
-                </li>
-              </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 问题事项块 -->
+                <div class="cnt-wrap issues">
+                    <div class="cnt-left" style="height:280px">
+                        <div class="cnt-ques-wrap">
+                            <div class="cnt-tit">
+                                <i class="tit"></i>热点问题
+                                <i class="cnt-more" style="cursor:pointer" onclick="javascript:window.location.assign('./QAIntelligence.html')"></i>
+                            </div>
+                            <ul class="cnt-ques">
+                                <li>
+                                    <a href="./QAIntelligence.html">•关于私有房屋出租的相关问题</a>
+                                    <span class="time cnt-time">(10-16)</span>
+                                </li>
+                                <li>
+                                    <a href="./QAIntelligence.html">•关于申请客车驾驶员的相关问题</a>
+                                    <span class="time cnt-time">(10-16)</span>
+                                </li>
+                                <li>
+                                    <a href="./QAIntelligence.html">•关于私有房屋出租的相关问题</a>
+                                    <span class="time cnt-time">(10-16)</span>
+                                </li>
+                                <li>
+                                    <a href="./QAIntelligence.html">•关于申请客车驾驶员的相关问题</a>
+                                    <span class="time cnt-time">(10-16)</span>
+                                </li>
+                                <li>
+                                    <a href="./QAIntelligence.html">•关于私有房屋出租的相关问题</a>
+                                    <span class="time cnt-time">(10-16)</span>
+                                </li>
+                                <li>
+                                    <a href="./QAIntelligence.html">•关于申请客车驾驶员的相关问题</a>
+                                    <span class="time cnt-time">(10-16)</span>
+                                </li>
+                                <li>
+                                    <a href="./QAIntelligence.html">•关于私有房屋出租的相关问题</a>
+                                    <span class="time cnt-time">(10-16)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="cnt-module">
+                            <a class="cnt-module-qa" href="./QAIntelligence.html">
+                                <i class="qa"></i>
+                                <span>智能问答</span>
+                            </a>
+                            <a class="cnt-module-app" href="./appCenter.html">
+                                <i class="app"></i>
+                                <span>APP中心</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cnt-right " style="height:280px">
+                        <div class="cnt-tit">
+                            <i class="tit"></i>热点事项
+                            <i class="cnt-more" style="cursor:pointer" onclick="javascript:window.location.assign('./eventsCenter.html')"></i>
+                        </div>
+                        <ul class="cnt-ques">
+                            <li>
+                                <i class="index index-hot"></i>
+                                <a href="./eventsCenter.html">大中专院校录取学生迁入</a>
+                            </li>
+                            <li>
+                                <i class="index index-hot"></i>
+                                <a href="./eventsCenter.html">变更文化程度、婚姻状况</a>
+                            </li>
+                            <li>
+                                <i class="index index-hot"></i>
+                                <a href="./eventsCenter.html">转业、复员、退伍军人入户</a>
+                            </li>
+                            <li>
+                                <i class="index index-warm"></i>
+                                <a href="./eventsCenter.html">子女投靠父母</a>
+                            </li>
+                            <li>
+                                <i class="index"></i>
+                                <a href="./eventsCenter.html">务工人员入户</a>
+                            </li>
+                            <li>
+                                <i class="index"></i>
+                                <a href="./eventsCenter.html">回国（恢复）户口</a>
+                            </li>
+                            <li>
+                                <i class="index"></i>
+                                <a href="./eventsCenter.html">准迁证补发</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="cnt-module">
-              <a class="cnt-module-qa" href="./QAIntelligence.html">
-                <i class="qa"></i>
-                <span>智能问答</span>
-              </a>
-              <a class="cnt-module-app" href="./appCenter.html">
-                <i class="app"></i>
-                <span>APP中心</span>
-              </a>
-            </div>
-          </div>
-          <div class="cnt-right " style="height:280px">
-            <div class="cnt-tit">
-              <i class="tit"></i>热点事项
-              <i class="cnt-more" style="cursor:pointer" onclick="javascript:window.location.assign('./eventsCenter.html')"></i>
-            </div>
-            <ul class="cnt-ques">
-              <li>
-                <i class="index index-hot"></i>
-                <a href="./eventsCenter.html">大中专院校录取学生迁入</a>
-              </li>
-              <li>
-                <i class="index index-hot"></i>
-                <a href="./eventsCenter.html">变更文化程度、婚姻状况</a>
-              </li>
-              <li>
-                <i class="index index-hot"></i>
-                <a href="./eventsCenter.html">转业、复员、退伍军人入户</a>
-              </li>
-              <li>
-                <i class="index index-warm"></i>
-                <a href="./eventsCenter.html">子女投靠父母</a>
-              </li>
-              <li>
-                <i class="index"></i>
-                <a href="./eventsCenter.html">务工人员入户</a>
-              </li>
-              <li>
-                <i class="index"></i>
-                <a href="./eventsCenter.html">回国（恢复）户口</a>
-              </li>
-              <li>
-                <i class="index"></i>
-                <a href="./eventsCenter.html">准迁证补发</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
 
-      <!-- </div> -->
+            <!-- </div> -->
+        </div>
+        <div class="section">
+            <div class="flink">
+                <div class="bd">
+                    <div class="cnt-tit">
+                        <i class="tit"></i>友情链接
+                    </div>
+                    <ul class="flink-ul">
+                        <li>
+                            <a href="http://www.gov.cn/">中国政府网
+                                <!-- <img src="assets/i/img_gov@2x.png" alt="中国政府网"> -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="hhttp://zygjjg.12388.gov.cn">中华人民共和国公安部
+                                <!-- <img src="assets/i/img_12388@2x.png" alt="中华人民共和国公安部"> -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.spp.gov.cn/">中华人民共和国最高人民检察院</a>
+                        </li>
+                        <li>
+                            <a href="http://www.court.gov.cn/">中华人民共和国最高人民法院</a>
+                        </li>
+                        <li>
+                            <a href="http://www.chinapeace.gov.cn/">中国长安网
+                                <!-- <img src="assets/i/img_chinapeace@2x.png" alt="中国长安网"> -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://qzlx.people.com.cn/">群众路线网
+                                <!-- <img src="assets/i/img_people@2x.png" alt="群众路线网"> -->
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.mps.gov.cn/">中央国家机关举报网站
+                                <!-- <img src="assets/i/img_mps@2x.png" alt="中央国家机关举报网站"> -->
+                            </a>
+                        </li>
+                        <li><a href="http://www.71.cn/wzzx/">中央国家机关理论在线</a></li>
+                        <li><a href="http://www.119.gov.cn/xiaofang/">公安部消防</a></li>
+                        <li><a href="www.122.gov.cn">公安部互联网交通安全综合服务管理平台</a></li>
+                        <li>
+                            <a href="http://bsdt.henanga.gov.cn">河南省公安厅互联网+便民服务平台</a>
+                        </li>
+                        <li>
+                            <a href="http://www.tjgaj.gov.cn/site/default.aspx">天津公安民生服务平台</a>
+                        </li>
+                        <li>
+                            <a href="http://www.shanxiga.gov.cn/site/default.aspx?menuid=4001">山西公安便民服务在线</a>
+                        </li>
+                        <li>
+                            <a href="http://gafw.jl.gov.cn/MainPages/Home">吉林“互联网+公安”综合服务平台</a>
+                        </li>
+                        <li>
+                            <a href="http://www.sdmsjw.gov.cn/index.html">山东民生警务平台</a>
+                        </li>
+                        <li><a href="http://gxga.gxi.gov.cn/webjjmain/gxhlw_bszxzy.jsp">广西公安“互联网+”综合服务平台</a></li>
+                        <li><a href="http://wsbs.shxga.gov.cn/webjjcluster/cityindex.jsp">陕西“互联网+公安政务服务”平台</a></li>
+                        <li><a href="http://www.bjgaj.gov.cn/web/index.html">北京市公安局</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="copr">版权所有：中华人民共和国公安部</div>
+                <div class="info">
+                    <p>
+                        <span style="margin-right:16px">京公网安备&emsp;11010102000001号</span>
+                        <span>京ICP备05070602号</span>
+                    </p>
+                    <p>
+                        <span style="margin-right:20px">地址：北京市东长安街14号</span>
+                        <span>邮编：100741</span>
+                    </p>
+                </div>
+                <div class="info-img">
+                    <a href="http://bszs.conac.cn/sitename?method=show&id=223521F9C45E0E5EE053022819ACAB07">
+                        <img src="assets/i/img_dangzhengjiguan@2x.png" alt="党政机关" width="44" height="31" style="margin-right:16px">
+                    </a>
+                    <a href="http://121.43.68.40/exposure/jiucuo.html?site_code=bm09000013&url=http%3A%2F%2Fwww.mps.gov.cn%2F">
+                        <img src="assets/i/img_zhaocuo@2x.png" alt="政府网站找错" width="44" height="31">
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="section">
-      <div class="flink">
-        <div class="bd">
-          <div class="cnt-tit">
-            <i class="tit"></i>友情链接
-          </div>
-          <ul class="flink-ul">
-            <li>
-              <a href="http://www.gov.cn/">
-                <img src="assets/i/img_gov@2x.png" alt="中国政府网">
-              </a>
-            </li>
-            <li>
-              <a href="http://www.chinapeace.gov.cn/">
-                <img src="assets/i/img_chinapeace@2x.png" alt="中国长安网">
-              </a>
-            </li>
-            <li>
-              <a href="http://qzlx.people.com.cn/">
-                <img src="assets/i/img_people@2x.png" alt="群众路线网">
-              </a>
-            </li>
-            <!-- <li>
-              <a href="http://wzzx.71.cn/">
-                <img src="assets/i/img_lilunwuzhangzaixian@2x.png" alt="中央国家机关理论在线">
-              </a>
-            </li> -->
-            <li>
-              <a href="http://www.mps.gov.cn/">
-                <img src="assets/i/img_12388@2x.png" alt="中华人民共和国公安部">
-              </a>
-            </li>
-            <li>
-              <a href="http://zygjjg.12388.gov.cn">
-                <img src="assets/i/img_mps@2x.png" alt="中央国家机关举报网站">
-              </a>
-            </li>
-          </ul>
+    <div class="modal-wrap modal-login am-hide">
+        <div class="login-modal">
+            <i class="modal-close"></i>
+            <div class="login-tit">欢迎使用</div>
+            <div class="login-hd">公安部互联网+政务服务平台</div>
+            <form class="login-form" onsubmit="">
+                <div class="form-group">
+                    <i class="icon-user"></i>
+                    <input type="text" class="form-field" placeholder="请输入您的手机号">
+                </div>
+                <div class="form-group">
+                    <i class="icon-psd"></i>
+                    <input type="password" class="form-field" placeholder="请输入您的密码">
+                </div>
+                <input type="button" value="登录" class="btn-login" id="btnLogin">
+            </form>
+            <div class="oper-wrap">
+                <a href="">注册用户</a>
+                <a href="">忘记密码?</a>
+            </div>
         </div>
-      </div>
-      <div class="footer">
-        <div class="copr">版权所有：中华人民共和国公安部</div>
-        <div class="info">
-          <p>
-            <span style="margin-right:16px">京公网安备&emsp;11010102000001号</span>
-            <span>京ICP备05070602号</span>
-          </p>
-          <p>
-            <span style="margin-right:20px">地址：北京市东长安街14号</span>
-            <span>邮编：100741</span>
-          </p>
-        </div>
-        <div class="info-img">
-          <a href="http://bszs.conac.cn/sitename?method=show&id=223521F9C45E0E5EE053022819ACAB07">
-            <img src="assets/i/img_dangzhengjiguan@2x.png" alt="党政机关" width="44" height="31" style="margin-right:16px">
-          </a>
-          <a href="http://121.43.68.40/exposure/jiucuo.html?site_code=bm09000013&url=http%3A%2F%2Fwww.mps.gov.cn%2F">
-            <img src="assets/i/img_zhaocuo@2x.png" alt="政府网站找错" width="44" height="31">
-          </a>
-        </div>
-      </div>
     </div>
-  </div>
-  <div class="modal-wrap am-hide">
-    <div class="login-modal">
-      <i class="modal-close"></i>
-      <div class="login-tit">欢迎使用</div>
-      <div class="login-hd">公安部互联网+政务服务平台</div>
-      <form class="login-form" onsubmit="">
-        <div class="form-group">
-          <i class="icon-user"></i>
-          <input type="text" class="form-field" placeholder="请输入您的手机号">
+    <div class="modal-wrap modal-area am-hide">
+        <div class="area-modal">
+            <i class="modal-close"></i>
+            <div class="choice-wr">
+                <div class="login-tit" style="margin-bottom: 10px">请选择您的所在地市: <span class="pick-city" id="pickCity"></span></div>
+                <button class="btn-primary" id="btnConfirm">确定</button>
+            </div>
+            <div class="am-tabs" data-am-tabs id="areaSelect">
+                <ul class="am-tabs-nav am-nav am-nav-tabs">
+                    <li class="am-active"><a href="#tab1">热门城市</a></li>
+                    <li id="tab-province"><a href="#tab2">省份</a></li>
+                    <li id="tab-city" class="am-hide"><a href="#tab3">城市</a></li>
+                </ul>
+
+                <div class="am-tabs-bd am-tabs-bd-ofv">
+                    <div class="am-tab-panel am-active" id="tab1">
+                        <ul class="tab-hot-cities">
+                            <li>北京</li>
+                            <li>上海</li>
+                            <li>广州</li>
+                            <li>深圳</li>
+                            <li>青岛</li>
+                            <li>杭州</li>
+                            <li>南京</li>
+                            <li>合肥</li>
+                            <li>郑州</li>
+                            <li>西安</li>
+                            <li>武汉</li>
+                            <li>重庆</li>
+                            <li>成都</li>
+                            <li>长沙</li>
+                            <li>长春</li>
+                            <li>天津</li>
+                            <li>石家庄</li>
+                        </ul>
+                    </div>
+                    <div class="am-tab-panel" id="tab2">
+                        <ul class="tab-hot-cities" id="tabs-province">
+                            <li value="北京市" data-code="110000">北京市</li>
+                            <li value="天津市" data-code="120000">天津市</li>
+                            <li value="河北省" data-code="130000">河北省</li>
+                            <li value="山西省" data-code="140000">山西省</li>
+                            <li value="内蒙古自治区" data-code="150000">内蒙古自治区</li>
+                            <li value="辽宁省" data-code="210000">辽宁省</li>
+                            <li value="吉林省" data-code="220000">吉林省</li>
+                            <li value="黑龙江省" data-code="230000">黑龙江省</li>
+                            <li value="上海市" data-code="310000">上海市</li>
+                            <li value="江苏省" data-code="320000">江苏省</li>
+                            <li value="浙江省" data-code="330000">浙江省</li>
+                            <li value="安徽省" data-code="340000">安徽省</li>
+                            <li value="福建省" data-code="350000">福建省</li>
+                            <li value="江西省" data-code="360000">江西省</li>
+                            <li value="山东省" data-code="370000">山东省</li>
+                            <li value="河南省" data-code="410000">河南省</li>
+                            <li value="湖北省" data-code="420000">湖北省</li>
+                            <li value="湖南省" data-code="430000">湖南省</li>
+                            <li value="广东省" data-code="440000">广东省</li>
+                            <li value="广西壮族自治区" data-code="450000">广西壮族自治区</li>
+                            <li value="海南省" data-code="460000">海南省</li>
+                            <li value="重庆市" data-code="500000">重庆市</li>
+                            <li value="四川省" data-code="510000">四川省</li>
+                            <li value="贵州省" data-code="520000">贵州省</li>
+                            <li value="云南省" data-code="530000">云南省</li>
+                            <li value="西藏自治区" data-code="540000">西藏自治区</li>
+                            <li value="陕西省" data-code="610000">陕西省</li>
+                            <li value="甘肃省" data-code="620000">甘肃省</li>
+                            <li value="青海省" data-code="630000">青海省</li>
+                            <li value="宁夏回族自治区" data-code="640000">宁夏回族自治区</li>
+                            <li value="新疆维吾尔自治区" data-code="650000">新疆维吾尔自治区</li>
+                            <li value="台湾省" data-code="710000">台湾省</li>
+                            <li value="香港特别行政区" data-code="810000">香港特别行政区</li>
+                            <li value="澳门特别行政区" data-code="820000">澳门特别行政区</li>
+                        </ul>
+                    </div>
+                    <div class="am-tab-panel" id="tab3">
+                        <ul class="tab-hot-cities">
+                            <li>北京</li>
+                            <li>上海</li>
+                            <li>广州</li>
+                            <li>深圳</li>
+                            <li>青岛</li>
+                            <li>杭州</li>
+                            <li>南京</li>
+                            <li>合肥</li>
+                            <li>郑州</li>
+                            <li>西安</li>
+                            <li>武汉</li>
+                            <li>重庆</li>
+                            <li>成都</li>
+                            <li>长沙</li>
+                            <li>长春</li>
+                            <li>石家庄</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="area-wr">
+                <div data-toggle="distpicker" style="display: flex;align-items:center">
+                    <div class="select-wr">
+                        <select name="province" id="province" class="select-modal">
+                                                  </select>
+                    </div>
+                    <div class="select-wr">
+                        <select name="city" id="city" class="select-modal">
+                                                  </select>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <button class="btn-normal">确定</button> -->
         </div>
-        <div class="form-group">
-          <i class="icon-psd"></i>
-          <input type="password" class="form-field" placeholder="请输入您的密码">
-        </div>
-        <input type="button" value="登录" class="btn-login" id="btnLogin">
-      </form>
-      <div class="oper-wrap">
-        <a href="">注册用户</a>
-        <a href="">忘记密码?</a>
-      </div>
     </div>
-  </div>
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="./assets/js/scrolloverflow.min.js"></script>
-  <script src="./assets/js/jquery.fullpage.min.js"></script>
-  <!--[if lte IE 8 ]>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="./assets/js/scrolloverflow.min.js"></script>
+    <script src="./assets/js/jquery.fullpage.min.js"></script>
+    <!--[if lte IE 8 ]>
     <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
     <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
     <![endif]-->
 
-  <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.1&key=e31e1eb03a47963714cbad012ae86c9e&plugin=AMap.CitySearch"></script>
-  <!-- <script src="./assets/js/distpicker.data.min.js"></script>
-  <script src="./assets/js/distpicker.min.js"></script> -->
-  <script src="assets/js/amazeui.min.js"></script>
+    <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.1&key=e31e1eb03a47963714cbad012ae86c9e&plugin=AMap.CitySearch"></script>
+    <script src="./assets/js/distpicker.data.min.js"></script>
+    <script src="./assets/js/distpicker.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
 </body>
 <script>
-  $(document).ready(function () {
-    loadPage()
-    // var $distpicker = $('#distpicker');
-    // $distpicker.distpicker();
-    $(window).scroll(function(){
-      $(".nav").addClass("fixed_nav")
-	  })
-    /*---------- fullpage  ----------*/
-    function loadPage() {
-      var winSize = findDimensions()
-      console.log(winSize);
-      console.log($(window).width());
-      console.log($(window).height());
-      $("#searchPage").height(winSize.winHeight - 150)
-    }
-    window.onresize = loadPage;
-    //函数：获取尺寸
-    function findDimensions() {
-      var winWidth = 0;
-      var winHeight = 0;
-      //获取窗口宽度
-      if (window.innerWidth)
-        winWidth = window.innerWidth;
-      else if ((document.body) && (document.body.clientWidth))
-        winWidth = document.body.clientWidth;
-      //获取窗口高度
-      if (window.innerHeight)
-        winHeight = window.innerHeight;
-      else if ((document.body) && (document.body.clientHeight))
-        winHeight = document.body.clientHeight;
-      //通过深入Document内部对body进行检测，获取窗口大小
-      if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth) {
-        winHeight = document.documentElement.clientHeight;
-        winWidth = document.documentElement.clientWidth;
-      }
-      return {
-        winHeight: winHeight,
-        winWidth: winWidth
-      }
-    }
-    $('#fullpage-wr').fullpage({
-      navigation: true,
-      scrollOverflow: true,
-      verticalCentered: true,
-      css3: false,
-    });
-
-    /*=============================================
-    =            Amap Location            =
-    =============================================*/
-    //获取用户所在城市信息
-    function showCityInfo() {
-      //实例化城市查询类
-      var citysearch = new AMap.CitySearch();
-      console.log("进入");
-      var cityinfo, provinceinfo
-      //自动获取用户IP，返回当前城市
-      citysearch.getLocalCity(function (status, result) {
-        console.log(status, result);
-        if (status === 'complete' && result.info === 'OK') {
-          if (result && result.city && result.bounds) {
-            cityinfo = result.city;
-            provinceinfo = result.province;
-          }
-        } else {
-          cityinfo = "北京市";
-          provinceinfo = "北京城区";
+    $(document).ready(function() {
+        var cityPicked = "北京市"
+        $(".tab-hot-cities").on("click", "li", function() {
+            if ($(this).parents("ul").prop("id") === "tabs-province") {
+                $("#tab-city").removeClass("am-hide")
+                $("#areaSelect").tabs("open", 2)
+            }
+            cityPicked = $(this).text()
+            $("#pickCity").text(cityPicked)
+        })
+        $("#btnConfirm").on("click", function() {
+            $("#location").text(cityPicked)
+            $("#location").css("background-image", "none")
+            $(this).parents(".modal-wrap").addClass("am-hide")
+        })
+        loadPage()
+            // var $distpicker = $('#distpicker');
+            // $distpicker.distpicker();
+            /*---------- fullpage  ----------*/
+        function loadPage() {
+            var winSize = findDimensions()
+            console.log(winSize);
+            console.log($(window).width());
+            console.log($(window).height());
+            $("#searchPage").height(winSize.winHeight - 155)
         }
-        $("#location").text(cityinfo)
-      });
-      // return {
-      //   city: cityinfo,
-      //   province: provinceinfo
-      // }
-    }
-    /*=====  End of Amap Location  ======*/
+        window.onresize = loadPage;
+        //函数：获取尺寸
+        function findDimensions() {
+            var winWidth = 0;
+            var winHeight = 0;
+            //获取窗口宽度
+            if (window.innerWidth)
+                winWidth = window.innerWidth;
+            else if ((document.body) && (document.body.clientWidth))
+                winWidth = document.body.clientWidth;
+            //获取窗口高度
+            if (window.innerHeight)
+                winHeight = window.innerHeight;
+            else if ((document.body) && (document.body.clientHeight))
+                winHeight = document.body.clientHeight;
+            //通过深入Document内部对body进行检测，获取窗口大小
+            if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth) {
+                winHeight = document.documentElement.clientHeight;
+                winWidth = document.documentElement.clientWidth;
+            }
+            return {
+                winHeight: winHeight,
+                winWidth: winWidth
+            }
+        }
+        $('#fullpage-wr').fullpage({
+            navigation: true,
+            scrollOverflow: true,
+            verticalCentered: true,
+            css3: false,
+            afterLoad: function(archor, index) {
+                if (index === 1) {
+                    console.log(index)
+                    $(".nav-float").animate({
+                        height: "0"
+                    }, 500)
+                    $(".nav-index").animate({
+                        opacity: "1"
+                    }, 500)
+                } else {
+                    console.log(index)
+                    $(".nav-float").animate({
+                        height: "50px"
+                    }, 500)
+                    $(".nav-index").animate({
+                        opacity: "0"
+                    }, 500)
+                }
+            }
+        });
 
-    var modalLogin = $(".modal-wrap")
-    var pop = $(".pop-wrap")
-    var indexNavLis = $("#indexNav").children("li")
-    var popTriangle = $(".pop-triangle")
-    var newIndex = 0
-    var topArr = [78, 124, 170, 216]
-    var newsLis = $(".news-list").children("li")
-    var newsActive = $(".news-active")
-    var newsStatic = $(".news-static")
-    var searchKey = $(".search-key-container")
+        /*=============================================
+        =            Amap Location            =
+        =============================================*/
+        //获取用户所在城市信息
+        function showCityInfo() {
+            //实例化城市查询类
+            var citysearch = new AMap.CitySearch();
+            console.log("进入");
+            var cityinfo, provinceinfo
+                //自动获取用户IP，返回当前城市
+            citysearch.getLocalCity(function(status, result) {
+                console.log(status, result);
+                if (status === 'complete' && result.info === 'OK') {
+                    if (result && result.city && result.bounds) {
+                        cityinfo = result.city;
+                        provinceinfo = result.province;
+                    }
+                } else {
+                    cityinfo = "北京市";
+                    provinceinfo = "北京城区";
+                }
+                cityPicked = cityinfo
+                $("#location").text(cityPicked)
+                $("#pickCity").text(cityPicked)
+            });
+            // return {
+            //   city: cityinfo,
+            //   province: provinceinfo
+            // }
+        }
+        /*=====  End of Amap Location  ======*/
 
-    $(".modal-close").on("tap click", function () {
-      modalLogin.addClass("am-hide")
-    })
-    $("input#search_cnt").focus(function () {
-      pop.removeClass("am-hide")
-      searchKey.animate({
-        opacity: 0
-      }, 500)
-    })
-    $("input#search_cnt").blur(function () {
-      pop.addClass("am-hide")
-      searchKey.animate({
-        opacity: 1
-      }, 500)
-    })
-    $("#indexNav").on("click", "li", function () {
-      indexNavLis.removeClass("nav-li__active")
-      $(this).addClass("nav-li__active")
-    })
-    $("#btnLogin").on("click", function () {
-      window.location.assign("me.html")
-    })
+        var modalLogin = $(".modal-login")
+        var modalArea = $(".modal-area")
+        var pop = $(".pop-wrap")
+        var indexNavLis = $("#indexNav").children("li")
+        var popTriangle = $(".pop-triangle")
+        var newIndex = 0
+        var topArr = [50, 110, 165, 230]
+        var newsLis = $(".news-list").children("li")
+        var newsActive = $(".news-active")
+        var newsStatic = $(".news-static")
+        var searchKey = $(".search-key-container")
 
-    /*=============================================
-    =            news slides            =
-    =============================================*/
+        $(".modal-close").on("tap click", function() {
+            // modalLogin.addClass("am-hide")
+            $(this).parents(".modal-wrap").addClass("am-hide")
+        })
+        $("input#search_cnt").focus(function() {
+            pop.removeClass("am-hide")
+            searchKey.animate({
+                opacity: 0
+            }, 500)
+        })
+        $("input#search_cnt").blur(function() {
+            pop.addClass("am-hide")
+            searchKey.animate({
+                opacity: 1
+            }, 500)
+        })
+        $("#indexNav").on("click", "li", function() {
+            indexNavLis.removeClass("nav-li__active")
+            $(this).addClass("nav-li__active")
+        })
+        $("#btnLogin").on("click", function() {
+            window.location.assign("me.html")
+        })
+        setTimeout(slides, 1500)
+            /*=============================================
+            =            news slides            =
+            =============================================*/
 
-    function slides() {
-      newIndex++
-      newIndex = newIndex > 3 ? 0 : newIndex
-      newsStatic.removeClass("am-hide")
-      newsActive.addClass("am-hide")
-      newsLis.eq(newIndex).find(".news-static").addClass("am-hide")
-      newsLis.eq(newIndex).find(".news-active").removeClass("am-hide")
-      popTriangle.animate({
-        "top": topArr[newIndex] + "px"
-      }, 500)
-      $('#news-slider').flexslider('next');
-      setTimeout(slides, 1500)
-    }
-    setTimeout(slides, 1500);
-    // 激活轮播图
-    $("#news-slider").flexslider({
-      animation: "slide", // String: ["fade"|"slide"]，动画效果
-      easing: "swing", // String: 滚动动画计时函数
-      direction: "horizontal", // String: 滚动方向 ["horizontal"|"vertical"]
-      reverse: false, // Boolean: 翻转 slide 运动方向
-      animationLoop: true, // Boolean: 是否循环播放
-      smoothHeight: false, // Boolean: 当 slide 图片比例不一样时
-      // "true": 父类自动适应图片高度
-      // "false": 不自动适应，父类高度为图片的最高高度，默认为false
+        function slides() {
+            newIndex++
+            newIndex = newIndex > 3 ? 0 : newIndex
+            newsStatic.removeClass("am-hide")
+            newsActive.addClass("am-hide")
+            newsLis.eq(newIndex).find(".news-static").addClass("am-hide")
+            newsLis.eq(newIndex).find(".news-active").removeClass("am-hide")
+            popTriangle.animate({
+                "top": topArr[newIndex] + "px"
+            }, 500)
+            $('#news-slider').flexslider('next');
+            setTimeout(slides, 1500)
+        }
+        // 激活轮播图
+        $("#news-slider").flexslider({
+            animation: "slide", // String: ["fade"|"slide"]，动画效果
+            easing: "swing", // String: 滚动动画计时函数
+            direction: "horizontal", // String: 滚动方向 ["horizontal"|"vertical"]
+            reverse: false, // Boolean: 翻转 slide 运动方向
+            animationLoop: true, // Boolean: 是否循环播放
+            smoothHeight: false, // Boolean: 当 slide 图片比例不一样时
+            // "true": 父类自动适应图片高度
+            // "false": 不自动适应，父类高度为图片的最高高度，默认为false
 
-      slideshow: false, // Boolean: 是否自动播放
-      slideshowSpeed: 1500, // Integer: ms 滚动间隔时间
+            slideshow: false, // Boolean: 是否自动播放
+            slideshowSpeed: 1500, // Integer: ms 滚动间隔时间
 
-      // Usability features
-      pauseOnAction: false, // Boolean: 用户操作时停止自动播放
-      pauseOnHover: false, // Boolean: 悬停时暂停自动播放
-      useCSS: true, // Boolean: 是否使用 css3 transition
-      touch: true, // Boolean: 允许触摸屏触摸滑动滑块
-      video: false, // Boolean: 使用视频的 slider，防止 CSS3 3D 变换毛刺
-      directionNav: false,
-    })
+            // Usability features
+            pauseOnAction: false, // Boolean: 用户操作时停止自动播放
+            pauseOnHover: false, // Boolean: 悬停时暂停自动播放
+            useCSS: true, // Boolean: 是否使用 css3 transition
+            touch: true, // Boolean: 允许触摸屏触摸滑动滑块
+            video: false, // Boolean: 使用视频的 slider，防止 CSS3 3D 变换毛刺
+            directionNav: false,
+        })
 
-    /*=====  End of news slides  ======*/
-    showCityInfo()
-    /* 登录 */
-    function login() {
-      modalLogin.removeClass("am-hide")
-    }
-    window.login = login
-  });
+        /*=====  End of news slides  ======*/
+        showCityInfo()
+
+        function getAreas() {
+            modalArea.removeClass("am-hide")
+        }
+        /* 登录 */
+        function login() {
+            modalLogin.removeClass("am-hide")
+        }
+        window.login = login
+        window.getAreas = getAreas
+    });
 </script>
 <!-- <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.1&key=e31e1eb03a47963714cbad012ae86c9e&plugin=AMap.DistrictSearch"></script>
 <script src="./assets/js/selectarea.js"></script> -->

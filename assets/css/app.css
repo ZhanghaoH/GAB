@@ -49,7 +49,6 @@ ol {
     font-size: 12px;
 }
 
-
 i {
     display: inline-block;
 }
@@ -168,7 +167,7 @@ button:hover {
 /* 导航 */
 
 .nav-wr {
-    background: rgba(0, 0, 0,.47);
+    background: rgba(0, 0, 0, .47);
     border-bottom: 2px solid rgb(244, 226, 113);
 }
 
@@ -195,14 +194,16 @@ button:hover {
 }
 
 .nav-other li a:hover {
-    color: #f4e271;   
+    color: #f4e271;
 }
+
 li.nav-other-li__active {
     background: #f4e271;
     /* font-size: 0; */
 }
+
 li.nav-other-li__active a:hover,
-li.nav-other-li__active a{
+li.nav-other-li__active a {
     color: #3a3e25;
     /* font-family: PingFangSC-Semibold; */
 }
@@ -256,12 +257,12 @@ li.nav-other-li__active a{
 .am-nav-tabs {
     border-bottom: 1px solid #bed8ef;
 }
+
 .bd-wr {
     height: 100%;
     background: url(../i/bg2.png) center center no-repeat;
     background-size: 100% 100%;
 }
-
 
 .bd-cnt {
     width: 1200px;
@@ -327,4 +328,17 @@ li.nav-other-li__active a{
     padding-bottom: 25px;
     display: flex;
     flex-flow: column nowrap;
+}
+
+
+/* clientservice */
+
+.client-service {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 56px;
+    height: 56px;
+    background: url(../i/img_kefu@2x.png) center center no-repeat;
+    background-size: 100%;
 }

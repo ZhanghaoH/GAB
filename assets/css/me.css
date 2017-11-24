@@ -1,5 +1,5 @@
 .me {
-    background: url(../i/bg2.png) center  center no-repeat;
+    background: url(../i/bg2.png) center center no-repeat;
     background-size: 100% 100%;
     height: 100%;
 }
@@ -51,61 +51,75 @@ i.icon-thumb {
     background: url("../i/img_touxiang@2x.png") center center no-repeat;
     background-size: contain;
 }
+
 .identify-class {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
 }
+
 .identify-class i {
     width: 25px;
     height: 25px;
     margin-left: 15px;
     cursor: pointer;
 }
+
 .identify-class i:first-child {
     margin-left: 15px;
 }
+
 i.identify-icon-idcard {
     background: url("../i/idcard.png") center center no-repeat;
     background-size: 100%
 }
+
 i.identify-icon-idcard.identify__done {
     background: url("../i/idcard_done.png") center center no-repeat;
     background-size: 100%
 }
+
 i.identify-icon-alipay {
     background: url("../i/alipay.png") center center no-repeat;
     background-size: 100%
 }
+
 i.identify-icon-alipay.identify__done {
     background: url("../i/alipay_done.png") center center no-repeat;
     background-size: 100%
 }
+
 i.identify-icon-wechat {
     background: url("../i/wechat.png") center center no-repeat;
     background-size: 100%
 }
+
 i.identify-icon-wechat.identify__done {
     background: url("../i/wechat_done.png") center center no-repeat;
     background-size: 100%
 }
+
 i.identify-icon-driver {
     background: url("../i/driver.png") center center no-repeat;
     background-size: 100%
 }
+
 i.identify-icon-driver.identify__done {
     background: url("../i/driver_done.png") center center no-repeat;
     background-size: 100%
 }
+
 i.identify-icon-unionpay {
     background: url("../i/unionpay.png") center center no-repeat;
     background-size: 100%
 }
+
 i.identify-icon-unionpay.identify__done {
     background: url("../i/unionpay_done.png") center center no-repeat;
     background-size: 100%
 }
+
 .cntl-thumb-uname {
     margin-top: 15px;
     /* font-family:PingFangSC-Regular; */
@@ -369,12 +383,14 @@ i.identify-icon-unionpay.identify__done {
     width: 295px;
 }
 
-.msg-action, .tab-comment-status {
+.msg-action,
+.tab-comment-status {
     width: 65px;
     text-align: center;
 }
 
-.msg-time, .tab-news-time {
+.msg-time,
+.tab-news-time {
     width: 85px;
     text-align: center;
 }
@@ -465,7 +481,8 @@ li .tab-comment-csr {
     justify-content: space-between;
 }
 
-li .tab-comment-status, .msg-action {
+li .tab-comment-status,
+.msg-action {
     background: #327fdf;
     border-radius: 2px;
     width: 65px;
@@ -570,6 +587,7 @@ li .comment-status__disabled {
     letter-spacing: 0.9px;
     border: none;
 }
+
 .groups-wr {
     display: flex;
     align-items: center;
@@ -604,27 +622,34 @@ i.icon-select {
     top: -1px;
     right: 0;
 }
+
 .identify-status {
     flex: auto;
     line-height: 45px;
 }
+
 .identify__success {
     color: #18b24b;
 }
+
 .identify__ing {
     color: #327fdf;
 }
+
 .btn__disabled {
     background: #b0b0b0;
 }
+
 .modal-msg {
     /* width: 450px; */
     padding-bottom: 0;
 }
+
 .msg-wr {
     width: 100%;
     margin-top: 25px;
 }
+
 .msg-cnt {
     height: 360px;
     padding: 0 15px;
@@ -648,19 +673,38 @@ i.icon-select {
 .msg-cnt li:nth-child(5n) {
     border-bottom: none;
 }
+
 .msg-tit {
     width: 200px;
 }
+
 .msg-status {
     width: 30px;
 }
+
 i.msg-status {
     width: 20px;
     height: 20px;
     background: url("../i/icon_xinxi_blue@2x.png") center center no-repeat;
     background-size: contain;
 }
+
 i.msg-status.msg-status__done {
     background: url("../i/icon_xinxi@2x.png") center center no-repeat;
     background-size: contain;
+}
+
+
+/* clientservice */
+
+.client-service {
+    display: block;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 56px;
+    height: 56px;
+    background: url(../i/img_kefu@2x.png) center center no-repeat;
+    background-size: 100%;
+    z-index: 999;
 }
