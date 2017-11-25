@@ -6,7 +6,7 @@
 }
 
 .bd-cnt-r {
-    width: auto;
+    flex: auto
 }
 
 .bd-cnt-tit {
@@ -158,7 +158,7 @@ i.icon-select {
 .app-list {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     list-style: none;
     padding-top: 15px;
 }
@@ -174,7 +174,7 @@ i.icon-select {
     flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    margin-right: 25px;
+    margin-right: 35px;
 }
 
 .app-list li:last-child {
@@ -207,9 +207,11 @@ i.app-icon {
     background-size: 100%;
 }
 
-.app-icon-henanjingmintong {
-    background: url("../i/img_henanjingmintong.png") center center no-repeat;
+.app-icon-beijingjiaojing {
+    background: url("../i/img_beijingjiaojing.png") center center no-repeat;
     background-size: 100%;
+    border-radius: 4px;
+    border: 1px solid #d2d2d2;
 }
 
 .app-icon-pazy {
@@ -278,6 +280,39 @@ i.app-icon {
     background-size: 100%;
     /* border: 1px solid #d2d2d2; */
     /* border-radius: 4px; */
+}
+
+.wechat-icon-bjjj {
+    background: url("../i/logo_bjjj.jpeg") center center no-repeat;
+    background-size: 100%;
+}
+
+.wechat-icon-sdwj {
+    background: url("../i/logo_sdwj.jpeg") center center no-repeat;
+    background-size: 100%;
+}
+
+
+/* 首都网警 北京消防 北京反恐 北京公安青年 北京监管 */
+
+.wechat-icon-bjfk {
+    background: url("../i/logo_bjfk.jpeg") center center no-repeat;
+    background-size: 100%;
+}
+
+.wechat-icon-bjxf {
+    background: url("../i/logo_bjxf.jpeg") center center no-repeat;
+    background-size: 100%;
+}
+
+.wechat-icon-bjgaqn {
+    background: url("../i/logo_bjgaqn.jpeg") center center no-repeat;
+    background-size: 100%;
+}
+
+.wechat-icon-bjjg {
+    background: url("../i/logo_bjjg.jpeg") center center no-repeat;
+    background-size: 100%;
 }
 
 .app-name {

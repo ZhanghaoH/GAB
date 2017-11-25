@@ -58,6 +58,25 @@
                 </li>
             </ul>
         </nav>
+        <nav class="nav-fixed-bottom nav-float">
+            <!-- <ul class="nav-list bd" id="indexNav">
+                <li class="nav-li__active">
+                    <a href="###">首页</a>
+                </li>
+                <li>
+                    <a href="eventsCenter.html">事项中心</a>
+                </li>
+                <li>
+                    <a href="policyFiles.html">政策文件</a>
+                </li>
+                <li>
+                    <a href="appCenter.html">APP中心</a>
+                </li>
+                <li>
+                    <a href="javascript:login();">个人中心</a>
+                </li>
+            </ul> -->
+        </nav>
         <div class="section" id="firstPage">
             <!-- logo -->
             <div class="container logo-wrap">
@@ -291,6 +310,9 @@
                             </a>
                         </li>
                     </ul>
+
+                    <div class="nav-index-bottom"></div>
+
                 </div>
             </div>
         </div>
@@ -815,16 +837,22 @@
                     $(".nav-index").animate({
                         opacity: "1"
                     }, 500)
-                } else {
+                } else if (index === 2) {
                     console.log(index)
                     $(".nav-float").animate({
                         height: "50px",
                         opacity: "1"
                     }, 500)
                     $(".nav-index").animate({
+                        opacity: "0",
+                    }, 500)
+                } else {
+                    $(".nav-fixed-bottom").animate({
+                        height: "0",
                         opacity: "0"
                     }, 500)
                 }
+
             }
         });
 

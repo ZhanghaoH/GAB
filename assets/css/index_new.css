@@ -129,6 +129,30 @@
     opacity: 0;
 }
 
+.nav-fixed-bottom {
+    border-top: 2px solid #f4e271;
+    height: 50px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, .85);
+}
+
+.nav-index-bottom {
+    border-top: 2px solid #f4e271;
+    height: 50px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, .85);
+}
+
 .nav-list {
     display: flex;
     flex-flow: row nowrap;
@@ -339,7 +363,8 @@
     margin: 0 auto;
     list-style: none;
     position: absolute;
-    bottom: 0;
+    /* bottom: 0; */
+    bottom: 50px;
     width: 1000px;
 }
 
@@ -1086,8 +1111,8 @@ i.icon-psd {
 .client-service {
     display: block;
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 66px;
+    right: 40px;
     width: 56px;
     height: 56px;
     background: url(../i/img_kefu@2x.png) center center no-repeat;

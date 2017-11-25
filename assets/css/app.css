@@ -336,8 +336,8 @@ li.nav-other-li__active a {
 
 .client-service {
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 66px;
+    right: 40px;
     width: 56px;
     height: 56px;
     background: url(../i/img_kefu@2x.png) center center no-repeat;
