@@ -135,7 +135,7 @@
                                 <li><a href="javascript:;">购房入户</a></li>
                             </ul>
                         </div>
-                        <div class="search-more">
+                        <div class="search-more am-hide">
                             <i class="search-close"></i>
                             <div class="search-tit">输入检索条件：</div>
                             <div class="search-form-group">
@@ -897,6 +897,7 @@
         })
         $("#gjSearch, .search-close").on("click", closeSearch)
         $("#togjSearch").on("click", function() {
+            $(".search-more").removeClass("am-hide")
             $(".search-more").animate({
                 opacity: 1,
                 top: "-115px"
@@ -907,6 +908,9 @@
             $(".search-more").animate({
                 opacity: 0,
                 top: "50px"
+            }, function() {
+                $(".search-more").addClass("am-hide")
+
             })
         }
         $("#indexNav").on("click", "li", function() {
