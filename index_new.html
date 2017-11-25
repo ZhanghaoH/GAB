@@ -28,11 +28,12 @@
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/index_new.css">
     <link rel="stylesheet" href="assets/css/jquery.fullpage.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
 
 </head>
 
 <body>
-    <a href="./QAIntelligence.html" class="client-service"></a>
+    <a href="./QAIntelligence.html" class="client-service animated tada infinite"></a>
     <div id="fullpage-wr">
 
         <nav class="nav-float nav-fixed">
@@ -65,7 +66,7 @@
                     <img class="logo-img" src="./assets/i/img_logo.png" />
                     <div class="logo-txt-r">
                         <span class="txt-cn">互联网+政务服务平台</span>
-                        <span class="txt-en">Internet Plus GOV Affairs Platform</span>
+                        <span class="txt-en">The&nbsp;&nbsp;Ministry&nbsp;&nbsp;of&nbsp;&nbsp;Public&nbsp;&nbsp;Security</span>
                     </div>
                 </div>
             </div>
@@ -106,41 +107,76 @@
                             <input type="text" class="input-key" id="search_cnt" placeholder="快速搜索你想要的服务">
                             <!-- </div> -->
                             <span class="btn-container">
-                <input type="button" value="搜索" class="am-btn btn-search">
+                <input type="button" value="搜索" class=" btn-search">
               </span>
                             <span class="btn-container btn-search__high">
-                <input type="button" value="高级搜索" class="am-btn btn-search" style="background:transparent;box-shadow:none">
+                <input type="button" value="高级搜索" class=" btn-search" style="background:transparent;box-shadow:none" id="togjSearch">
               </span>
                         </form>
                         <div class="search-key-container">
                             <div class="search-key-label">热门搜索:</div>
                             <ul class="search-key">
                                 <li>
-                                    <a href="">出入境业务预约</a>
+                                    <a href="javascript:;">出入境业务预约</a>
                                 </li>
                                 <li>
-                                    <a href="">河南省警民通</a>
+                                    <a href="javascript:;">河南省警民通</a>
                                 </li>
                                 <li>
-                                    <a href="">机动车车检</a>
+                                    <a href="javascript:;">机动车车检</a>
                                 </li>
                                 <li>
-                                    <a href="">广州微警</a>
+                                    <a href="javascript:;">广州微警</a>
                                 </li>
                                 <li>
-                                    <a href="">公民出国办证须知</a>
+                                    <a href="javascript:;">公民出国办证须知</a>
                                 </li>
-                                <li>
-                                    <a href="">旅馆业办证许可
-                  </a>
-                                </li>
-                                <li>
-                                    <a href="">购房入户
-                  </a>
-                                </li>
+                                <li><a href="javascript:;">旅馆业办证许可</a></li>
+                                <li><a href="javascript:;">购房入户</a></li>
                             </ul>
                         </div>
-                        <div class="pop-wrap am-hide">
+                        <div class="search-more">
+                            <i class="search-close"></i>
+                            <div class="search-tit">输入检索条件：</div>
+                            <div class="search-form-group">
+                                <div class="search-form-label">搜索关键字：</div>
+                                <input type="text" class="search-form-cnt" placeholder="请输入搜索关键字">
+                            </div>
+                            <div class="search-form-group">
+                                <div class="search-form-label">搜索种类：</div>
+                                <div class="search-form-cnt search-checkbox">
+                                    <i class="choice-status"></i>
+                                    <span>服务事项</span>
+                                </div>
+                                <div class="search-form-cnt  search-checkbox">
+                                    <i class="choice-status"></i>
+                                    <span>政策文件</span>
+                                </div>
+                                <div class="search-form-cnt  search-checkbox">
+                                    <i class="choice-status"></i>
+                                    <span>APP中心</span>
+                                </div>
+                            </div>
+                            <div class="search-form-group">
+                                <div class="search-form-label">服务/文件上线时间：</div>
+                                <div class="search-form-cnt search-radio">
+                                    <i class="choice-status"></i>
+                                    <span>最近一周</span>
+                                </div>
+                                <div class="search-form-cnt  search-radio">
+                                    <i class="choice-status"></i>
+                                    <span>最近一月</span>
+                                </div>
+                                <div class="search-form-cnt  search-radio">
+                                    <i class="choice-status"></i>
+                                    <span>最近半年</span>
+                                </div>
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn-normal" id="gjSearch">高级搜索</button>
+                            </div>
+                        </div>
+                        <div class="pop-search am-hide">
                             <div class="am-tabs" data-am-tabs>
                                 <ul class="am-tabs-nav am-nav am-nav-tabs">
                                     <li class="am-active">
@@ -315,22 +351,22 @@
                             <ul class="am-slides">
                                 <li>
                                     <a href="http://www.mps.gov.cn/n2253534/n2253535/c5925560/content.html">
-                                        <img src="http://www.mps.gov.cn/n2253534/n2253535/c5925560/part/5925580.jpg" />
+                                        <img src="./assets/i/news_1.jpg" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="http://www.mps.gov.cn/n2253534/n2253539/c5866758/content.html">
-                                        <img src="http://www.mps.gov.cn/n2253534/n2253539/c5866758/part/5866769.jpg" />
+                                        <img src="./assets/i/news_2.jpg" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="http://www.henanga.gov.cn/jwzx/rdgz/2017-10-23/8423.html">
-                                        <img src="http://www.henanga.gov.cn/d/file/jwzx/rdgz/2017-10-23/6d927bab1f4fec08f48bd7865c343b68.jpg" />
+                                        <img src="./assets/i/news_3.jpg" />
                                     </a>
                                 </li>
                                 <li>
                                     <a href="http://www.henanga.gov.cn/jwzx/rdgz/2017-09-18/8348.html">
-                                        <img src="http://www.henanga.gov.cn/d/file/jwzx/rdgz/2017-09-18/37d4e5078c2ef5868eb26efce4838ed5.jpg" />
+                                        <img src="./assets/i/news_4.jpg" />
                                     </a>
                                 </li>
                             </ul>
@@ -489,7 +525,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="hhttp://zygjjg.12388.gov.cn">中华人民共和国公安部
+                            <a href="http://www.mps.gov.cn/">中华人民共和国公安部
                                 <!-- <img src="assets/i/img_12388@2x.png" alt="中华人民共和国公安部"> -->
                             </a>
                         </li>
@@ -510,7 +546,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="http://www.mps.gov.cn/">中央国家机关举报网站
+                            <a href="http://zygjjg.12388.gov.cn">中央国家机关举报网站
                                 <!-- <img src="assets/i/img_mps@2x.png" alt="中央国家机关举报网站"> -->
                             </a>
                         </li>
@@ -561,6 +597,8 @@
             </div>
         </div>
     </div>
+
+    <!-- 登录弹窗 -->
     <div class="modal-wrap modal-login am-hide">
         <div class="login-modal">
             <i class="modal-close"></i>
@@ -583,6 +621,7 @@
             </div>
         </div>
     </div>
+    <!-- 选址弹窗 -->
     <div class="modal-wrap modal-area am-hide">
         <div class="area-modal">
             <i class="modal-close"></i>
@@ -600,23 +639,23 @@
                 <div class="am-tabs-bd am-tabs-bd-ofv">
                     <div class="am-tab-panel am-active" id="tab1">
                         <ul class="tab-hot-cities">
-                            <li>北京</li>
-                            <li>上海</li>
-                            <li>广州</li>
-                            <li>深圳</li>
-                            <li>青岛</li>
-                            <li>杭州</li>
-                            <li>南京</li>
-                            <li>合肥</li>
-                            <li>郑州</li>
-                            <li>西安</li>
-                            <li>武汉</li>
-                            <li>重庆</li>
-                            <li>成都</li>
-                            <li>长沙</li>
-                            <li>长春</li>
-                            <li>天津</li>
-                            <li>石家庄</li>
+                            <li>北京市</li>
+                            <li>上海市</li>
+                            <li>广州市</li>
+                            <li>深圳市</li>
+                            <li>青岛市</li>
+                            <li>杭州市</li>
+                            <li>南京市</li>
+                            <li>合肥市</li>
+                            <li>郑州市</li>
+                            <li>西安市</li>
+                            <li>武汉市</li>
+                            <li>重庆市</li>
+                            <li>成都市</li>
+                            <li>长沙市</li>
+                            <li>长春市</li>
+                            <li>天津市</li>
+                            <li>石家庄市</li>
                         </ul>
                     </div>
                     <div class="am-tab-panel" id="tab2">
@@ -658,23 +697,8 @@
                         </ul>
                     </div>
                     <div class="am-tab-panel" id="tab3">
-                        <ul class="tab-hot-cities">
-                            <li>北京</li>
-                            <li>上海</li>
-                            <li>广州</li>
-                            <li>深圳</li>
-                            <li>青岛</li>
-                            <li>杭州</li>
-                            <li>南京</li>
-                            <li>合肥</li>
-                            <li>郑州</li>
-                            <li>西安</li>
-                            <li>武汉</li>
-                            <li>重庆</li>
-                            <li>成都</li>
-                            <li>长沙</li>
-                            <li>长春</li>
-                            <li>石家庄</li>
+                        <ul class="tab-hot-cities" id="tabs-cities">
+
                         </ul>
                     </div>
                 </div>
@@ -706,17 +730,33 @@
     <script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.1&key=e31e1eb03a47963714cbad012ae86c9e&plugin=AMap.CitySearch"></script>
     <script src="./assets/js/distpicker.data.min.js"></script>
     <script src="./assets/js/distpicker.min.js"></script>
-    <script src="assets/js/amazeui.min.js"></script>
+    <script src="./assets/js/amazeui.min.js"></script>
+    <script src="./assets/js/data.js"></script>
 </body>
 <script>
     $(document).ready(function() {
         var cityPicked = "北京市"
+        var areas = cities.provinces
         $(".tab-hot-cities").on("click", "li", function() {
+            cityPicked = $(this).text()
+            $(".tab-hot-cities").children("li").removeClass("cities__checked")
+            $(this).addClass("cities__checked")
             if ($(this).parents("ul").prop("id") === "tabs-province") {
+                var curCities
+                console.log(cityPicked)
+                areas.forEach(element => {
+                    if (element.provinceName === cityPicked) {
+                        var citiesHtml = ""
+                        curCities = element.citys
+                        curCities.map(function(el, i) {
+                            citiesHtml += `<li>${el.citysName}</li>`
+                        })
+                        $("#tabs-cities").html(citiesHtml)
+                    }
+                })
                 $("#tab-city").removeClass("am-hide")
                 $("#areaSelect").tabs("open", 2)
             }
-            cityPicked = $(this).text()
             $("#pickCity").text(cityPicked)
         })
         $("#btnConfirm").on("click", function() {
@@ -769,7 +809,8 @@
                 if (index === 1) {
                     console.log(index)
                     $(".nav-float").animate({
-                        height: "0"
+                        height: "0",
+                        opacity: "0"
                     }, 500)
                     $(".nav-index").animate({
                         opacity: "1"
@@ -777,7 +818,8 @@
                 } else {
                     console.log(index)
                     $(".nav-float").animate({
-                        height: "50px"
+                        height: "50px",
+                        opacity: "1"
                     }, 500)
                     $(".nav-index").animate({
                         opacity: "0"
@@ -820,7 +862,7 @@
 
         var modalLogin = $(".modal-login")
         var modalArea = $(".modal-area")
-        var pop = $(".pop-wrap")
+        var pop = $(".pop-search")
         var indexNavLis = $("#indexNav").children("li")
         var popTriangle = $(".pop-triangle")
         var newIndex = 0
@@ -846,6 +888,27 @@
                 opacity: 1
             }, 500)
         })
+        $(".search-checkbox").on("click", function() {
+            $(this).find("i").toggleClass("choice__done")
+        })
+        $(".search-radio").on("click", function() {
+            $(".search-radio").find("i").removeClass("choice__done")
+            $(this).find("i").addClass("choice__done")
+        })
+        $("#gjSearch, .search-close").on("click", closeSearch)
+        $("#togjSearch").on("click", function() {
+            $(".search-more").animate({
+                opacity: 1,
+                top: "-115px"
+            })
+        })
+
+        function closeSearch() {
+            $(".search-more").animate({
+                opacity: 0,
+                top: "50px"
+            })
+        }
         $("#indexNav").on("click", "li", function() {
             indexNavLis.removeClass("nav-li__active")
             $(this).addClass("nav-li__active")

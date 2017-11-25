@@ -98,7 +98,8 @@ i {
 
 /* 模态窗 */
 
-i.modal-close {
+i.modal-close,
+i.search-close {
     width: 20px;
     height: 20px;
     background: url(../i/close.png) center center;

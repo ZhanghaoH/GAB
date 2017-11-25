@@ -104,13 +104,16 @@
 
 .nav,
 .nav-float {
-    border-top: 2px solid #f4e271;
     background: rgba(0, 0, 0, .4);
     /* background: #052863; */
     /* position: absolute;
     left: 0;
     right: 0;
     top: 0; */
+}
+
+.nav-index {
+    border-top: 2px solid #f4e271;
 }
 
 .nav-fixed {
@@ -123,6 +126,7 @@
     left: 0;
     right: 0;
     z-index: 999;
+    opacity: 0;
 }
 
 .nav-list {
@@ -260,6 +264,8 @@
     /* font-family:PingFangSC-Semibold, 微软雅黑; */
     letter-spacing: 1.29px;
     text-align: center;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     padding: 0;
@@ -300,6 +306,7 @@
 .search-key li>a {
     font-size: 12px;
     /* font-family:PingFangSC-Medium; */
+    font-weight: bolder;
     color: #ffffff;
     letter-spacing: 0.71px;
     padding: 3px 5px;
@@ -319,6 +326,7 @@
     margin-right: 6px;
     padding-top: 5px;
     width: 132px;
+    font-weight: bolder;
     text-align: center;
     color: #ffffff;
     letter-spacing: 0.71px;
@@ -826,7 +834,7 @@ i.app {
 
 /* 搜索浮窗 */
 
-.pop-wrap {
+.pop-search {
     box-shadow: 0 3px 8px 0 rgba(45, 51, 59, 0.42) inset;
     background: #f5fbff;
     /* border-radius: 4px; */
@@ -840,21 +848,21 @@ i.app {
     overflow: auto;
 }
 
-.pop-wrap .am-nav-tabs {
+.pop-search .am-nav-tabs {
     margin: 0 auto;
 }
 
-.pop-wrap .am-nav-tabs>li {
+.pop-search .am-nav-tabs>li {
     width: 16.5%;
     background: #d1e5ff;
     border-radius: 2px 2px 0 0;
 }
 
-.pop-wrap .am-nav-tabs>li:last-child {
+.pop-search .am-nav-tabs>li:last-child {
     margin-right: 0;
 }
 
-.pop-wrap .am-nav-tabs>li>a {
+.pop-search .am-nav-tabs>li>a {
     color: #292d33;
     line-height: 1.5;
     border: none;
@@ -865,7 +873,7 @@ i.app {
     font-size: 14px;
 }
 
-.pop-wrap .am-nav-tabs>li.am-active>a,
+.pop-search .am-nav-tabs>li.am-active>a,
 .am-nav-tabs>li.am-active>a:focus,
 .am-nav-tabs>li>a:hover,
 .am-nav-tabs>li.am-active>a:hover {
@@ -875,11 +883,11 @@ i.app {
     color: #ffffff;
 }
 
-.pop-wrap .am-tabs-bd {
+.pop-search .am-tabs-bd {
     border: none;
 }
 
-.pop-wrap .am-nav-tabs>li.am-active {
+.pop-search .am-nav-tabs>li.am-active {
     background: #327fdf;
 }
 
@@ -1153,4 +1161,93 @@ i.icon-psd {
     /* font-family:PingFangSC-Semibold; */
     font-size: 16px;
     letter-spacing: 0.9px;
+}
+
+.cities__checked {
+    color: #fff;
+    background: #0f8fff;
+    border-radius: 4px;
+}
+
+
+/*----------  search pop  ----------*/
+
+.search-more {
+    padding: 15px 25px;
+    background-color: #fff;
+    border-radius: 4px;
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+
+.search-tit {
+    font-size: 16px;
+    margin-bottom: 15px;
+    /* color:  */
+}
+
+.search-form-group {
+    border-radius: 4px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.search-form-cnt {
+    margin-left: 45px;
+    display: flex;
+    align-items: center;
+}
+
+input.search-form-cnt {
+    flex: auto;
+    padding: 0 5px;
+    line-height: 32px;
+    border: 1px solid #d2d2d2;
+    border-radius: 4px
+}
+
+.search-form-label {
+    width: 150px;
+    text-align: right;
+}
+
+.btn-normal {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+i.choice-status {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    margin-right: 10px;
+    border: 1px solid #d2d2d2;
+    border-radius: 4px;
+}
+
+.search-radio .choice-status {
+    border-radius: 50%;
+    border: none;
+    background: url("../i/radio_gray.png") center center no-repeat;
+    background-size: 100% 100%;
+}
+
+.search-checkbox i.choice-status.choice__done {
+    background: url("../i/check_box_p.png") center center no-repeat;
+    background-size: 100% 100%;
+    border-color: transparent
+}
+
+.search-radio i.choice-status.choice__done {
+    background: url("../i/radio.png") center center no-repeat;
+    background-size: 100% 100%;
+    border-color: transparent
 }

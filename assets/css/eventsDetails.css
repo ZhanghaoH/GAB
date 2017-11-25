@@ -5,6 +5,21 @@
     position: relative;
 }
 
+.action-back i {
+    width: 25px;
+    height: 25px;
+    background: url("../i/back.png") center center no-repeat;
+    background-size: contain;
+}
+
+.action-back {
+    position: absolute;
+    bottom: 25px;
+    left: 45px;
+    z-index: 9;
+    font-size: 0;
+}
+
 .details .bd-cnt-l-list-wr {
     flex: auto;
     border-bottom: none;
@@ -53,9 +68,10 @@
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    list-style: none;
 }
 
-.details-up-services li {
+.details-up-services li a {
     display: flex;
     align-items: center;
     /* font-family:PingFangSC-Regular; */
